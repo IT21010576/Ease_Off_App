@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Ease Off Application</string>
+    <string name="WelcomeText">Welcome to Ease Off</string>
+    <string name="LoginLbl">Login</string>
+    <string name="EmailPlaceholder">Enter your email</string>
+    <string name="PwdPlaceholder">Enter your password</string>
+    <string name="SignUpLbl">Sign Up</string>
+    <string name="SignUpText">Sign Up to Ease Off!</string>
+    <string name="SignUptxt1">My Personal Details</string>
+    <string name="SignUptxt2">My Account Registration</string>
+    <string name="SignUpNameLbl">Full Name :</string>
+    <string name="SignUpNameHint">Enter your full name</string>
+    <string name="SignUpDobLbl">Date Of Birth :</string>
+    <string name="MaleLbl">Male</string>
+    <string name="FemaleLbl">Female</string>
+    <string name="SignUpGenderLbl">Gender :</string>
+    <string name="termsAconditions">I accept the Terms and Conditions</string>
+    <string name="SignUpEmailLbl">Email :</string>
+    <string name="SignUpPwdLbl">Password :</string>
+    <string name="SignUpPwdHint">Create your Password</string>
+    <string name="SignUpDobHint">Enter your DOB</string>
 </resources>
