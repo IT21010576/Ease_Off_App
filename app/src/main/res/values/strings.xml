@@ -19,4 +19,13 @@
     <string name="SignUpPwdLbl">Password :</string>
     <string name="SignUpPwdHint">Create your Password</string>
     <string name="SignUpDobHint">Enter your DOB</string>
+    <string name="DailyMedLbl">Daily Medicine</string>
+    <string name="BeautyLbl">Beauty</string>
+    <string name="PharmacyLbl">Pharmacy</string>
+    <string name="DiseasesUpdtLbl">Diseases Update</string>
+    <string name="HelathcareLbl">Helathcare</string>
+    <string name="EathealthyLbl">Eat Healthy</string>
+    <string name="StayfitLbl">Stay Fit</string>
+    <string name="MindYouLbl"><![CDATA[Mind & You]]></string>
+    <string name="DashboardLbl">Dashboard</string>
 </resources>

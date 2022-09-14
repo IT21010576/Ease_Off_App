@@ -9,4 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="GreenBtn">#228B22</color>
     <color name="LightGreen">#AFE1AF</color>
+    <color name="DashboardCol1">#52BE80</color>
+    <color name="DashboardCol2">#F5B041</color>
+    <color name="DashboardCol3">#EC7063</color>
+    <color name="DashboardCol4">#F7DC6F</color>
 </resources>

@@ -70,6 +70,7 @@
         android:layout_width="113dp"
         android:layout_height="48dp"
         android:background="@color/GreenBtn"
+        android:onClick="moveToDashboard"
         android:text="@string/LoginLbl"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -18,4 +18,9 @@ public class Login extends AppCompatActivity {
         Intent intent1=new Intent(this,Signup.class);
         startActivity(intent1);
     }
+
+    public void moveToDashboard(View view){
+        Intent intent1=new Intent(this,MainDashboard.class);
+        startActivity(intent1);
+    }
 }
