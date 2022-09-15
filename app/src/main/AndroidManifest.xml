@@ -14,10 +14,13 @@
         android:theme="@style/Theme.EaseOffApplication"
         tools:targetApi="31">
         <activity
-            android:name=".MainDashboard"
+            android:name=".MedicineLists"
             android:exported="false" />
         <activity
-            android:name=".Healthcare"
+            android:name=".healthcare"
+            android:exported="false" />
+        <activity
+            android:name=".MainDashboard"
             android:exported="false" />
         <activity
             android:name=".Signup"

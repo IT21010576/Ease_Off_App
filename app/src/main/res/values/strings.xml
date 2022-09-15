@@ -28,4 +28,7 @@
     <string name="StayfitLbl">Stay Fit</string>
     <string name="MindYouLbl"><![CDATA[Mind & You]]></string>
     <string name="DashboardLbl">Dashboard</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="AddScheduleBtn">Add Schedule</string>
 </resources>
