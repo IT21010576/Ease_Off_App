@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_health_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_healthcare.xml" value="0.25" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_main_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_medicine_lists.xml" value="0.25" />
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Tutorial/Ease_Off_App/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Tutorial/Ease_Off_App/app/src/main/res/layout/activity_signup.xml" value="0.33" />
       </map>
