@@ -19,8 +19,4 @@ public class healthcare extends AppCompatActivity {
         setContentView(R.layout.activity_healthcare);
     }
 
-    public void moveToMedicineLists(Fragment fragment){
-        Intent intent1=new Intent(this,medicineLists.class);
-        startActivity(intent1);
-    }
 }
