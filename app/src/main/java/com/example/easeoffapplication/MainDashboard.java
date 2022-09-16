@@ -2,7 +2,9 @@ package com.example.easeoffapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainDashboard extends AppCompatActivity {
 
@@ -10,5 +12,10 @@ public class MainDashboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_dashboard);
+    }
+
+    public void MoveToDietDash(View view){
+        Intent intent1=new Intent(this,DietDashboard.class);
+        startActivity(intent1);
     }
 }

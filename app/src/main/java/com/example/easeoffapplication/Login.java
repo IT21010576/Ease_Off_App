@@ -20,7 +20,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void moveToDashboard(View view){
-        Intent intent1=new Intent(this,MainDashboard.class);
-        startActivity(intent1);
+        Intent intent2=new Intent(this,MainDashboard.class);
+        startActivity(intent2);
     }
 }

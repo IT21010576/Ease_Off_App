@@ -14,10 +14,19 @@
         android:theme="@style/Theme.EaseOffApplication"
         tools:targetApi="31">
         <activity
-            android:name=".MainDashboard"
+            android:name=".MyHealthyRecipies"
             android:exported="false" />
         <activity
-            android:name=".Healthcare"
+            android:name=".PlanMyDiet"
+            android:exported="false" />
+        <activity
+            android:name=".TrackMyCalories"
+            android:exported="false" />
+        <activity
+            android:name=".DietDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".MainDashboard"
             android:exported="false" />
         <activity
             android:name=".Signup"
