@@ -31,4 +31,24 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="AddScheduleBtn">Add Schedule</string>
+    <string name="Workoutbtn">Add Workout</string>
+    <string name="weeklylbl1">Weekly Planner</string>
+    <string name="Myprobtn">My Profile</string>
+    <string name="Myworkbtn">My Workouts</string>
+    <string name="Fname">Full name</string>
+    <string name="pAge">Age</string>
+    <string name="pHeight" />
+    <string name="p_Height">Height</string>
+    <string name="p_weight">Weight</string>
+    <string name="p_age">Age</string>
+    <string name="FullWorkbtn">Full Body Workout</string>
+    <string name="Withequipbtn">Workouts With Equipments</string>
+    <string name="absWorkbtn">abs Workout</string>
+    <string name="Workoutlbl">Workout Summary</string>
+    <string name="MG_txt">Main Goal:- Build Muscle</string>
+    <string name="TL_txt">Training Level:- Beginner</string>
+    <string name="PD_txt">Program Duration:- 12 Weeks</string>
+    <string name="DPW_txt">Days Per Week:- 3</string>
+    <string name="Rec_txt">Recommended Workouts: DEADLIFT, SQUAT, BENCH PRESS,OVERHEAD PRESS,ROW</string>
+    <string name="TPW_txt">Times Per Workout: 45-60 minutes</string>
 </resources>

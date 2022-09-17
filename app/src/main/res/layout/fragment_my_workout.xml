@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ThemeCol3"
+    tools:context=".MyWorkout">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Workout"
+        android:textSize="40dp"
+        android:layout_topInParent="true"
+        android:textColor="@color/cardview_dark_background"
+        android:backgroundTint="@color/ThemeCol3"
+        />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:textSize="35sp"
+        android:textColor="@color/ThemeCol1Btn"
+        android:text="@string/FullWorkbtn"
+        android:backgroundTint="@color/ThemeCol4"/>
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="300dp"
+        android:textSize="35sp"
+        android:textColor="@color/ThemeCol1Btn"
+        android:text="@string/Withequipbtn"
+        android:backgroundTint="@color/ThemeCol4"/>
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="@string/absWorkbtn"
+        android:textSize="35sp"
+        android:textColor="@color/ThemeCol1Btn"
+        android:layout_marginTop="500dp"
+        android:backgroundTint="@color/ThemeCol4"/>
+
+</FrameLayout>
+
+
+
