@@ -14,8 +14,9 @@
         android:theme="@style/Theme.EaseOffApplication"
         tools:targetApi="31">
         <activity
-            android:name=".MedicineLists"
+            android:name=".Workout"
             android:exported="false" />
+
         <activity
             android:name=".healthcare"
             android:exported="false" />
