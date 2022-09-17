@@ -16,7 +16,6 @@
         <activity
             android:name=".Workout"
             android:exported="false" />
-
         <activity
             android:name=".healthcare"
             android:exported="false" />
