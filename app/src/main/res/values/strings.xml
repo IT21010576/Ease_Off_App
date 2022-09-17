@@ -83,5 +83,15 @@
     <string name="methodHint">Enter the method</string>
     <string name="caloriHint">Enter no of calories per g</string>
     <string name="savedRecipeLbl">My Saved Recipies</string>
-
+    <string name="AddScheduleBtn">Add Schedule</string>
+    <string name="AddBtn">Add</string>
+    <string name="MyDailyMedScheLbl">My Daily Medicine Schedules</string>
+    <string name="DownloadBtn">Download</string>
+    <string name="SearchLbl">Search</string>
+    <string name="SeeMoreBtn">See More</string>
+    <string name="ViewMyListsBtn">View My Lists</string>
+    <string name="AddToListBtn">Add to list</string>
+    <string name="CopyNumBtn">Copy Number</string>
+    <string name="ViewMySchedulesBtn">View My Schedules</string>
+    <string name="newListBtn">New List</string>
 </resources>

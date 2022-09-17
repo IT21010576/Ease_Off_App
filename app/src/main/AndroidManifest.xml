@@ -26,6 +26,21 @@
             android:name=".DietDashboard"
             android:exported="false" />
         <activity
+            android:name=".PharmacyMain"
+            android:exported="false" />
+        <activity
+            android:name=".DailyMedicine"
+            android:exported="false" />
+        <activity
+            android:name=".DiseasesUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".Beauty"
+            android:exported="false" />
+        <activity
+            android:name=".healthcare"
+            android:exported="false" />
+        <activity
             android:name=".MainDashboard"
             android:exported="false" />
         <activity
