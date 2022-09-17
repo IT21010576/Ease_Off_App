@@ -38,4 +38,6 @@
     <string name="ViewMyListsBtn">View My Lists</string>
     <string name="AddToListBtn">Add to list</string>
     <string name="CopyNumBtn">Copy Number</string>
+    <string name="ViewMySchedulesBtn">View My Schedules</string>
+    <string name="newListBtn">New List</string>
 </resources>
