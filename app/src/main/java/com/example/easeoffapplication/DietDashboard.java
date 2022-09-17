@@ -28,4 +28,9 @@ public class DietDashboard extends AppCompatActivity {
         Intent intent3=new Intent(this,MyHealthyRecipies.class);
         startActivity(intent3);
     }
+
+    public void MoveToNutriFacts(View view){
+        Intent intent4=new Intent(this,NutriFacts.class);
+        startActivity(intent4);
+    }
 }

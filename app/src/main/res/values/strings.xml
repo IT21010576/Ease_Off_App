@@ -53,7 +53,7 @@
     <string name="TrackCalorieBtn1">Record an Intake</string>
     <string name="PlanMealBtn1">Create a Meal Plan</string>
     <string name="PlanMealBtn2">View my Meal Plans</string>
-    <string name="DayLbl">Day of the Week :</string>
+    <string name="DayLbl">Day :</string>
     <string name="BreakfastLbl">Breakfast :</string>
     <string name="LunchLbl">Lunch :</string>
     <string name="TeaTimeLbl">Tea Time :</string>
