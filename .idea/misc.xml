@@ -3,9 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+
+        <entry key="..\:/Ease_Off_App/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/activity_main_dashboard.xml" value="0.33" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/activity_mind_and_you_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/activity_mind_create_journal.xml" value="0.33" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/activity_mind_meditate.xml" value="0.25" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/activity_mind_sleep.xml" value="0.25" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/activity_mind_sleep_feedback.xml" value="0.33" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/activity_mind_thought_journal.xml" value="0.33" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/activity_mind_tips.xml" value="0.33" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/activity_signup.xml" value="0.33" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/fragment_m_ind_sleep_calc_t_ime.xml" value="0.20416666666666666" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/fragment_mind_meditate_timer.xml" value="0.22" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/fragment_mind_meditate_times.xml" value="0.25" />
+        <entry key="..\:/Ease_Off_App/app/src/main/res/layout/fragment_mind_sleep_view_time.xml" value="0.1" />
+
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_beauty.xml" value="0.2" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_daily_medicine.xml" value="0.2" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_diseases_update.xml" value="0.2" />
+
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_health_dashboard.xml" value="0.25" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_healthcare.xml" value="0.2" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_main.xml" value="0.264" />

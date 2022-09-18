@@ -4,17 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="MoveToDietDash"
-    tools:context=".MainDashboard">
+    style="@style/DashboardFontStyle"
+    tools:context=".MindAndYouDashboard">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/mind_journal_btn"
         android:layout_width="168dp"
         android:layout_height="158dp"
-        android:backgroundTint="@color/DashboardCol1"
-        android:onClick="MoveToDietDash"
-        android:text="@string/EathealthyLbl"
-        android:textColor="@color/white"
+        android:backgroundTint="@color/IndividualDashboardCol1"
+        android:text="@string/mind_journal_lbl"
+        android:onClick="moveToMindThoughtJournal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.115"
@@ -23,14 +22,13 @@
         app:layout_constraintVertical_bias="0.263" />
 
     <Button
-        android:id="@+id/button9"
+        android:id="@+id/mind_sleep_btn"
         android:layout_width="168dp"
         android:layout_height="158dp"
-        android:backgroundTint="@color/DashboardCol3"
-        android:onClick="moveToHealthcare"
-        android:text="@string/HelathcareLbl"
+        android:backgroundTint="@color/IndividualDashboardCol2"
+        android:text="@string/mind_sleep_lbl"
+        android:onClick="moveToMindSleep"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,14 +36,13 @@
         app:layout_constraintVertical_bias="0.642" />
 
     <Button
-        android:id="@+id/button10"
+        android:id="@+id/mind_meditate_btn"
         android:layout_width="168dp"
         android:layout_height="158dp"
-        android:backgroundTint="@color/DashboardCol4"
-        android:text="@string/MindYouLbl"
-        android:onClick="moveToMindAndYou"
+        android:backgroundTint="@color/IndividualDashboardCol3"
+        android:text="@string/mind_meditate_lbl"
+        android:onClick="moveToMindMeditate"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,13 +50,13 @@
         app:layout_constraintVertical_bias="0.642" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/mind_tips_btn"
         android:layout_width="168dp"
         android:layout_height="158dp"
-        android:backgroundTint="@color/DashboardCol2"
-        android:text="@string/StayfitLbl"
+        android:backgroundTint="@color/IndividualDashboardCol4"
+        android:text="@string/mind_tips_lbl"
+        android:onClick="moveToMindTips"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,21 +75,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.widget.SearchView
-        android:id="@+id/searchView"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginBottom="796dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.892"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/textView11"
         android:layout_width="113dp"
         android:layout_height="34dp"
-        android:text="@string/DashboardLbl"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/toolbar"
         app:layout_constraintHorizontal_bias="0.311"

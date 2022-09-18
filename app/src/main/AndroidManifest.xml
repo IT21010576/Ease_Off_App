@@ -14,6 +14,27 @@
         android:theme="@style/Theme.EaseOffApplication"
         tools:targetApi="31">
         <activity
+
+            android:name=".MindSleepFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".MindCreateJournal"
+            android:exported="false" />
+        <activity
+            android:name=".MindTips"
+            android:exported="false" />
+        <activity
+            android:name=".MindMeditate"
+            android:exported="false" />
+        <activity
+            android:name=".MindSleep"
+            android:exported="false" />
+        <activity
+            android:name=".MindThoughtJournal"
+            android:exported="false" />
+        <activity
+            android:name=".MindAndYouDashboard"
+
             android:name=".MyHealthyRecipies"
             android:exported="false" />
         <activity
@@ -39,6 +60,7 @@
             android:exported="false" />
         <activity
             android:name=".healthcare"
+
             android:exported="false" />
         <activity
             android:name=".MainDashboard"
