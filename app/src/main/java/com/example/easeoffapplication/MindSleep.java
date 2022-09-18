@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainDashboard extends AppCompatActivity {
+public class MindSleep extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_dashboard);
+        setContentView(R.layout.activity_mind_sleep);
     }
 
-    public void moveToMindAndYou(View view) {
-        Intent mind=new Intent(this,MindAndYouDashboard.class);
-        startActivity(mind);
+    public void moveToMindSleepFeedback(View view) {
+        Intent intent = new Intent(this,MindSleepFeedback.class );
+        startActivity(intent);
     }
 }

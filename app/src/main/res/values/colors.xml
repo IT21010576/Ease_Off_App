@@ -9,8 +9,16 @@
     <color name="white">#FFFFFFFF</color>
     <color name="GreenBtn">#228B22</color>
     <color name="LightGreen">#AFE1AF</color>
-    <color name="DashboardCol1">#52BE80</color>
-    <color name="DashboardCol2">#F5B041</color>
-    <color name="DashboardCol3">#EC7063</color>
-    <color name="DashboardCol4">#F7DC6F</color>
+    <color name="DashboardCol1">#1A5276</color>
+    <color name="DashboardCol2">#2874A6 </color>
+    <color name="DashboardCol3">#2E86C1</color>
+    <color name="DashboardCol4">#5DADE2</color>
+    <color name="IndividualDashboardCol1">#A9CCE3</color>
+    <color name="IndividualDashboardCol2">#AED6F1</color>
+    <color name="IndividualDashboardCol3">#D6EAF8</color>
+    <color name="IndividualDashboardCol4">#EAF2F8</color>
+    <color name="ThemeCol1Btn">#5499C7</color>
+    <color name="ThemeCol2">#5DADE2</color>
+    <color name="ThemeCol3">#A9CCE3</color>
+    <color name="ThemeCol4">#D6EAF8</color>
 </resources>
