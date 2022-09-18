@@ -43,6 +43,7 @@
         android:layout_height="158dp"
         android:backgroundTint="@color/DashboardCol4"
         android:text="@string/MindYouLbl"
+        android:onClick="moveToMindAndYou"
         app:layout_constraintBottom_toBottomOf="parent"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,7 +78,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <SearchView
+    <android.widget.SearchView
+        android:id="@+id/searchView"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginBottom="796dp"

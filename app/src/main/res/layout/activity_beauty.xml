@@ -8,9 +8,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
-        android:background="?attr/colorPrimary"
+        style="@style/toolbarStyle"
         android:backgroundTint="@color/ThemeCol2"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -192,6 +190,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="TextView"
+
+        android:id="@+id/textView25"
+        style="@style/toolbarFontStyle"
+        android:text="@string/BeautyLbl"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
@@ -199,9 +202,7 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="54dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="24dp"
+        style="@style/toolbarImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
