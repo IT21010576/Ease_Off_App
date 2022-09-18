@@ -8,7 +8,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="500dp"
         android:layout_marginTop="220dp">
 
         <LinearLayout
@@ -24,12 +24,10 @@
 
                 <Button
                     android:id="@+id/button14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:layout_marginLeft="220dp"
                     android:layout_marginTop="70dp"
                     android:layout_marginRight="20dp"
-                    android:backgroundTint="@color/ThemeCol1Btn"
                     android:text="@string/AddToListBtn" />
 
                 <TextView
@@ -64,12 +62,10 @@
 
                 <Button
                     android:id="@+id/button15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:layout_marginLeft="220dp"
                     android:layout_marginTop="70dp"
                     android:layout_marginRight="20dp"
-                    android:backgroundTint="@color/ThemeCol1Btn"
                     android:text="@string/AddToListBtn" />
 
                 <TextView
@@ -104,12 +100,10 @@
 
                 <Button
                     android:id="@+id/button16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/buttonStyle"
                     android:layout_marginLeft="220dp"
                     android:layout_marginTop="70dp"
                     android:layout_marginRight="20dp"
-                    android:backgroundTint="@color/ThemeCol1Btn"
                     android:text="@string/CopyNumBtn" />
 
                 <TextView

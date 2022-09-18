@@ -3,4 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyMedicineLists"/>
+    tools:context=".MyMedicineLists">
+
+    <Button
+        android:id="@+id/button19"
+        style="@style/buttonStyle"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/newListBtn" />
+</FrameLayout>

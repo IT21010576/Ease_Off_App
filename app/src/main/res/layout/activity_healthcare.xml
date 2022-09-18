@@ -8,6 +8,7 @@
 
     <Button
         android:id="@+id/dailyMedicine"
+        style="@style/DashboardFontStyle"
         android:layout_width="168dp"
         android:layout_height="158dp"
         android:backgroundTint="@color/IndividualDashboardCol1"
@@ -21,6 +22,7 @@
 
     <Button
         android:id="@+id/button9"
+        style="@style/DashboardFontStyle"
         android:layout_width="168dp"
         android:layout_height="158dp"
         android:backgroundTint="@color/IndividualDashboardCol3"
@@ -34,6 +36,7 @@
 
     <Button
         android:id="@+id/button10"
+        style="@style/DashboardFontStyle"
         android:layout_width="168dp"
         android:layout_height="158dp"
         android:backgroundTint="@color/IndividualDashboardCol4"
@@ -47,6 +50,7 @@
 
     <Button
         android:id="@+id/button8"
+        style="@style/DashboardFontStyle"
         android:layout_width="168dp"
         android:layout_height="158dp"
         android:backgroundTint="@color/IndividualDashboardCol2"
@@ -72,16 +76,14 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="113dp"
-        android:layout_height="34dp"
+        style="@style/toolbarFontStyle"
         android:text="@string/HelathcareLbl"
-        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintHorizontal_bias="0.292"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.031" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView10"

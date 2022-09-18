@@ -14,10 +14,8 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/AddBtn"
-        android:backgroundTint="@color/ThemeCol1Btn"
+        style="@style/buttonStyle"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="480dp"
-        android:layout_marginLeft="50dp"/>
+        android:text="@string/AddBtn" />
 </FrameLayout>

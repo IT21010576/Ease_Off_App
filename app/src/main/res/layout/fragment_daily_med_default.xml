@@ -15,20 +15,22 @@
 
         <TextView
             android:id="@+id/textView19"
+            style="@style/headingFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="35dp"
-            android:text="Tips when taking daily medicine"
+            android:text="@string/HealthTipsHeading"
             android:textSize="25dp" />
 
         <TextView
             android:id="@+id/textView20"
+            style="@style/generalFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="140dp"
-            android:text="Keep a list\n\nTake your meds at the same time\n\nLeave yourself notes\n\nUse a pillbox\n\nKeep a calendar\n\nSet an alarm\n\n"
-            android:textSize="18dp"/>
+            android:text="@string/HealthTipsText"
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/button17"
@@ -37,7 +39,7 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="500dp"
             android:backgroundTint="@color/ThemeCol1Btn"
-            android:text="Start Your Schedule Today"/>
+            android:text="@string/StartYourScheduleTodayBtn" />
     </androidx.cardview.widget.CardView>
 
 

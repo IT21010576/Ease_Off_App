@@ -23,7 +23,7 @@
     <string name="BeautyLbl">Beauty</string>
     <string name="PharmacyLbl">Pharmacy</string>
     <string name="DiseasesUpdtLbl">Diseases Update</string>
-    <string name="HelathcareLbl">Helathcare</string>
+    <string name="HelathcareLbl">Healthcare</string>
     <string name="EathealthyLbl">Eat Healthy</string>
     <string name="StayfitLbl">Stay Fit</string>
     <string name="MindYouLbl"><![CDATA[Mind & You]]></string>
@@ -94,4 +94,13 @@
     <string name="CopyNumBtn">Copy Number</string>
     <string name="ViewMySchedulesBtn">View My Schedules</string>
     <string name="newListBtn">New List</string>
+    <string name="HealthTipsHeading">Tips when taking daily medicine</string>
+    <string name="HealthTipsText">Keep a list\n\nTake your meds at the same time\n\nLeave yourself notes\n\nUse a pillbox\n\nKeep a calendar\n\nSet an alarm\n\n</string>
+    <string name="StartYourScheduleTodayBtn">Start Your Schedule Today</string>
+    <string name="MyDailyMedicineSchedulesHeading">My Daily Medicine Schedules</string>
+    <string name="SaveToGalleryBtn">Save list to gallery</string>
+    <string name="ListName">Name</string>
+    <string name="ListNameLbl">List name</string>
+    <string name="qtyLbl">Qty</string>
+    <string name="MedcineLbl">Medicine</string>
 </resources>
