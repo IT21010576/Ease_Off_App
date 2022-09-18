@@ -8,9 +8,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
-        android:layout_width="match_parent"
-        android:layout_height="76dp"
-        android:background="?attr/colorPrimary"
+        style="@style/toolbarStyle"
         android:backgroundTint="@color/ThemeCol2"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -23,9 +21,7 @@
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="54dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="24dp"
+        style="@style/toolbarImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,9 +30,9 @@
 
     <TextView
         android:id="@+id/textView26"
+        style="@style/toolbarFontStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="@string/DiseasesUpdtLbl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
