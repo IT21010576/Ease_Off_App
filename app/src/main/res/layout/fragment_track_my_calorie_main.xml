@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/IndividualDashboardCol3"
     tools:context=".TrackMyCalorieMain">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,86 +12,137 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/lbl1"
+            style="@style/headingFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/TrackCalorieLbl1"
-            android:textSize="20sp"
+            android:textSize="12pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.103"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.181" />
+            app:layout_constraintVertical_bias="0.142" />
 
         <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/IntakeDateLbl"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.052"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.28" />
-
-        <EditText
-            android:id="@+id/editTextDate2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/EnterDateHint"
-            android:inputType="date"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.895"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.269" />
-
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/CalorieRecLbl3"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.042"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.696" />
-
-        <TextView
-            android:id="@+id/textView19"
+            android:id="@+id/textView36"
+            style="@style/generalFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/CalorieRecLbl1"
-            android:textSize="16sp"
+            android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.059"
+            app:layout_constraintHorizontal_bias="0.315"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.421" />
+            app:layout_constraintVertical_bias="0.393" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/textView40"
+            style="@style/generalFontText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/IntakeDateLbl"
+            android:textSize="8pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.318"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <TextView
+            android:id="@+id/textView37"
+            style="@style/generalFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/CalorieRecLbl2"
-            android:textSize="16sp"
+            android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintHorizontal_bias="0.278"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.55" />
+            app:layout_constraintVertical_bias="0.542" />
+
+        <TextView
+            android:id="@+id/textView38"
+            style="@style/generalFontText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CalorieRecLbl3"
+            android:textSize="8pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.254"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.684" />
+
+        <EditText
+            android:id="@+id/tbBreakfast"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/EnterIntakeHint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.387" />
+
+        <EditText
+            android:id="@+id/tbDay"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/EnterDateHint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.243"
+            tools:layout_editor_absoluteX="236dp" />
+
+        <EditText
+            android:id="@+id/tbLunch"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/EnterIntakeHint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.54" />
+
+        <EditText
+            android:id="@+id/tbTea"
+            style="@style/generalFontText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/EnterIntakeHint"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.692" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/saveCalBtn"
+            style="@style/buttonStyle"
             android:layout_width="186dp"
             android:layout_height="46dp"
             android:background="@color/GreenBtn"
@@ -102,47 +154,37 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.846" />
 
-        <EditText
-            android:id="@+id/editTextNumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/EnterIntakeHint"
-            android:inputType="number"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.895"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.402" />
+        <ImageView
+            android:id="@+id/dayImg"
+            android:layout_width="69dp"
+            android:layout_height="66dp"
+            android:src="@drawable/dayIcon"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="157dp" />
 
-        <EditText
-            android:id="@+id/editTextNumber4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/EnterIntakeHint"
-            android:inputType="number"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.9"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.556" />
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="72dp"
+            android:layout_height="64dp"
+            android:src="@drawable/carbsIcon"
+            tools:layout_editor_absoluteX="11dp"
+            tools:layout_editor_absoluteY="256dp" />
 
-        <EditText
-            android:id="@+id/editTextNumber5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="@string/EnterIntakeHint"
-            android:inputType="number"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.895"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.701" />
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:src="@drawable/protIcon"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="351dp" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="64dp"
+            android:layout_height="63dp"
+            android:src="@drawable/fatIcon"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="458dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

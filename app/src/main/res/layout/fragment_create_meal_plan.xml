@@ -12,7 +12,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView34"
+            android:id="@+id/lbl1"
             style="@style/headingFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

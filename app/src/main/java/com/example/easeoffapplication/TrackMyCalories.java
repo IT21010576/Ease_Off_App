@@ -11,44 +11,30 @@ import android.widget.Button;
 
 public class TrackMyCalories extends AppCompatActivity {
 
-    Button recordFragBtn;
-    Button viewFragBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_track_my_calories);
-        recordFragBtn=findViewById(R.id.TrackCalbtn1);
-        viewFragBtn=findViewById(R.id.TrackCalbtn2);
-
-
-        recordFragBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                replaceFragment(new TrackMyCalorieMain());
-            }
-        });
-
-        viewFragBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                replaceFragment(new PreviousCalorieIntakes());
-            }
-
-
-        });
-
 
     }
 
-    private void replaceFragment(Fragment fragment) {
-        FragmentManager fragmentManager=getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.FrameLayout1,fragment);
-        fragmentTransaction.commit();
+    public void changeFragment(View view){
+        Fragment fragment;
+        if (view == findViewById(R.id.TrackCalbtn1)){
+            fragment = new TrackMyCalorieMain();
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.fragmentContainer2,fragment);
+            ft.commit();
+        }
+        if (view == findViewById(R.id.TrackCalbtn2)){
+            fragment = new PreviousCalorieIntakes();
+            FragmentManager fm = getSupportFragmentManager(); FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.fragmentContainer2,fragment);
+            ft.commit();
+        }
     }
-
 
 
 }

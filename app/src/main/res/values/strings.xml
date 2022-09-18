@@ -42,7 +42,7 @@
     <string name="CalorieRecLbl3">Fats:</string>
     <string name="SaveandCalcBtn">Save and Calculate</string>
     <string name="EnterDateHint">Enter the Date</string>
-    <string name="EnterIntakeHint">Enter Intake (in grams)</string>
+    <string name="EnterIntakeHint">Enter Intake (in g)</string>
     <string name="CalcSummary">Summary</string>
     <string name="CalorieLbl">Calories</string>
     <string name="TotalCalLbl">Total Calories</string>
@@ -94,4 +94,9 @@
     <string name="CopyNumBtn">Copy Number</string>
     <string name="ViewMySchedulesBtn">View My Schedules</string>
     <string name="newListBtn">New List</string>
+    <string name="searchHint">Enter day..</string>
+    <string name="carbDaily">Carbohydrates - xxCal</string>
+    <string name="protdaily">Protein-xCal</string>
+    <string name="Fatdaily">Fats - xxCal</string>
+    <string name="nutriLbl">Nutritional Facts you must know!</string>
 </resources>
