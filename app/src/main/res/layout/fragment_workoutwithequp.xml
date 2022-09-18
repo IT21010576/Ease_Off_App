@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/IndividualDashboardCol3"
+    tools:context=".Workoutwithequp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/ThemeCol3"
+        android:theme="?attr/actionBarTheme" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:src="@android:drawable/ic_menu_gallery" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Chstexer_lbl"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        android:backgroundTint="@color/ThemeCol4"/>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="380dp"
+        android:backgroundTint="@color/ThemeCol4"
+        android:text="@string/leg_lbl"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="410dp"
+        android:backgroundTint="@color/DashboardCol2"
+        android:ems="10"
+        android:textSize="6sp"
+        android:text="@string/leg_txt"
+        android:textColor="@color/ThemeCol1Btn" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="560dp"
+        android:text="@string/arm_lbl"
+        android:textColor="@color/purple_700"
+        android:backgroundTint="@color/ThemeCol4"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="400dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="585dp"
+        android:ems="10"
+        android:textSize="6sp"
+        android:text="@string/arm_txt"
+        android:backgroundTint="@color/DashboardCol2"
+        android:textColor="@color/ThemeCol1Btn" />
+
+    <TextView
+        android:id="@+id/textView26"
+        style="@style/headingFontText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/DashboardCol2"
+        android:text="Workouts With Equipment"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="230dp"
+        android:backgroundTint="@color/DashboardCol2"
+        android:text="@string/newchest_txt"
+        android:textColor="@color/black" />
+
+
+</FrameLayout>

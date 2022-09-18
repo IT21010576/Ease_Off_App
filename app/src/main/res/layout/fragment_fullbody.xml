@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ThemeCol2"
+    android:background="@color/IndividualDashboardCol3"
     tools:context=".Fullbody">
 
     <!-- TODO: Update blank fragment layout -->
@@ -16,6 +16,7 @@
         android:layout_marginLeft="80dp"
         android:layout_marginTop="220dp"
         android:text="@string/Workoutlbl"
+        android:textColor="@color/DashboardCol1"
         android:textSize="30sp" />
 
     <androidx.appcompat.widget.Toolbar
@@ -30,7 +31,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="162dp"
         android:layout_marginTop="50dp"
         android:src="@android:drawable/ic_menu_gallery" />
 
@@ -40,7 +41,7 @@
         android:layout_height="wrap_content"
         android:text="@string/MG_txt"
         android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textColor="@color/teal_700"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="300dp"/>
 
@@ -50,7 +51,7 @@
         android:layout_height="wrap_content"
         android:text="@string/TL_txt"
         android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textColor="@color/teal_700"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="340dp"/>
 
@@ -60,7 +61,7 @@
         android:layout_height="wrap_content"
         android:text="@string/PD_txt"
         android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textColor="@color/teal_700"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="380dp" />
 
@@ -70,7 +71,7 @@
         android:layout_height="wrap_content"
         android:text="@string/TPW_txt"
         android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textColor="@color/teal_700"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="420dp"/>
     <TextView
@@ -79,7 +80,7 @@
         android:layout_height="wrap_content"
         android:text="@string/DPW_txt"
         android:textSize="20sp"
-        android:textColor="@color/black"
+        android:textColor="@color/teal_700"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="460dp"/>
 
@@ -91,8 +92,18 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="500dp"
         android:text="@string/Rec_txt"
-        android:textColor="@color/design_default_color_error"
-        android:textSize="24sp" />
+        android:textColor="@color/purple_500"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        style="@style/headingFontText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="20dp"
+        android:text="Full body Workouts"
+        android:textSize="20dp" />
 
 
 </FrameLayout>

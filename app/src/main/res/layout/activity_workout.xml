@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_200"
     tools:context=".Workout">
 
     <Button
@@ -29,13 +30,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455"
+        app:layout_constraintVertical_bias="0.429"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="179dp"
-        android:layout_height="38dp"
+        style="@style/headingFontText"
+        android:layout_width="247dp"
+        android:layout_height="46dp"
         android:text="Weekly Planner"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -48,6 +50,7 @@
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
+        style="@style/toolbarStyle"
         android:layout_width="414dp"
         android:layout_height="52dp"
         android:background="?attr/colorPrimary"
@@ -55,22 +58,24 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/fragment2btn"
+        style="@style/buttonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="My Profile"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="518dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="518dp" />
 
     <Button
         android:id="@+id/fragment3btn"
+        style="@style/buttonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="164dp"
@@ -80,6 +85,32 @@
         app:layout_constraintHorizontal_bias="0.885"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <SearchView
+        android:layout_width="139dp"
+        android:layout_height="29dp"
+        android:text="@string/search_txt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="@+id/toolbar2"
+        app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.022"></SearchView>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="99dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginBottom="688dp"
+        android:text="@string/search_txt"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.026" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

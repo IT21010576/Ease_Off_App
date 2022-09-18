@@ -51,4 +51,30 @@
     <string name="DPW_txt">Days Per Week:- 3</string>
     <string name="Rec_txt">Recommended Workouts: DEADLIFT, SQUAT, BENCH PRESS,OVERHEAD PRESS,ROW</string>
     <string name="TPW_txt">Times Per Workout: 45-60 minutes</string>
+    <string name="Chstexer_lbl">Chest Exercise</string>
+    <string name="chest_txt">Dumbbell Squeeze Press-10 </string>
+    <string name="leg_lbl">Leg Exercise</string>
+    <string name="leg_txt">Barbell Squat. (4 sets, 6-10 reps) </string>
+    <string name="arm_lbl">Arm Exercise</string>
+    <string name="arm_txt">Hug a Tree- 10 reps </string>
+    <string name="newchest_txt">Dumbbell Squeeze Press-10
+    </string>
+    <string name="Exercise_lbl">Exercise 1 Summary</string>
+    <string name="Exercise_txt">Dumbbell Crunch-Reps 10
+    Tuck and crunch- Reps 12</string>
+    <string name="Exercise2_lbl">Exercise 2 Summary</string>
+    <string name="abs_lbl">abs Workouts</string>
+    <string name="search_txt">Workouts</string>
+    <string name="today_lbl">Today</string>
+    <string name="Setur_lbl">Set your daily goal</string>
+    <string name="setadd_btn">Add Set</string>
+    <string name="Squat_lbl">Squat</string>
+    <string name="Bench_lbl">Bench Press</string>
+    <string name="Leg_lbl">Leg Press</string>
+    <string name="Over_lbl">Overhead Press</string>
+    <string name="EstTime">Your estimated total Workout time</string>
+    <string name="Est_calorie" />
+    <string name="Est_calorieburnt">Your estimated calorie burnt today</string>
+    <string name="Edit_btn">Edit my set</string>
+    <string name="Delete_btn">Delete my set</string>
 </resources>
