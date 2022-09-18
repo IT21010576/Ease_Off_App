@@ -14,8 +14,19 @@ public class MainDashboard extends AppCompatActivity {
         setContentView(R.layout.activity_main_dashboard);
     }
 
+
     public void moveToMindAndYou(View view) {
         Intent mind=new Intent(this,MindAndYouDashboard.class);
         startActivity(mind);
+
+    public void MoveToDietDash(View view) {
+        Intent intent1 = new Intent(this, DietDashboard.class);
+        startActivity(intent1);
+    }
+
+    public void moveToHealthcare(View view){
+        Intent intent1=new Intent(this,healthcare.class);
+        startActivity(intent1);
+
     }
 }
