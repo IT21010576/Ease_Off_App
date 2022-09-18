@@ -11,37 +11,38 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView27"
-            android:layout_width="195dp"
+            android:id="@+id/calLbl1"
+            style="@style/generalFontText"
+            android:layout_width="252dp"
             android:layout_height="41dp"
             android:text="@string/IdealCalLbl1"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.085" />
+            app:layout_constraintVertical_bias="0.184" />
 
         <TextView
-            android:id="@+id/textView43"
-            android:layout_width="191dp"
-            android:layout_height="45dp"
+            android:id="@+id/calLbl2"
+            style="@style/generalFontText"
+            android:layout_width="250dp"
+            android:layout_height="42dp"
             android:text="@string/IdealCalLbl2"
             android:textAlignment="center"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.571" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView1"
             android:layout_width="303dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="350dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginTop="400dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,24 +56,36 @@
 
                 <TextView
                     android:id="@+id/textView1"
+                    style="@style/generalFontText"
                     android:layout_width="300dp"
                     android:layout_height="70dp"
-                    android:background="@color/material_dynamic_primary80"
-                    android:text="TextView" />
+                    android:background="@color/ThemeCol2"
+                    android:paddingTop="10pt"
+                    android:text="@string/carbDaily"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/textView2"
+                    style="@style/generalFontText"
                     android:layout_width="300dp"
                     android:layout_height="70dp"
-                    android:background="@color/material_dynamic_primary70"
-                    android:text="TextView" />
+                    android:background="@color/ThemeCol3"
+                    android:paddingTop="10pt"
+                    android:text="@string/protdaily"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/textView3"
+                    style="@style/generalFontText"
                     android:layout_width="300dp"
                     android:layout_height="70dp"
-                    android:background="@color/material_dynamic_primary50"
-                    android:text="TextView" />
+                    android:background="@color/ThemeCol4"
+                    android:paddingTop="10pt"
+                    android:text="@string/Fatdaily"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
@@ -83,7 +96,7 @@
             android:layout_width="303dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
-            android:layout_marginBottom="400dp"
+            android:layout_marginBottom="200dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -97,28 +110,65 @@
 
                 <TextView
                     android:id="@+id/textView4"
+                    style="@style/generalFontText"
                     android:layout_width="300dp"
                     android:layout_height="70dp"
-                    android:background="@color/material_dynamic_primary80"
-                    android:text="TextView" />
+                    android:background="@color/ThemeCol2"
+                    android:paddingTop="10pt"
+                    android:text="@string/carbDaily"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/textView5"
+                    style="@style/generalFontText"
                     android:layout_width="300dp"
                     android:layout_height="70dp"
-                    android:background="@color/material_dynamic_primary70"
-                    android:text="TextView" />
+                    android:background="@color/ThemeCol3"
+                    android:paddingTop="10pt"
+                    android:text="@string/protdaily"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/textView6"
+                    style="@style/generalFontText"
                     android:layout_width="300dp"
                     android:layout_height="70dp"
-                    android:background="@color/material_dynamic_primary50"
-                    android:text="TextView" />
+                    android:background="@color/ThemeCol4"
+                    android:paddingTop="10pt"
+                    android:text="@string/Fatdaily"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/diduknwLbl"
+            style="@style/headingFontText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/didUKnowLbl1"
+            android:textSize="13pt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.085" />
+
+        <ImageView
+            android:id="@+id/diduknwImg"
+            android:layout_width="102dp"
+            android:layout_height="97dp"
+            android:src="@drawable/didyouknow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.851"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="30dp" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

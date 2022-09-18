@@ -41,7 +41,7 @@
                 android:backgroundTint="@color/ThemeCol4">
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/HealRecBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="220dp"
@@ -58,7 +58,7 @@
                     app:srcCompat="@drawable/default_image" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/prevLbl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="170dp"
@@ -74,7 +74,7 @@
                 android:backgroundTint="@color/ThemeCol4">
 
                 <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/NutriFctBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="220dp"
@@ -91,7 +91,7 @@
                     app:srcCompat="@drawable/default_image" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/summaryLbl"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="170dp"
@@ -107,7 +107,7 @@
                 android:backgroundTint="@color/ThemeCol4">
 
                 <Button
-                    android:id="@+id/button12"
+                    android:id="@+id/saveCalBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="220dp"
@@ -140,7 +140,7 @@
                 android:backgroundTint="@color/ThemeCol4">
 
                 <Button
-                    android:id="@+id/button13"
+                    android:id="@+id/backBtn2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="220dp"
@@ -185,9 +185,16 @@
     </ScrollView>
 
     <TextView
+        android:id="@+id/MyPlansLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+
         android:id="@+id/textView25"
         style="@style/toolbarFontStyle"
         android:text="@string/BeautyLbl"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="@+id/toolbar2"
@@ -203,7 +210,7 @@
         app:srcCompat="@drawable/backbtn" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/tbDinner"
         android:layout_width="286dp"
         android:layout_height="69dp"
         android:layout_marginTop="96dp"

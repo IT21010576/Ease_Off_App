@@ -32,4 +32,12 @@
             app:layout_constraintVertical_bias="0.72" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <Button
+        android:id="@+id/TrackCalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AddBtn"
+        android:backgroundTint="@color/ThemeCol1Btn"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="50dp"/>
 </FrameLayout>

@@ -40,7 +40,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/tbLunch"
         android:layout_width="286dp"
         android:layout_height="69dp"
         android:layout_marginTop="96dp"
@@ -100,7 +100,7 @@
                     android:text="@string/SeeMoreBtn"/>
 
                 <TextView
-                    android:id="@+id/textView27"
+                    android:id="@+id/calLbl1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="170dp"
@@ -132,7 +132,7 @@
                     android:text="@string/SeeMoreBtn"/>
 
                 <TextView
-                    android:id="@+id/textView28"
+                    android:id="@+id/TitleSavedRec"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="170dp"

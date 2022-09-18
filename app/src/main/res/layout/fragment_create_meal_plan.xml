@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/IndividualDashboardCol3"
     tools:context=".CreateMealPlan">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -11,80 +12,91 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView34"
+            android:id="@+id/lbl1"
+            style="@style/headingFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/PlanMealBtn1"
-            android:textSize="16sp"
+            android:textSize="12pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.172" />
+            app:layout_constraintVertical_bias="0.142" />
 
         <TextView
             android:id="@+id/textView36"
+            style="@style/generalFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/BreakfastLbl"
+            android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintHorizontal_bias="0.283"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.359" />
+            app:layout_constraintVertical_bias="0.356" />
 
         <TextView
             android:id="@+id/textView40"
+            style="@style/generalFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/DayLbl"
+            android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.099"
+            app:layout_constraintHorizontal_bias="0.245"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.244" />
+            app:layout_constraintVertical_bias="0.24" />
 
         <TextView
             android:id="@+id/textView37"
+            style="@style/generalFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/LunchLbl"
+            android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintHorizontal_bias="0.258"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.481" />
+            app:layout_constraintVertical_bias="0.478" />
 
         <TextView
             android:id="@+id/textView38"
+            style="@style/generalFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/TeaTimeLbl"
+            android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintHorizontal_bias="0.28"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.61" />
+            app:layout_constraintVertical_bias="0.604" />
 
         <TextView
             android:id="@+id/textView39"
+            style="@style/generalFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/DinnerLbl"
+            android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintHorizontal_bias="0.261"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.744" />
+            app:layout_constraintVertical_bias="0.735" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
-            android:layout_width="228dp"
+            android:id="@+id/tbDinner"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/MealsHint"
@@ -92,14 +104,14 @@
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.89"
+            app:layout_constraintHorizontal_bias="0.972"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.745" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
-            android:layout_width="228dp"
+            android:id="@+id/tbBreakfast"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/MealsHint"
@@ -107,29 +119,27 @@
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.89"
+            app:layout_constraintHorizontal_bias="0.972"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.348" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName6"
-            android:layout_width="228dp"
+            android:id="@+id/tbDay"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/dayHint"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.89"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.229" />
+            app:layout_constraintVertical_bias="0.229"
+            tools:layout_editor_absoluteX="186dp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName4"
-            android:layout_width="228dp"
+            android:id="@+id/tbLunch"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/MealsHint"
@@ -137,28 +147,31 @@
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.89"
+            app:layout_constraintHorizontal_bias="0.972"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.474" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
-            android:layout_width="228dp"
+            android:id="@+id/tbTea"
+            style="@style/generalFontText"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/MealsHint"
             android:inputType="textPersonName"
             android:minHeight="48dp"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.89"
+            app:layout_constraintHorizontal_bias="0.972"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.606" />
 
         <Button
             android:id="@+id/button14"
+            style="@style/buttonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/teal_200"
@@ -169,6 +182,46 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.884" />
+
+        <ImageView
+            android:id="@+id/dayImg"
+            android:layout_width="64dp"
+            android:layout_height="57dp"
+            android:src="@drawable/dayIcon"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="157dp" />
+
+        <ImageView
+            android:id="@+id/breakfastImg"
+            android:layout_width="63dp"
+            android:layout_height="58dp"
+            android:src="@drawable/breakfastIcon"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="238dp" />
+
+        <ImageView
+            android:id="@+id/lunchImg"
+            android:layout_width="62dp"
+            android:layout_height="59dp"
+            android:src="@drawable/lunchIon"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="324dp" />
+
+        <ImageView
+            android:id="@+id/teaImg"
+            android:layout_width="62dp"
+            android:layout_height="58dp"
+            android:src="@drawable/teaIcon"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="414dp" />
+
+        <ImageView
+            android:id="@+id/dinnerImg"
+            android:layout_width="62dp"
+            android:layout_height="58dp"
+            android:src="@drawable/dinnerIcon"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="509dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

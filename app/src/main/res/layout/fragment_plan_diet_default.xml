@@ -14,7 +14,7 @@
             android:id="@+id/tableLayout"
             android:layout_width="375dp"
             android:layout_height="319dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="90dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,18 +31,25 @@
 
                     <TextView
                         android:id="@+id/textView46"
+                        style="@style/generalFontText"
                         android:layout_width="150dp"
                         android:layout_height="80dp"
                         android:layout_weight="1"
+                        android:background="@color/DashboardCol4"
                         android:text="@string/fruitsVeglbl1"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/textView47"
+                        style="@style/generalFontText"
                         android:layout_width="225dp"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:text="@string/fruitsVeglbl2" />
+                        android:background="@color/IndividualDashboardCol2"
+                        android:text="@string/fruitsVeglbl2"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
                 </LinearLayout>
             </TableRow>
 
@@ -57,18 +64,25 @@
 
                     <TextView
                         android:id="@+id/textView48"
+                        style="@style/generalFontText"
                         android:layout_width="150dp"
                         android:layout_height="80dp"
                         android:layout_weight="1"
+                        android:background="@color/DashboardCol4"
                         android:text="@string/fatsLbl1"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/textView49"
+                        style="@style/generalFontText"
                         android:layout_width="225dp"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:text="@string/fatsLbl2" />
+                        android:background="@color/IndividualDashboardCol2"
+                        android:text="@string/fatsLbl2"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
                 </LinearLayout>
             </TableRow>
 
@@ -83,18 +97,25 @@
 
                     <TextView
                         android:id="@+id/textView50"
+                        style="@style/generalFontText"
                         android:layout_width="150dp"
                         android:layout_height="80dp"
                         android:layout_weight="1"
+                        android:background="@color/DashboardCol4"
                         android:text="@string/saltLbl"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/textView51"
+                        style="@style/generalFontText"
                         android:layout_width="225dp"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:text="@string/saltLbl2" />
+                        android:background="@color/IndividualDashboardCol2"
+                        android:text="@string/saltLbl2"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
                 </LinearLayout>
             </TableRow>
 
@@ -109,37 +130,46 @@
 
                     <TextView
                         android:id="@+id/textView52"
+                        style="@style/generalFontText"
                         android:layout_width="150dp"
                         android:layout_height="80dp"
                         android:layout_weight="1"
+                        android:background="@color/DashboardCol4"
                         android:text="@string/sugarsLbl1"
-                        android:textAlignment="center" />
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
 
                     <TextView
                         android:id="@+id/textView53"
+                        style="@style/generalFontText"
                         android:layout_width="225dp"
                         android:layout_height="80dp"
                         android:layout_weight="1"
-                        android:text="@string/sugarsLbl2" />
+                        android:background="@color/IndividualDashboardCol2"
+                        android:text="@string/sugarsLbl2"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
                 </LinearLayout>
             </TableRow>
         </TableLayout>
 
         <TextView
-            android:id="@+id/textView54"
+            android:id="@+id/diduknwLbl"
+            style="@style/headingFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/didUKnowLbl1"
-            android:textSize="16sp"
+            android:textSize="13pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.127"
+            app:layout_constraintHorizontal_bias="0.122"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.16" />
+            app:layout_constraintVertical_bias="0.155" />
 
         <TextView
-            android:id="@+id/textView55"
+            android:id="@+id/lbl2"
+            style="@style/generalFontText"
             android:layout_width="369dp"
             android:layout_height="27dp"
             android:text="@string/didUKnowLbl2"
@@ -150,7 +180,17 @@
             app:layout_constraintHorizontal_bias="0.619"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.215" />
+            app:layout_constraintVertical_bias="0.264" />
+
+        <ImageView
+            android:id="@+id/diduknwImg"
+            android:layout_width="102dp"
+            android:layout_height="97dp"
+            android:src="@drawable/didyouknow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="77dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

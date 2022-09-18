@@ -94,7 +94,7 @@
     <string name="CalorieRecLbl3">Fats:</string>
     <string name="SaveandCalcBtn">Save and Calculate</string>
     <string name="EnterDateHint">Enter the Date</string>
-    <string name="EnterIntakeHint">Enter Intake (in grams)</string>
+    <string name="EnterIntakeHint">Enter Intake (in g)</string>
     <string name="CalcSummary">Summary</string>
     <string name="CalorieLbl">Calories</string>
     <string name="TotalCalLbl">Total Calories</string>
@@ -105,7 +105,7 @@
     <string name="TrackCalorieBtn1">Record an Intake</string>
     <string name="PlanMealBtn1">Create a Meal Plan</string>
     <string name="PlanMealBtn2">View my Meal Plans</string>
-    <string name="DayLbl">Day of the Week :</string>
+    <string name="DayLbl">Day :</string>
     <string name="BreakfastLbl">Breakfast :</string>
     <string name="LunchLbl">Lunch :</string>
     <string name="TeaTimeLbl">Tea Time :</string>
@@ -145,6 +145,11 @@
     <string name="CopyNumBtn">Copy Number</string>
     <string name="ViewMySchedulesBtn">View My Schedules</string>
     <string name="newListBtn">New List</string>
+    <string name="searchHint">Enter day..</string>
+    <string name="carbDaily">Carbohydrates - xxCal</string>
+    <string name="protdaily">Protein-xCal</string>
+    <string name="Fatdaily">Fats - xxCal</string>
+    <string name="nutriLbl">Nutritional Facts you must know!</string>
     <string name="HealthTipsHeading">Tips when taking daily medicine</string>
     <string name="HealthTipsText">Keep a list\n\nTake your meds at the same time\n\nLeave yourself notes\n\nUse a pillbox\n\nKeep a calendar\n\nSet an alarm\n\n</string>
     <string name="StartYourScheduleTodayBtn">Start Your Schedule Today</string>
@@ -155,5 +160,4 @@
     <string name="qtyLbl">Qty</string>
     <string name="MedcineLbl">Medicine</string>
     <string name="MyMedicineListsHeading">My Medicine Lists</string>
-
 </resources>

@@ -18,29 +18,23 @@ public class PlanMyDiet extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plan_my_diet);
-        createPlanBtn=findViewById(R.id.createPlanBtn);
-        viewPlansBtn=findViewById(R.id.viewPlanBtn);
-
-        createPlanBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                replaceFragment(new CreateMealPlan());
-            }
-        });
-
-        viewPlansBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                replaceFragment(new ViewMealPlans());
-            }
-        });
 
     }
 
-    private void replaceFragment(Fragment fragment) {
-        FragmentManager fragmentManager=getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.FrameLayout1,fragment);
-        fragmentTransaction.commit();
+    public void changeFragment(View view){
+        Fragment fragment;
+        if (view == findViewById(R.id.createPlanBtn)){
+            fragment = new CreateMealPlan();
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.fragmentContainer,fragment);
+            ft.commit();
+        }
+        if (view == findViewById(R.id.viewPlanBtn)){
+            fragment = new ViewMealPlans();
+            FragmentManager fm = getSupportFragmentManager(); FragmentTransaction ft = fm.beginTransaction();
+            ft.replace(R.id.fragmentContainer,fragment);
+            ft.commit();
+        }
     }
 }

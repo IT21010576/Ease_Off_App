@@ -6,41 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".PlanMyDiet">
 
-    <FrameLayout
-        android:id="@+id/FrameLayout1"
-        android:layout_width="409dp"
-        android:layout_height="657dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TrackCalbtn2"
-        app:layout_constraintVertical_bias="1.0">
-
-    </FrameLayout>
-
     <Button
         android:id="@+id/createPlanBtn"
+        style="@style/buttonStyle"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:background="@color/teal_200"
+        android:onClick="changeFragment"
         android:text="@string/PlanMealBtn1"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintEnd_toStartOf="@+id/viewPlanBtn"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.001" />
 
     <Button
         android:id="@+id/viewPlanBtn"
+        style="@style/buttonStyle"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:background="@color/teal_200"
+        android:onClick="changeFragment"
         android:text="@string/PlanMealBtn2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.992"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/createPlanBtn"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.001" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:name="com.example.easeoffapplication.PlanDietDefault"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createPlanBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
