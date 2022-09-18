@@ -85,7 +85,6 @@
     <string name="savedRecipeLbl">My Saved Recipies</string>
     <string name="AddScheduleBtn">Add Schedule</string>
     <string name="AddBtn">Add</string>
-    <string name="MyDailyMedScheLbl">My Daily Medicine Schedules</string>
     <string name="DownloadBtn">Download</string>
     <string name="SearchLbl">Search</string>
     <string name="SeeMoreBtn">See More</string>
@@ -103,4 +102,5 @@
     <string name="ListNameLbl">List name</string>
     <string name="qtyLbl">Qty</string>
     <string name="MedcineLbl">Medicine</string>
+    <string name="MyMedicineListsHeading">My Medicine Lists</string>
 </resources>
