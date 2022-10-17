@@ -130,7 +130,7 @@
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <EditText
@@ -299,7 +299,7 @@
 
             </LinearLayout>
         </ScrollView>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
 
 
 
