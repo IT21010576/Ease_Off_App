@@ -8,7 +8,7 @@
     android:background="@drawable/background">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar4"
+        android:id="@+id/toolbar4dailyMed"
         style="@style/toolbarStyle"
         android:backgroundTint="@color/ThemeCol2"
         android:minHeight="?attr/actionBarSize"
@@ -26,11 +26,11 @@
         android:text="@string/DailyMedLbl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
-        app:layout_constraintStart_toStartOf="@+id/toolbar4"
+        app:layout_constraintStart_toStartOf="@+id/toolbar4dailyMed"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/toolbarheading_dailymed"
         style="@style/toolbarImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
@@ -39,16 +39,16 @@
         app:srcCompat="@drawable/backbtn" />
 
     <Button
-        android:id="@+id/button25"
+        android:id="@+id/addSchedulebtn_dailymed"
         style="@style/buttonStyle"
         android:text="@string/AddScheduleBtn"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button26"
+        app:layout_constraintBaseline_toBaselineOf="@+id/viewschedulebtn_dailymed"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button26"
+        android:id="@+id/viewschedulebtn_dailymed"
         style="@style/buttonStyle"
         android:text="@string/ViewMySchedulesBtn"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -133,9 +133,11 @@
             android:inputType="textPersonName"
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.973"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.229"
-            tools:layout_editor_absoluteX="186dp" />
+            app:layout_constraintVertical_bias="0.227" />
 
         <EditText
             android:id="@+id/tbLunch"
@@ -170,7 +172,7 @@
             app:layout_constraintVertical_bias="0.606" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/createBtn_healthyRec"
             style="@style/buttonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -184,44 +186,63 @@
             app:layout_constraintVertical_bias="0.884" />
 
         <ImageView
-            android:id="@+id/dayImg"
+            android:id="@+id/dayimg"
             android:layout_width="64dp"
             android:layout_height="57dp"
-            android:src="@drawable/dayIcon"
-            tools:layout_editor_absoluteX="19dp"
-            tools:layout_editor_absoluteY="157dp" />
+            android:src="@drawable/dayicon"
+            app:layout_constraintBottom_toTopOf="@+id/breakfastImg"
+            app:layout_constraintEnd_toStartOf="@+id/textView40"
+            app:layout_constraintHorizontal_bias="0.74"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lbl1" />
 
         <ImageView
             android:id="@+id/breakfastImg"
             android:layout_width="63dp"
             android:layout_height="58dp"
-            android:src="@drawable/breakfastIcon"
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="238dp" />
+            android:src="@drawable/breakfasticon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.339" />
 
         <ImageView
             android:id="@+id/lunchImg"
             android:layout_width="62dp"
             android:layout_height="59dp"
-            android:src="@drawable/lunchIon"
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="324dp" />
+            android:src="@drawable/lunchicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.063"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.48" />
 
         <ImageView
             android:id="@+id/teaImg"
             android:layout_width="62dp"
             android:layout_height="58dp"
-            android:src="@drawable/teaIcon"
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="414dp" />
+            android:src="@drawable/teaicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.614" />
 
         <ImageView
             android:id="@+id/dinnerImg"
             android:layout_width="62dp"
             android:layout_height="58dp"
-            android:src="@drawable/dinnerIcon"
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="509dp" />
+            android:src="@drawable/dinnericon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.057"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.742" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

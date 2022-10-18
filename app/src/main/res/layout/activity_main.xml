@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/welcome_heading"
         android:layout_width="380dp"
         android:layout_height="61dp"
         android:text="@string/WelcomeText"
@@ -24,14 +24,14 @@
         app:layout_constraintVertical_bias="0.167" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/username"
         android:layout_width="294dp"
         android:layout_height="75dp"
         android:ems="10"
         android:hint="@string/EmailPlaceholder"
         android:inputType="textEmailAddress"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         app:layout_constraintVertical_bias="0.801" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/password"
         android:layout_width="294dp"
         android:layout_height="75dp"
         android:ems="10"
@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.528" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/loginBtn"
         android:layout_width="113dp"
         android:layout_height="48dp"
         android:background="@color/ThemeCol1Btn"
@@ -68,7 +68,7 @@
         app:layout_constraintVertical_bias="0.67" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/signUpBtn"
         android:layout_width="113dp"
         android:layout_height="48dp"
         android:background="@color/ThemeCol3"

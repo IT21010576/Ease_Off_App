@@ -9,18 +9,18 @@
     tools:context=".MindCreateJournal">
 
     <RelativeLayout
+        android:id="@+id/mind_journal_create_title_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/mind_journal_create_title_bar">
+        android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/mind_journal_create_textview"
+            style="@style/headingFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/mind_journal_create_textview"
-            android:text="@string/mindCreateJournalTitle"
             android:layout_marginLeft="50pt"
             android:layout_marginTop="10pt"
-            style="@style/headingFontText"/>
+            android:text="@string/mindCreateJournalTitle" />
 
     </RelativeLayout>
 
@@ -34,12 +34,14 @@
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/datelbl_createMindJournal"
             style="@style/generalFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mindCreateJournalDate" />
 
         <EditText
+            android:id="@+id/dateEdt_createMindJ"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"

@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.001" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/totCaloriesLbl"
         style="@style/toolbarFontStyle"
         android:text="@string/PharmacyLbl"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/backbtn_pharmacy"
         style="@style/toolbarImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
@@ -39,19 +39,19 @@
         app:srcCompat="@drawable/backbtn" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/viewMyListBtn_pharmacy"
         style="@style/buttonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/ThemeCol1Btn"
         android:text="@string/ViewMyListsBtn"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button27"
+        app:layout_constraintBaseline_toBaselineOf="@+id/newListBtn_pharmacy"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button27"
+        android:id="@+id/newListBtn_pharmacy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/ThemeCol1Btn"
