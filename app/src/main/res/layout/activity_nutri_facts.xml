@@ -64,7 +64,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/viewbtn1_nutrifacts"
                 style="@style/buttonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
                 app:layout_constraintVertical_bias="0.93" />
 
             <TextView
-                android:id="@+id/textView60"
+                android:id="@+id/lbl1_nutrifacts"
                 android:layout_width="217dp"
                 android:layout_height="103dp"
                 android:text="TextView"
@@ -89,12 +89,16 @@
                 app:layout_constraintVertical_bias="0.138" />
 
             <ImageView
-                android:id="@+id/imageView20"
+                android:id="@+id/img1_nutrifacts"
                 android:layout_width="94dp"
                 android:layout_height="102dp"
-                app:srcCompat="@drawable/factImg"
-                tools:layout_editor_absoluteX="-2dp"
-                tools:layout_editor_absoluteY="1dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/lbl1_nutrifacts"
+                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.136"
+                app:srcCompat="@drawable/factimg" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -114,7 +118,7 @@
         app:layout_constraintVertical_bias="0.603">
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/viewbtn2_nutrifacts"
             style="@style/buttonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -127,7 +131,7 @@
             app:layout_constraintVertical_bias="0.93" />
 
         <TextView
-            android:id="@+id/textView60"
+            android:id="@+id/lbl2_nutrifacts"
             android:layout_width="217dp"
             android:layout_height="103dp"
             android:text="TextView"
@@ -139,12 +143,16 @@
             app:layout_constraintVertical_bias="0.138" />
 
         <ImageView
-            android:id="@+id/imageView20"
+            android:id="@+id/img2_nutrifacts"
             android:layout_width="94dp"
             android:layout_height="102dp"
-            app:srcCompat="@drawable/factImg"
-            tools:layout_editor_absoluteX="-2dp"
-            tools:layout_editor_absoluteY="1dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lbl2_nutrifacts"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.135"
+            app:srcCompat="@drawable/factimg" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -155,10 +163,12 @@
         android:layout_marginBottom="32dp"
         android:background="@color/ThemeCol4"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="35dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/viewbtn3_nutrifacts"
             style="@style/buttonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -171,24 +181,28 @@
             app:layout_constraintVertical_bias="0.93" />
 
         <TextView
-            android:id="@+id/textView60"
+            android:id="@+id/lbl3_nutrifacts"
             android:layout_width="217dp"
             android:layout_height="103dp"
             android:text="TextView"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.873"
+            app:layout_constraintHorizontal_bias="0.894"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.138" />
+            app:layout_constraintVertical_bias="0.136" />
 
         <ImageView
-            android:id="@+id/imageView20"
+            android:id="@+id/img3_nutrifacts"
             android:layout_width="94dp"
             android:layout_height="102dp"
-            app:srcCompat="@drawable/factImg"
-            tools:layout_editor_absoluteX="-2dp"
-            tools:layout_editor_absoluteY="1dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lbl3_nutrifacts"
+            app:layout_constraintHorizontal_bias="0.384"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.135"
+            app:srcCompat="@drawable/factimg" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

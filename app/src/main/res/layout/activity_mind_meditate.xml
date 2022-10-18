@@ -14,24 +14,24 @@
 
     <Button
         android:id="@+id/mind_meditate_timer_frag_btn"
+        style="@style/buttonStyle"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:backgroundTint="@color/black"
-        android:text="@string/mindMeditateTimerBtn"
-        style="@style/buttonStyle"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
         android:layout_marginBottom="50dp"
-        android:layout_marginStart="50dp"/>
+        android:backgroundTint="@color/black"
+        android:text="@string/mindMeditateTimerBtn" />
 
     <Button
         android:id="@+id/mind_meditate_times_frag_btn"
+        style="@style/buttonStyle"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        style="@style/buttonStyle"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="50dp"
         android:backgroundTint="@color/black"
-        android:text="@string/mindMeditateTimesBtn"/>
+        android:text="@string/mindMeditateTimesBtn" />
 </RelativeLayout>

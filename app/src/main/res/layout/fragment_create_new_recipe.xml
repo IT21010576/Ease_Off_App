@@ -25,7 +25,7 @@
             app:layout_constraintVertical_bias="0.142" />
 
         <TextView
-            android:id="@+id/textView35"
+            android:id="@+id/recNamelbl"
             style="@style/generalFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
             app:layout_constraintVertical_bias="0.796" />
 
         <Button
-            android:id="@+id/createBtn"
+            android:id="@+id/createBtn_createRec"
             style="@style/buttonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -95,7 +95,7 @@
             app:layout_constraintVertical_bias="0.918" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName7"
+            android:id="@+id/recNameEdt"
             android:layout_width="226dp"
             android:layout_height="48dp"
             android:ems="10"
@@ -109,7 +109,7 @@
             app:layout_constraintVertical_bias="0.253" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/ingredientsEdt"
             android:layout_width="226dp"
             android:layout_height="139dp"
             android:ems="10"
@@ -124,7 +124,7 @@
             app:layout_constraintVertical_bias="0.407" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine2"
+            android:id="@+id/methodEdt"
             android:layout_width="228dp"
             android:layout_height="158dp"
             android:ems="10"
@@ -139,7 +139,7 @@
             app:layout_constraintVertical_bias="0.682" />
 
         <EditText
-            android:id="@+id/editTextNumberPassword"
+            android:id="@+id/caloriesEdt"
             android:layout_width="227dp"
             android:layout_height="wrap_content"
             android:ems="10"

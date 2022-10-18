@@ -3,8 +3,6 @@
     <style name="DashboardFontStyle">
         <item name="android:textColor">#17202A</item>
         <item name="android:textSize">12pt</item>
-        <item name="fontFamily">monospace</item>
-        <item name="font">sans-serif</item>
     </style>
     <style name="toolbarFontStyle">
         <item name="android:textColor">#17202A</item>
@@ -29,19 +27,16 @@
         <item name="backgroundTint">@color/ThemeCol1Btn</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">wrap_content</item>
-        <item name="font">sans-serif</item>
         <item name="android:textColor">#17202A</item>
         <item name="android:textStyle">bold</item>
     </style>
     <style name="headingFontText">
-        <item name="font">sans-serif</item>
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">14pt</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textStyle">bold</item>
     </style>
     <style name="generalFontText">
-        <item name="font">sans-serif</item>
         <item name="android:textColor">#17202A</item>
         <item name="android:textSize">10pt</item>
     </style>
