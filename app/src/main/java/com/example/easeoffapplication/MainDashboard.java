@@ -16,8 +16,9 @@ public class MainDashboard extends AppCompatActivity {
 
 
     public void moveToMindAndYou(View view) {
-        Intent mind=new Intent(this,MindAndYouDashboard.class);
+        Intent mind = new Intent(this, MindAndYouDashboard.class);
         startActivity(mind);
+    }
 
     public void MoveToDietDash(View view) {
         Intent intent1 = new Intent(this, DietDashboard.class);

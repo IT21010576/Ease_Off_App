@@ -99,14 +99,15 @@
             android:id="@+id/tbDay"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
             android:ems="10"
             android:hint="@string/EnterDateHint"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView40"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.243"
-            tools:layout_editor_absoluteX="236dp" />
+            app:layout_constraintVertical_bias="0.242" />
 
         <EditText
             android:id="@+id/tbLunch"
@@ -143,8 +144,8 @@
         <Button
             android:id="@+id/saveCalBtn"
             style="@style/buttonStyle"
-            android:layout_width="186dp"
-            android:layout_height="46dp"
+            android:layout_width="191dp"
+            android:layout_height="67dp"
             android:background="@color/GreenBtn"
             android:text="@string/SaveandCalcBtn"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -158,33 +159,49 @@
             android:id="@+id/dayImg"
             android:layout_width="69dp"
             android:layout_height="66dp"
-            android:src="@drawable/dayIcon"
-            tools:layout_editor_absoluteX="14dp"
-            tools:layout_editor_absoluteY="157dp" />
+            android:src="@drawable/dayicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.248" />
 
         <ImageView
             android:id="@+id/imageView9"
             android:layout_width="72dp"
             android:layout_height="64dp"
-            android:src="@drawable/carbsIcon"
-            tools:layout_editor_absoluteX="11dp"
-            tools:layout_editor_absoluteY="256dp" />
+            android:src="@drawable/carbsicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.032"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.395" />
 
         <ImageView
             android:id="@+id/imageView10"
             android:layout_width="66dp"
             android:layout_height="66dp"
-            android:src="@drawable/protIcon"
-            tools:layout_editor_absoluteX="14dp"
-            tools:layout_editor_absoluteY="351dp" />
+            android:src="@drawable/proticon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.541" />
 
         <ImageView
             android:id="@+id/imageView19"
             android:layout_width="64dp"
             android:layout_height="63dp"
-            android:src="@drawable/fatIcon"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="458dp" />
+            android:src="@drawable/proticon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.037"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.685" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

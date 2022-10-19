@@ -2,14 +2,14 @@
     <string name="app_name">Ease Off Application</string>
     <string name="WelcomeText">Welcome to Ease Off</string>
     <string name="LoginLbl">Login</string>
-    <string name="EmailPlaceholder">Enter your email</string>
+    <string name="EmailPlaceholder">Enter your username</string>
     <string name="PwdPlaceholder">Enter your password</string>
     <string name="SignUpLbl">Sign Up</string>
     <string name="SignUpText">Sign Up to Ease Off!</string>
     <string name="SignUptxt1">My Personal Details</string>
     <string name="SignUptxt2">My Account Registration</string>
     <string name="SignUpNameLbl">Full Name :</string>
-    <string name="SignUpNameHint">Enter your full name</string>
+    <string name="SignUpNameHint">Enter a username</string>
     <string name="SignUpDobLbl">Date Of Birth :</string>
     <string name="MaleLbl">Male</string>
     <string name="FemaleLbl">Female</string>
@@ -28,13 +28,10 @@
     <string name="StayfitLbl">Stay Fit</string>
     <string name="MindYouLbl"><![CDATA[Mind & You]]></string>
     <string name="DashboardLbl">Dashboard</string>
-
-
     <string name="mind_journal_lbl">Thought Journal</string>
     <string name="mind_sleep_lbl">Sleep</string>
     <string name="mind_meditate_lbl">Meditation</string>
     <string name="mind_tips_lbl">Mind Tips</string>
-
     <string name="mindSleepHeader">Set Bed Time</string>
     <string name="mindSleepHours">Hours</string>
     <string name="mindSleepMinutes">Minutes</string>
@@ -45,8 +42,6 @@
     <string name="mindSleepCalculate">Calculate</string>
     <string name="mindSleepStartTime">From </string>
     <string name="mindSleepEndTime">To </string>
-
-
     <string name="mindMeditateHeader">Meditation Timer</string>
     <string name="mindMeditateTimerBtn">Timer</string>
     <string name="mindMeditateTimesBtn">Time Meditated</string>
@@ -58,7 +53,6 @@
     <string name="mindMeditateTImesTime">Meditated Time</string>
     <string name="mindMeditateTimesTotalLbl">Total time</string>
     <string name="mindMeditateTimesTotalHint">Total time</string>
-
     <string name="mindTipsHeader">Mind Tips</string>
     <string name="mindTipsSelectBtn">Select</string>
     <string name="mindTipsDisplayTextView">tips</string>
@@ -67,7 +61,6 @@
         <item>Focus</item>
         <item>Memory</item>
     </string-array>
-
     <string name="mindJournalsHeader">My Journals</string>
     <string name="mindCreateJournalTitle">New journal</string>
     <string name="mindCreateJournalDate">Date</string>
@@ -77,11 +70,6 @@
     <string name="mindCreateJournalSaveBtn">Save</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="mindCreateJournalNote">Note</string>
-
-
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="DietDashSub1">Track my Calories</string>
     <string name="DietDashSub2">Plan my Diet</string>
     <string name="DietDashSub4">Nutritional Facts</string>

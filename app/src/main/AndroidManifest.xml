@@ -35,8 +35,10 @@
             android:name=".MindThoughtJournal"
             android:exported="false" />
         <activity
-            android:name=".MindAndYouDashboard"
             android:name=".MyHealthyRecipies"
+            android:exported="false" />
+        <activity
+            android:name=".MindAndYouDashboard"
             android:exported="false" />
         <activity
             android:name=".PlanMyDiet"
