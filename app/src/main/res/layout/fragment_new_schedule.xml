@@ -10,26 +10,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button6"
-            style="@style/buttonStyle"
-            android:layout_marginBottom="280dp"
-            android:text="@string/AddBtn"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.213"
-            app:layout_constraintStart_toStartOf="parent" />
-
         <CalendarView
             android:id="@+id/calendarView"
             android:layout_width="wrap_content"
             android:layout_height="302dp"
-            app:layout_constraintBottom_toTopOf="@+id/button6"
+            android:layout_marginTop="132dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.72" />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <Button
+        android:id="@+id/AddBtn_medSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AddBtn"
+        android:backgroundTint="@color/ThemeCol1Btn"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="50dp"/>
 </FrameLayout>

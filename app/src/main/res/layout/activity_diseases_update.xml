@@ -7,7 +7,7 @@
     tools:context=".DiseasesUpdate">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar3"
+        android:id="@+id/toolbardiseaseUp"
         style="@style/toolbarStyle"
         android:backgroundTint="@color/ThemeCol2"
         android:minHeight="?attr/actionBarSize"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/backbtn_disUp"
         style="@style/toolbarImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
@@ -29,18 +29,18 @@
         app:srcCompat="@drawable/backbtn" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/heading_disUp"
         style="@style/toolbarFontStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/DiseasesUpdtLbl"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
-        app:layout_constraintStart_toStartOf="@+id/toolbar3"
+        app:layout_constraintStart_toStartOf="@+id/toolbardiseaseUp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/diseaseUp_search"
         android:layout_width="286dp"
         android:layout_height="69dp"
         android:layout_marginTop="96dp"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+        app:layout_constraintTop_toBottomOf="@+id/toolbardiseaseUp"
         app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
@@ -83,14 +83,14 @@
                 android:backgroundTint="@color/ThemeCol4">
 
                 <ImageView
-                    android:id="@+id/imageView14"
+                    android:id="@+id/img1_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="200dp"
                     app:srcCompat="@drawable/default_image" />
 
                 <Button
-                    android:id="@+id/button20"
+                    android:id="@+id/seemore1_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="220dp"
@@ -100,7 +100,7 @@
                     android:text="@string/SeeMoreBtn"/>
 
                 <TextView
-                    android:id="@+id/textView27"
+                    android:id="@+id/lbl1_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="170dp"
@@ -115,14 +115,14 @@
                 android:backgroundTint="@color/ThemeCol4">
 
                 <ImageView
-                    android:id="@+id/imageView15"
+                    android:id="@+id/img2_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="200dp"
                     app:srcCompat="@drawable/default_image"/>
 
                 <Button
-                    android:id="@+id/button21"
+                    android:id="@+id/seemore2_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="220dp"
@@ -132,7 +132,7 @@
                     android:text="@string/SeeMoreBtn"/>
 
                 <TextView
-                    android:id="@+id/textView28"
+                    android:id="@+id/lbl2_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="170dp"
@@ -147,14 +147,14 @@
                 android:backgroundTint="@color/ThemeCol4">
 
                 <ImageView
-                    android:id="@+id/imageView16"
+                    android:id="@+id/img3_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="200dp"
                     app:srcCompat="@drawable/default_image" />
 
                 <Button
-                    android:id="@+id/button22"
+                    android:id="@+id/seemore3_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="220dp"
@@ -164,7 +164,7 @@
                     android:text="@string/SeeMoreBtn"/>
 
                 <TextView
-                    android:id="@+id/textView29"
+                    android:id="@+id/lbl3_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="170dp"
@@ -179,14 +179,14 @@
                 android:backgroundTint="@color/ThemeCol4">
 
                 <ImageView
-                    android:id="@+id/imageView17"
+                    android:id="@+id/img4_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="200dp"
                     app:srcCompat="@drawable/default_image"/>
 
                 <Button
-                    android:id="@+id/button23"
+                    android:id="@+id/seemore4_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="220dp"
@@ -196,7 +196,7 @@
                     android:text="@string/SeeMoreBtn"/>
 
                 <TextView
-                    android:id="@+id/textView30"
+                    android:id="@+id/lbl4_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="170dp"
@@ -211,14 +211,14 @@
                 android:backgroundTint="@color/ThemeCol4">
 
                 <ImageView
-                    android:id="@+id/imageView18"
+                    android:id="@+id/img5_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="200dp"
                     app:srcCompat="@drawable/default_image"/>
 
                 <Button
-                    android:id="@+id/button24"
+                    android:id="@+id/seemore5_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="220dp"
@@ -228,7 +228,7 @@
                     android:text="@string/SeeMoreBtn"/>
 
                 <TextView
-                    android:id="@+id/textView31"
+                    android:id="@+id/lbl5_disUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="170dp"

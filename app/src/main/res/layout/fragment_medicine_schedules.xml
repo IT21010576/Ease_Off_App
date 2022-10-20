@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".MedicineSchedules">
 
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView32"
+            android:id="@+id/heading_medSchedules"
             style="@style/headingFontText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -19,10 +20,23 @@
             android:textSize="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.248"
+            app:layout_constraintHorizontal_bias="0.296"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.261" />
+            app:layout_constraintVertical_bias="0.307" />
+
+        <Button
+            android:id="@+id/addMedScheduleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/ThemeCol1Btn"
+            android:text="@string/AddScheduleBtn"
+            app:layout_constraintBottom_toTopOf="@+id/heading_medSchedules"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.745" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>

@@ -14,7 +14,9 @@
         android:theme="@style/Theme.EaseOffApplication"
         tools:targetApi="31">
         <activity
-
+            android:name=".NutriFacts"
+            android:exported="false" />
+        <activity
             android:name=".MindSleepFeedback"
             android:exported="false" />
         <activity
@@ -33,9 +35,10 @@
             android:name=".MindThoughtJournal"
             android:exported="false" />
         <activity
-            android:name=".MindAndYouDashboard"
-
             android:name=".MyHealthyRecipies"
+            android:exported="false" />
+        <activity
+            android:name=".MindAndYouDashboard"
             android:exported="false" />
         <activity
             android:name=".PlanMyDiet"

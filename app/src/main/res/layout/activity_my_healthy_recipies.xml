@@ -8,6 +8,7 @@
 
     <Button
         android:id="@+id/viewRecipeBtn"
+        style="@style/buttonStyle"
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:background="@color/teal_200"
