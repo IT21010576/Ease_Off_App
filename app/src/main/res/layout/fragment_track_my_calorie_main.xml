@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/IndividualDashboardCol3"
-    tools:context=".TrackMyCalorieMain">
+    tools:context=".EatHealthy.TrackMyCalorieMain">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,194 +14,144 @@
         <TextView
             android:id="@+id/lbl1"
             style="@style/headingFontText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="337dp"
+            android:layout_height="43dp"
             android:text="@string/TrackCalorieLbl1"
-            android:textSize="12pt"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.142" />
+            app:layout_constraintVertical_bias="0.137" />
 
         <TextView
             android:id="@+id/textView36"
             style="@style/generalFontText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="149dp"
+            android:layout_height="48dp"
             android:text="@string/CalorieRecLbl1"
             android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.315"
+            app:layout_constraintHorizontal_bias="0.08"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.393" />
+            app:layout_constraintVertical_bias="0.423" />
 
         <TextView
             android:id="@+id/textView40"
             style="@style/generalFontText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="158dp"
+            android:layout_height="49dp"
             android:text="@string/IntakeDateLbl"
             android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.318"
+            app:layout_constraintHorizontal_bias="0.083"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.25" />
+            app:layout_constraintVertical_bias="0.276" />
 
         <TextView
             android:id="@+id/textView37"
             style="@style/generalFontText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="158dp"
+            android:layout_height="49dp"
             android:text="@string/CalorieRecLbl2"
             android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.278"
+            app:layout_constraintHorizontal_bias="0.083"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.542" />
+            app:layout_constraintVertical_bias="0.574" />
 
         <TextView
             android:id="@+id/textView38"
             style="@style/generalFontText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="158dp"
+            android:layout_height="49dp"
             android:text="@string/CalorieRecLbl3"
             android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.254"
+            app:layout_constraintHorizontal_bias="0.083"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.684" />
+            app:layout_constraintVertical_bias="0.722" />
 
         <EditText
-            android:id="@+id/tbBreakfast"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/carbIntake"
+            android:layout_width="191dp"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/EnterIntakeHint"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/proIntake"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.904"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.387" />
+            app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintStart_toEndOf="@+id/textView36"
+            app:layout_constraintTop_toBottomOf="@+id/tbDay" />
 
         <EditText
             android:id="@+id/tbDay"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
+            android:layout_width="191dp"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/EnterDateHint"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/carbIntake"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.707"
             app:layout_constraintStart_toEndOf="@+id/textView40"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.242" />
+            app:layout_constraintTop_toBottomOf="@+id/lbl1" />
 
         <EditText
-            android:id="@+id/tbLunch"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:id="@+id/proIntake"
+            android:layout_width="191dp"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/EnterIntakeHint"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/fatIntake"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.904"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.54" />
+            app:layout_constraintHorizontal_bias="0.707"
+            app:layout_constraintStart_toEndOf="@+id/textView37"
+            app:layout_constraintTop_toBottomOf="@+id/carbIntake" />
 
         <EditText
-            android:id="@+id/tbTea"
+            android:id="@+id/fatIntake"
             style="@style/generalFontText"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
+            android:layout_width="191dp"
+            android:layout_height="48dp"
             android:ems="10"
             android:hint="@string/EnterIntakeHint"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:textSize="18sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/calCalorieBtn"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.904"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.692" />
+            app:layout_constraintHorizontal_bias="0.707"
+            app:layout_constraintStart_toEndOf="@+id/textView38"
+            app:layout_constraintTop_toBottomOf="@+id/proIntake" />
 
         <Button
-            android:id="@+id/saveCalBtn"
+            android:id="@+id/calCalorieBtn"
             style="@style/buttonStyle"
-            android:layout_width="191dp"
-            android:layout_height="67dp"
+            android:layout_width="235dp"
+            android:layout_height="64dp"
             android:background="@color/GreenBtn"
             android:text="@string/SaveandCalcBtn"
+            android:textSize="16sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.846" />
-
-        <ImageView
-            android:id="@+id/dayImg"
-            android:layout_width="69dp"
-            android:layout_height="66dp"
-            android:src="@drawable/dayicon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.046"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.248" />
-
-        <ImageView
-            android:id="@+id/imageView9"
-            android:layout_width="72dp"
-            android:layout_height="64dp"
-            android:src="@drawable/carbsicon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.032"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.395" />
-
-        <ImageView
-            android:id="@+id/imageView10"
-            android:layout_width="66dp"
-            android:layout_height="66dp"
-            android:src="@drawable/proticon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.046"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.541" />
-
-        <ImageView
-            android:id="@+id/imageView19"
-            android:layout_width="64dp"
-            android:layout_height="63dp"
-            android:src="@drawable/proticon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.037"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.685" />
+            app:layout_constraintVertical_bias="0.891" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

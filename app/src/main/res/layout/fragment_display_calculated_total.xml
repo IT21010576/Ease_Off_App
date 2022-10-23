@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayCalculatedTotal">
+    tools:context=".EatHealthy.DisplayCalculatedTotal">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,22 +13,21 @@
         <TextView
             android:id="@+id/lblSummary"
             style="@style/headingFontText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="204dp"
+            android:layout_height="54dp"
             android:text="@string/CalcSummary"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.145" />
+            app:layout_constraintVertical_bias="0.123" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
-            android:layout_width="327dp"
-            android:layout_height="385dp"
+            android:layout_width="368dp"
+            android:layout_height="379dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -41,146 +40,126 @@
                 android:background="@color/ThemeCol4">
 
                 <TextView
-                    android:id="@+id/caloriesLbl"
+                    android:id="@+id/carbLbl"
                     style="@style/generalFontText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/CalorieLbl"
-                    android:textSize="16sp"
+                    android:layout_width="139dp"
+                    android:layout_height="50dp"
+                    android:text="@string/CalorieRecLbl1"
+                    android:textSize="20sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.791"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.044" />
-
-                <TextView
-                    android:id="@+id/textView26"
-                    android:layout_width="107dp"
-                    android:layout_height="33dp"
-                    android:layout_marginTop="20dp"
-                    android:hint="Answer"
-                    android:textAlignment="center"
-                    app:layout_constraintBottom_toTopOf="@+id/lbl5_disUp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/carbLbl"
-                    app:layout_constraintTop_toBottomOf="@+id/caloriesLbl"
-                    app:layout_constraintVertical_bias="0.339" />
-
-                <TextView
-                    android:id="@+id/heading_medSchedules"
-                    android:layout_width="107dp"
-                    android:layout_height="33dp"
-                    android:layout_marginBottom="44dp"
-                    android:hint="Answer"
-                    android:textAlignment="center"
-                    app:layout_constraintBottom_toTopOf="@+id/textView33"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/fatLbl" />
-
-                <TextView
-                    android:id="@+id/textView33"
-                    android:layout_width="107dp"
-                    android:layout_height="33dp"
-                    android:hint="Answer"
-                    android:textAlignment="center"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.845"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.815" />
-
-                <TextView
-                    android:id="@+id/lbl5_disUp"
-                    android:layout_width="107dp"
-                    android:layout_height="33dp"
-                    android:layout_marginBottom="40dp"
-                    android:hint="Answer"
-                    android:textAlignment="center"
-                    app:layout_constraintBottom_toTopOf="@+id/heading_medSchedules"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toEndOf="@+id/protLbl" />
-
-                <TextView
-                    android:id="@+id/totCaloriesLbl"
-                    style="@style/generalFontText"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/TotalCalLbl"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/protLbl"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.121"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.811" />
-
-                <TextView
-                    android:id="@+id/carbLbl"
-                    style="@style/generalFontText"
-                    android:layout_width="50pt"
-                    android:layout_height="wrap_content"
-                    android:text="@string/CalorieRecLbl1"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/textView26"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.209" />
-
-                <TextView
-                    android:id="@+id/fatLbl"
-                    style="@style/generalFontText"
-                    android:layout_width="50pt"
-                    android:layout_height="wrap_content"
-                    android:text="@string/CalorieRecLbl3"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/heading_medSchedules"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.606" />
+                    app:layout_constraintVertical_bias="0.111" />
 
                 <TextView
                     android:id="@+id/protLbl"
                     style="@style/generalFontText"
-                    android:layout_width="50pt"
-                    android:layout_height="wrap_content"
+                    android:layout_width="137dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="28dp"
                     android:text="@string/CalorieRecLbl2"
-                    android:textSize="16sp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/fatLbl"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carbLbl"
+                    app:layout_constraintVertical_bias="0.335" />
+
+                <TextView
+                    android:id="@+id/fatLbl"
+                    style="@style/generalFontText"
+                    android:layout_width="137dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="28dp"
+                    android:text="@string/CalorieRecLbl3"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/totCaloriesLbl"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/protLbl"
+                    app:layout_constraintVertical_bias="0.562" />
+
+                <TextView
+                    android:id="@+id/totCaloriesLbl"
+                    style="@style/generalFontText"
+                    android:layout_width="153dp"
+                    android:layout_height="48dp"
+                    android:text="@string/TotalCalLbl"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/lbl5_disUp"
-                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.116"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.396" />
+                    app:layout_constraintTop_toBottomOf="@+id/fatLbl"
+                    app:layout_constraintVertical_bias="0.811" />
+
+                <TextView
+                    android:id="@+id/carbSmry"
+                    android:layout_width="139dp"
+                    android:layout_height="45dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/proSmry"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.93"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/fatsSmry"
+                    android:layout_width="139dp"
+                    android:layout_height="45dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/TotalSmry"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.93"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/proSmry" />
+
+                <TextView
+                    android:id="@+id/TotalSmry"
+                    android:layout_width="139dp"
+                    android:layout_height="45dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.93"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fatsSmry" />
+
+                <TextView
+                    android:id="@+id/proSmry"
+                    android:layout_width="139dp"
+                    android:layout_height="45dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/fatsSmry"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.93"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carbSmry" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/backbtn_CalCalories"
+            android:id="@+id/savebtn_CalCalories"
             style="@style/buttonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="140dp"
+            android:layout_height="56dp"
             android:background="@color/GreenBtn"
-            android:text="@string/BackBtnLbl"
+            android:text="@string/SaveRecBtnLbl"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.903" />
+            app:layout_constraintVertical_bias="0.943" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

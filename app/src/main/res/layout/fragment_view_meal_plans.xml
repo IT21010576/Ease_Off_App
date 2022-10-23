@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ViewMealPlans">
+    tools:context=".EatHealthy.ViewMealPlans">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.25" />
+            app:layout_constraintVertical_bias="0.203" />
 
         <EditText
             android:id="@+id/searchTb"
@@ -42,68 +42,153 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <Button
-            android:id="@+id/createPlanBtn4"
+            android:id="@+id/viewPlanEdit"
             style="@style/buttonStyle"
             android:layout_width="112dp"
             android:layout_height="48dp"
-            android:layout_marginTop="38dp"
-            android:layout_marginBottom="18dp"
             android:background="@color/teal_200"
             android:onClick="changeFragment"
             android:text="Edit"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/createPlanBtn5"
+            app:layout_constraintEnd_toStartOf="@+id/viewPlanDel"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.969" />
 
         <Button
-            android:id="@+id/createPlanBtn5"
+            android:id="@+id/viewPlanDel"
             style="@style/buttonStyle"
             android:layout_width="112dp"
             android:layout_height="48dp"
-            android:layout_marginTop="38dp"
-            android:layout_marginBottom="18dp"
             android:background="@color/teal_200"
             android:onClick="changeFragment"
             android:text="Delete"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/createPlanBtn4"
-            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
-
-        <FrameLayout
-            android:id="@+id/frameLayout"
-            android:layout_width="369dp"
-            android:layout_height="281dp"
-            android:layout_marginBottom="104dp"
-            android:background="@color/IndividualDashboardCol4"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.448"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/MyPlansLbl"
-            app:layout_constraintVertical_bias="1.0">
-
-            <TextView
-                android:id="@+id/tvMealPln"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="TextView" />
-        </FrameLayout>
+            app:layout_constraintStart_toEndOf="@+id/viewPlanEdit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.971" />
 
         <Button
             android:id="@+id/viewmpBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="Get Meal Plan"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/searchTb"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.079" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="390dp"
+            android:layout_height="337dp"
+            android:backgroundTint="@color/IndividualDashboardCol3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.647">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/tbViewMeal1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintBottom_toTopOf="@+id/tbViewMeal2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.844"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.112" />
+
+                <EditText
+                    android:id="@+id/tbViewMeal3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.844"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tbViewMeal2"
+                    app:layout_constraintVertical_bias="0.709" />
+
+                <EditText
+                    android:id="@+id/tbViewMeal2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    app:layout_constraintBottom_toTopOf="@+id/tbViewMeal3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.844"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tbViewMeal1"
+                    app:layout_constraintVertical_bias="0.422" />
+
+                <TextView
+                    android:id="@+id/tvViewMeal1"
+                    android:layout_width="121dp"
+                    android:layout_height="52dp"
+                    android:text="@string/BreakfastLbl"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.059"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.217" />
+
+                <TextView
+                    android:id="@+id/tvViewMeal2"
+                    android:layout_width="121dp"
+                    android:layout_height="52dp"
+                    android:text="@string/LunchLbl"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.059"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.54" />
+
+                <TextView
+                    android:id="@+id/tvViewMeal3"
+                    android:layout_width="121dp"
+                    android:layout_height="52dp"
+                    android:text="@string/DinnerLbl"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.059"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.88" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
