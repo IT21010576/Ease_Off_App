@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/IndividualDashboardCol3"
-    tools:context=".CreateMealPlan">
+    tools:context=".EatHealthy.CreateMealPlan">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -46,7 +46,7 @@
             android:text="@string/LunchLbl"
             android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tbLunch"
+            app:layout_constraintEnd_toStartOf="@+id/proIntake"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -74,7 +74,7 @@
             android:text="@string/BreakfastLbl"
             android:textSize="8pt"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/tbBreakfast"
+            app:layout_constraintEnd_toStartOf="@+id/carbIntake"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -96,7 +96,7 @@
             app:layout_constraintVertical_bias="0.34" />
 
         <EditText
-            android:id="@+id/tbBreakfast"
+            android:id="@+id/carbIntake"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -126,7 +126,7 @@
             app:layout_constraintVertical_bias="0.753" />
 
         <EditText
-            android:id="@+id/tbLunch"
+            android:id="@+id/proIntake"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
             android:ems="10"

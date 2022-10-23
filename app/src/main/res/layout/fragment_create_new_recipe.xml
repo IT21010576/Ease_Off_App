@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/IndividualDashboardCol3"
-    tools:context=".CreateNewRecipe">
+    tools:context=".EatHealthy.CreateNewRecipe">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

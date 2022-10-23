@@ -1,4 +1,4 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.EatHealthy;
 
 import android.os.Bundle;
 
@@ -8,13 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.easeoffapplication.R;
 
-public class TrackMyCalorieMain extends Fragment {
+
+public class ViewSavedRecipes extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_track_my_calorie_main, container, false);
+        return inflater.inflate(R.layout.fragment_view_saved_recipes, container, false);
     }
 }
