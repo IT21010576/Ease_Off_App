@@ -29,10 +29,19 @@
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_daily_med_default.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_medicine_lists.xml" value="0.25" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_medicine_schedules.xml" value="0.25" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_mind_meditate_timer.xml" value="0.18127404873877725" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_mind_meditate_times.xml" value="0.1923899102180419" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_mind_sleep_view_time.xml" value="0.18127404873877725" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_my_medicine_lists.xml" value="0.25" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_new_medicine_list.xml" value="0.25" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_new_schedule.xml" value="0.25" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_pharmacy.xml" value="0.264" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_plan_diet_default.xml" value="0.18127404873877725" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_previous_calorie_intakes.xml" value="0.2894736842105263" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_track_calorie_default.xml" value="0.18127404873877725" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_track_my_calorie_main.xml" value="0.264" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_view_meal_plans.xml" value="0.18127404873877725" />
+        <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/fragment_view_saved_recipes.xml" value="0.18127404873877725" />
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_beauty.xml" value="0.25" />
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_daily_medicine.xml" value="0.25" />
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_diet_dashboard.xml" value="0.25" />
@@ -58,6 +67,11 @@
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_view_saved_recipes.xml" value="0.25" />
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Tutorial/Ease_Off_App/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Tutorial/Ease_Off_App/app/src/main/res/layout/activity_signup.xml" value="0.33" />
+        <entry key="..\:/Users/Yashi/Desktop/jgbyh,v,hvfgt/Ease_Off_App/app/src/main/res/layout/activity_set_goal.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Yashi/Desktop/jgbyh,v,hvfgt/Ease_Off_App/app/src/main/res/layout/activity_today.xml" value="0.234375" />
+        <entry key="..\:/Users/Yashi/Desktop/jgbyh,v,hvfgt/Ease_Off_App/app/src/main/res/layout/activity_workout.xml" value="0.234375" />
+        <entry key="..\:/Users/Yashi/Desktop/jgbyh,v,hvfgt/Ease_Off_App/app/src/main/res/layout/fragment_abs_workout.xml" value="0.234375" />
+        <entry key="..\:/Users/Yashi/Desktop/jgbyh,v,hvfgt/Ease_Off_App/app/src/main/res/layout/fragment_m_ind_sleep_calc_t_ime.xml" value="0.1" />
       </map>
     </option>
   </component>

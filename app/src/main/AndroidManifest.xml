@@ -63,10 +63,15 @@
             android:exported="false" />
         <activity
             android:name=".healthcare"
-
+            android:exported="false" />
+        <activity
+            android:name=".SetGoal"
             android:exported="false" />
         <activity
             android:name=".MainDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Workout"
             android:exported="false" />
         <activity
             android:name=".Signup"
