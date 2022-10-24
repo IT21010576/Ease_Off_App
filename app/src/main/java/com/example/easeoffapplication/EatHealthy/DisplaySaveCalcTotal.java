@@ -18,7 +18,7 @@ import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.TrackCalories;
 
 
-public class DisplayCalculatedTotal extends Fragment {
+public class DisplaySaveCalcTotal extends Fragment {
 
     String CarbsValue,ProteinValue,FatsValue,TotalCalories,Date;
     String comment="";
@@ -67,7 +67,7 @@ public class DisplayCalculatedTotal extends Fragment {
 
     }
 
-
+    //add record to db
     public void addCalulatedRecord(){
         DBhelper dbHelper = new DBhelper(getContext());
         SQLiteDatabase db = dbHelper.getWritableDatabase();

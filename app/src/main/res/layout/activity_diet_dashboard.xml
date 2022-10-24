@@ -10,42 +10,48 @@
         android:id="@+id/NutriFctBtn"
         android:layout_width="152dp"
         android:layout_height="152dp"
-        android:backgroundTint="@color/IndividualDashboardCol4"
+        android:backgroundTint="@color/IndividualDashboardCol1"
         android:text="@string/DietDashSub4"
+        android:textSize="8pt"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/myhealthyrecBtn"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716" />
+        app:layout_constraintVertical_bias="0.773" />
 
     <Button
         android:id="@+id/myhealthyrecBtn"
         android:layout_width="152dp"
         android:layout_height="152dp"
-        android:backgroundTint="@color/IndividualDashboardCol3"
+        android:backgroundTint="@color/IndividualDashboardCol1"
         android:onClick="MoveToHealthyRecipe"
         android:text="@string/DietDashSub3"
+        android:textSize="8pt"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/NutriFctBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.716" />
+        app:layout_constraintVertical_bias="0.776" />
 
     <Button
         android:id="@+id/addMedScheduleBtn"
         android:layout_width="152dp"
         android:layout_height="152dp"
-        android:backgroundTint="@color/IndividualDashboardCol2"
+        android:backgroundTint="@color/IndividualDashboardCol1"
         android:onClick="MoveToPlanDiet"
         android:text="@string/DietDashSub2"
+        android:textSize="8pt"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/AddBtn_medSchedule"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356" />
+        app:layout_constraintVertical_bias="0.332" />
 
     <Button
         android:id="@+id/AddBtn_medSchedule"
@@ -54,24 +60,14 @@
         android:backgroundTint="@color/IndividualDashboardCol1"
         android:onClick="MoveToTrackCalorie"
         android:text="@string/DietDashSub1"
+        android:textSize="8pt"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/addMedScheduleBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.357" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbardietdash"
-        android:layout_width="410dp"
-        android:layout_height="76dp"
-        android:background="@drawable/ic_launcher_background"
-        android:backgroundTint="@color/ThemeCol2"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.334" />
 
     <TextView
         android:id="@+id/DietDashLbl"
@@ -84,20 +80,9 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.17" />
-
-    <ImageView
-        android:id="@+id/backbtn_heathcareDash"
-        android:layout_width="54dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn"/>
+        app:layout_constraintVertical_bias="0.098" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

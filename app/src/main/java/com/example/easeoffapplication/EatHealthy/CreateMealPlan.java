@@ -61,7 +61,12 @@ public class CreateMealPlan extends Fragment {
         values.put(MealPlans.mealPlans.COLUMN_NAME_DINNER, Dinner);
 
         long newRowId = db.insert(MealPlans.mealPlans.TABLE_NAME,null, values);
-        Toast.makeText(getActivity(), "Added Meal Plan!", Toast.LENGTH_SHORT).show();
+        if(newRowId==-1){
+            Toast.makeText(getActivity(), "Cannot Create Plan!", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Toast.makeText(getActivity(), "Added Meal Plan!", Toast.LENGTH_SHORT).show();
+        }
 
         reset();
     }

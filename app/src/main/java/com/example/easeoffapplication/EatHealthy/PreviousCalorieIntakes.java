@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.provider.BaseColumns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,6 +28,7 @@ public class PreviousCalorieIntakes extends Fragment {
     ViewCaloryAdaptor customAdaptor;
     ArrayList<String> date,comment;
     ArrayList<Double> totalCal;
+    ArrayList<Long> id;
 
 
     @Override
@@ -39,9 +41,10 @@ public class PreviousCalorieIntakes extends Fragment {
         date=new ArrayList<>();
         totalCal=new ArrayList<>();
         comment=new ArrayList<>();
+        id=new ArrayList<>();
 
         displayData();
-        customAdaptor=new ViewCaloryAdaptor(getContext(),date,totalCal,comment);
+        customAdaptor=new ViewCaloryAdaptor(getActivity(),getContext(),date,totalCal,comment,id);
         recyclerView.setAdapter(customAdaptor);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -72,6 +75,8 @@ public class PreviousCalorieIntakes extends Fragment {
                         cursor.getColumnIndexOrThrow(TrackCalories.savedCalories.COLUMN_NAME_TOTALCALORIES)));
                 comment.add(cursor.getString(
                         cursor.getColumnIndexOrThrow(TrackCalories.savedCalories.COLUMN_NAME_COMMENT)));
+                id.add(cursor.getLong(
+                        cursor.getColumnIndexOrThrow(BaseColumns._ID)));
             }
         }
     }
