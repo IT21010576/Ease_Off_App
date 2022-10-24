@@ -19,6 +19,7 @@ public class Login extends AppCompatActivity {
     EditText username,password;
     Button login;
     String Username,Password;
+    public static String Name=null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,7 @@ public class Login extends AppCompatActivity {
         boolean valid=validateUser(Username,Password);
 
         if(valid==true){
+            Name=Username;
             Intent intent2=new Intent(this,MainDashboard.class);
             startActivity(intent2);
         }

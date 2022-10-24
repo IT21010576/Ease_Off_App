@@ -98,7 +98,7 @@ public class Signup extends AppCompatActivity {
         ContentValues values = new ContentValues();
         values.put(User.userDetails.COLUMN_NAME_USERNAME, Username);
         values.put(User.userDetails.COLUMN_NAME_PASSWORD, Password);
-        values.put(User.userDetails.COLUMN_NAME_DOB, DOB);
+        values.put(User.userDetails.COLUMN_NAME_BYEAR, DOB);
         values.put(User.userDetails.COLUMN_NAME_GENDER, Gender);
 
         long newRowId = db.insert(User.userDetails.TABLE_NAME,null, values);
