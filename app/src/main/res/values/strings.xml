@@ -18,7 +18,7 @@
     <string name="SignUpEmailLbl">Email :</string>
     <string name="SignUpPwdLbl">Password :</string>
     <string name="SignUpPwdHint">Create your Password</string>
-    <string name="SignUpDobHint">Enter your DOB</string>
+    <string name="SignUpDobHint">Enter your Birth Year</string>
     <string name="DailyMedLbl">Daily Medicine</string>
     <string name="BeautyLbl">Beauty</string>
     <string name="PharmacyLbl">Pharmacy</string>
@@ -182,7 +182,7 @@
     <string name="Leg_lbl">Leg Press</string>
     <string name="Over_lbl">Overhead Press</string>
     <string name="EstTime">Your estimated total Workout time</string>
-    <string name="Est_calorie" />
+    <string name="nutriFact1Age1">Cut down on Fast food and Fizzy Drink Intake</string>
     <string name="Est_calorieburnt">Your estimated calorie burnt today</string>
     <string name="Edit_btn">Edit my set</string>
     <string name="Delete_btn">Delete my set</string>

@@ -8,66 +8,48 @@
 
     <Button
         android:id="@+id/NutriFctBtn"
-        android:layout_width="152dp"
-        android:layout_height="152dp"
+        android:layout_width="263dp"
+        android:layout_height="137dp"
         android:backgroundTint="@color/IndividualDashboardCol1"
+        android:onClick="MoveToNutriFacts"
         android:text="@string/DietDashSub4"
         android:textSize="8pt"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/myhealthyrecBtn"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.773" />
-
-    <Button
-        android:id="@+id/myhealthyrecBtn"
-        android:layout_width="152dp"
-        android:layout_height="152dp"
-        android:backgroundTint="@color/IndividualDashboardCol1"
-        android:onClick="MoveToHealthyRecipe"
-        android:text="@string/DietDashSub3"
-        android:textSize="8pt"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/NutriFctBtn"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.776" />
+        app:layout_constraintTop_toBottomOf="@+id/addMedScheduleBtn" />
 
     <Button
         android:id="@+id/addMedScheduleBtn"
-        android:layout_width="152dp"
-        android:layout_height="152dp"
+        android:layout_width="263dp"
+        android:layout_height="137dp"
         android:backgroundTint="@color/IndividualDashboardCol1"
         android:onClick="MoveToPlanDiet"
         android:text="@string/DietDashSub2"
         android:textSize="8pt"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/NutriFctBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/AddBtn_medSchedule"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.332" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddBtn_medSchedule" />
 
     <Button
         android:id="@+id/AddBtn_medSchedule"
-        android:layout_width="152dp"
-        android:layout_height="152dp"
+        android:layout_width="263dp"
+        android:layout_height="137dp"
         android:backgroundTint="@color/IndividualDashboardCol1"
         android:onClick="MoveToTrackCalorie"
         android:text="@string/DietDashSub1"
         android:textSize="8pt"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/addMedScheduleBtn"
+        app:layout_constraintBottom_toTopOf="@+id/addMedScheduleBtn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
+        app:layout_constraintTop_toBottomOf="@+id/DietDashLbl" />
 
     <TextView
         android:id="@+id/DietDashLbl"
@@ -78,9 +60,9 @@
         android:textColor="?android:attr/navigationBarColor"
         android:textSize="14pt"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/AddBtn_medSchedule"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.098" />
