@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.easeoffapplication.EatHealthy.DisplayCalculatedTotal;
 import com.example.easeoffapplication.R;
 
 
@@ -60,7 +59,7 @@ public class TrackMyCalorieMain extends Fragment {
 
     public void displayResults(){
 
-        DisplayCalculatedTotal frag = new DisplayCalculatedTotal ();
+        DisplaySaveCalcTotal frag = new DisplaySaveCalcTotal();
         String Date=date.getText().toString();
 
         Bundle args = new Bundle();

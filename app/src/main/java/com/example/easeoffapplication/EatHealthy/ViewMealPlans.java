@@ -128,9 +128,13 @@ public class ViewMealPlans extends Fragment {
         String selection = BaseColumns._ID + " LIKE ?";
         String[] selectionArgs = { currentID };
 
-        db.delete(MealPlans.mealPlans.TABLE_NAME, selection, selectionArgs);
-        Toast.makeText(getActivity(), "Meal Plan Deleted!", Toast.LENGTH_LONG).show();
-
+        long result=db.delete(MealPlans.mealPlans.TABLE_NAME, selection, selectionArgs);
+        if(result==-1){
+            Toast.makeText(getContext(), "Failed to Delete!", Toast.LENGTH_LONG).show();
+        }
+        else {
+            Toast.makeText(getContext(), "Meal Plan Deleted!", Toast.LENGTH_LONG).show();
+        }
         displayBrkfst.setText("");
         displayLunch.setText("");
         displayDinner.setText("");
@@ -155,9 +159,14 @@ public class ViewMealPlans extends Fragment {
         String selection = BaseColumns._ID + " LIKE ?";
         String[] selectionArgs = { currentID };
 
-         db.update(MealPlans.mealPlans.TABLE_NAME, values, selection, selectionArgs);
+        long result = db.update(MealPlans.mealPlans.TABLE_NAME, values, selection, selectionArgs);
 
-        Toast.makeText(getActivity(), "Meal Plan Updated!", Toast.LENGTH_LONG).show();
+        if(result==-1){
+            Toast.makeText(getContext(), "Failed to Update!", Toast.LENGTH_LONG).show();
+        }
+        else {
+            Toast.makeText(getContext(), "Meal Plan Updated!", Toast.LENGTH_LONG).show();
+        }
     }
 
 

@@ -10,7 +10,7 @@ public class DBhelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME="EaseOffApp.db";
 
     public DBhelper(Context context){
-        super(context,DATABASE_NAME,null,3);
+        super(context,DATABASE_NAME,null,5);
     }
 
         private static final String SQL_CREATE_ENTRY_MP="CREATE TABLE "+MealPlans.mealPlans.TABLE_NAME +" ("+
@@ -26,11 +26,21 @@ public class DBhelper extends SQLiteOpenHelper {
                                                         TrackCalories.savedCalories.COLUMN_NAME_TOTALCALORIES+" DOUBLE,"+
                                                         TrackCalories.savedCalories.COLUMN_NAME_COMMENT+" TEXT)";
 
+        private static final String SQL_CREATE_ENTRY_USER="CREATE TABLE "+User.userDetails.TABLE_NAME +" ("+
+                                                            User.userDetails.COLUMN_NAME_USERNAME+" TEXT PRIMARY KEY,"+
+                                                            User.userDetails.COLUMN_NAME_PASSWORD+" TEXT,"+
+                                                            User.userDetails.COLUMN_NAME_DOB+" TEXT,"+
+                                                            User.userDetails.COLUMN_NAME_GENDER+" TEXT)";
+
         private static final String SQL_DELETE_ENTRIES_MP =
                 "DROP TABLE IF EXISTS " + MealPlans.mealPlans.TABLE_NAME;
 
         private static final String SQL_DELETE_ENTRIES_TC =
                 "DROP TABLE IF EXISTS " + TrackCalories.savedCalories.TABLE_NAME;
+
+        private static final String SQL_DELETE_ENTRIES_USER =
+                "DROP TABLE IF EXISTS " + User.userDetails.TABLE_NAME;
+
 
 
     @Override
@@ -38,6 +48,7 @@ public class DBhelper extends SQLiteOpenHelper {
 
         sqLiteDatabase.execSQL(SQL_CREATE_ENTRY_MP);
         sqLiteDatabase.execSQL(SQL_CREATE_ENTRY_TC);
+        sqLiteDatabase.execSQL(SQL_CREATE_ENTRY_USER);
 
     }
 
@@ -47,6 +58,7 @@ public class DBhelper extends SQLiteOpenHelper {
         // to simply to discard the data and start over
         db.execSQL(SQL_DELETE_ENTRIES_MP);
         db.execSQL(SQL_DELETE_ENTRIES_TC);
+        db.execSQL(SQL_DELETE_ENTRIES_USER);
         onCreate(db);
     }
     public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
