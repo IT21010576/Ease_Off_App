@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TrackMyCalories">
+    tools:context=".EatHealthy.TrackMyCalories">
 
     <Button
         android:id="@+id/TrackCalbtn1"
@@ -38,13 +38,12 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainer2"
-        android:name="com.example.easeoffapplication.TrackCalorieDefault"
-        android:layout_width="407dp"
-        android:layout_height="663dp"
+        android:name="com.example.easeoffapplication.EatHealthy.TrackCalorieDefault"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.882" />
+        app:layout_constraintTop_toBottomOf="@+id/TrackCalbtn2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

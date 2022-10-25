@@ -3,10 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_plan_my_diet.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_diet_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_main_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_nutri_facts.xml" value="0.25" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_plan_my_diet.xml" value="0.21" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_signup.xml" value="0.25" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_track_my_calories.xml" value="0.25" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_update_track_calorie.xml" value="0.25" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_create_meal_plan.xml" value="0.25" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_display_calculated_total.xml" value="0.25" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_fullbody.xml" value="0.25" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_pharmacy.xml" value="0.1" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_plan_diet_default.xml" value="0.18" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_previous_calorie_intakes.xml" value="0.25" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_track_calorie_default.xml" value="0.21" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_track_my_calorie_main.xml" value="0.25" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_view_meal_plans.xml" value="0.25" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_view_saved_recipes.xml" value="0.16394927536231885" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_workoutwithequp.xml" value="0.25" />
+        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/viewcalorierow.xml" value="0.25" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_beauty.xml" value="0.264" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_daily_medicine.xml" value="0.2" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/activity_diseases_update.xml" value="0.264" />

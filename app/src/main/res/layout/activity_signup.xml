@@ -9,117 +9,117 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/SignUpText"
+        android:textColor="@color/black"
         android:textSize="14pt"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/createUsername"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.124" />
 
     <EditText
         android:id="@+id/createUsername"
-        android:ellipsize="start"
-        android:gravity="center"
         android:layout_width="253dp"
         android:layout_height="51dp"
         android:background="@color/white"
+        android:ellipsize="start"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/SignUpNameHint"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/enterdob"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.258" />
 
     <EditText
         android:id="@+id/enterdob"
-        android:ellipsize="start"
-        android:gravity="center"
         android:layout_width="253dp"
         android:layout_height="51dp"
         android:background="@color/white"
+        android:ellipsize="start"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/SignUpDobHint"
-        android:inputType="date"
+        android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createUsername"
         app:layout_constraintVertical_bias="0.393" />
 
-    <RadioButton
-        android:id="@+id/radioButtonMale"
-        android:textSize="8pt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/white"
-        android:minHeight="48dp"
-        android:text="@string/MaleLbl"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/radioButtonFemale"
-        app:layout_constraintHorizontal_bias="0.701"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <RadioButton
-        android:id="@+id/radioButtonFemale"
-        android:textSize="8pt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:buttonTint="@color/white"
-        android:minHeight="48dp"
-        android:text="@string/FemaleLbl"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="230dp"
+        android:layout_height="99dp"
+        app:layout_constraintBottom_toTopOf="@+id/create_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/radioButtonMale"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toBottomOf="@+id/enterdob">
+
+        <RadioButton
+            android:id="@+id/maleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Male"
+            android:textSize="8pt" />
+
+        <RadioButton
+            android:id="@+id/femaleBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Female"
+            android:textSize="8pt" />
+    </RadioGroup>
 
     <EditText
         android:id="@+id/create_password"
-        android:ellipsize="start"
-        android:gravity="center"
         android:layout_width="253dp"
         android:layout_height="51dp"
         android:background="@color/white"
+        android:ellipsize="start"
         android:ems="10"
+        android:gravity="center"
         android:hint="@string/SignUpPwdHint"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/create_password2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:textSize="8pt"
-        android:text="@string/termsAconditions"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <EditText
+        android:id="@+id/create_password2"
+        android:layout_width="253dp"
+        android:layout_height="51dp"
+        android:background="@color/white"
+        android:ellipsize="start"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Re-enter your password"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/signup_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754" />
+        app:layout_constraintTop_toBottomOf="@+id/create_password" />
 
     <Button
-        android:id="@+id/signup_signupPage"
+        android:id="@+id/signup_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@color/ThemeCol1Btn"
@@ -127,9 +127,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.85" />
+        app:layout_constraintTop_toBottomOf="@+id/create_password2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

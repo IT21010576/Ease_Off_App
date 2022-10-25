@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.easeoffapplication.EatHealthy.DietDashboard;
+
 public class MainDashboard extends AppCompatActivity {
 
     @Override

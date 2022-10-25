@@ -14,7 +14,10 @@
         android:theme="@style/Theme.EaseOffApplication"
         tools:targetApi="31">
         <activity
-            android:name=".NutriFacts"
+            android:name=".EatHealthy.Update_trackCalorie"
+            android:exported="false" />
+        <activity
+            android:name=".EatHealthy.NutriFacts"
             android:exported="false" />
         <activity
             android:name=".MindSleepFeedback"
@@ -35,19 +38,16 @@
             android:name=".MindThoughtJournal"
             android:exported="false" />
         <activity
-            android:name=".MyHealthyRecipies"
-            android:exported="false" />
-        <activity
             android:name=".MindAndYouDashboard"
             android:exported="false" />
         <activity
-            android:name=".PlanMyDiet"
+            android:name=".EatHealthy.PlanMyDiet"
             android:exported="false" />
         <activity
-            android:name=".TrackMyCalories"
+            android:name=".EatHealthy.TrackMyCalories"
             android:exported="false" />
         <activity
-            android:name=".DietDashboard"
+            android:name=".EatHealthy.DietDashboard"
             android:exported="false" />
         <activity
             android:name=".PharmacyMain"
@@ -63,10 +63,15 @@
             android:exported="false" />
         <activity
             android:name=".healthcare"
-
+            android:exported="false" />
+        <activity
+            android:name=".SetGoal"
             android:exported="false" />
         <activity
             android:name=".MainDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Workout"
             android:exported="false" />
         <activity
             android:name=".Signup"
@@ -80,6 +85,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
