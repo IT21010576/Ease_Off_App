@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.easeoffapplication.Healthcare.healthcare;
+import com.example.easeoffapplication.EatHealthy.DietDashboard;
 
 public class MainDashboard extends AppCompatActivity {
 

@@ -1,20 +1,22 @@
 package com.example.easeoffapplication;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
 
-public class TrackMyCalorieMain extends Fragment {
+public class MyWorkout extends Fragment {
 
+    View view;
     @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_track_my_calorie_main, container, false);
+        view= inflater.inflate(R.layout.fragment_my_workout, container, false);
+        return view;
     }
+
 }
