@@ -19,4 +19,10 @@ public class healthcare extends AppCompatActivity {
         setContentView(R.layout.activity_healthcare);
     }
 
+    public void moveToPharmacy(View view){
+        Intent intent1=new Intent(this,PharmacyMain.class);
+        startActivity(intent1);
+
+    }
+
 }
