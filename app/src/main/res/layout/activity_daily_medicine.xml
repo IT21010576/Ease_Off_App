@@ -4,59 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DailyMedicine"
-    android:background="@drawable/background">
+    tools:context=".Healthcare.DailyMedicine">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar4dailyMed"
-        style="@style/toolbarStyle"
-        android:backgroundTint="@color/ThemeCol2"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/dailyMedDefFrag"
+        android:name="com.example.easeoffapplication.Healthcare.dailyMedDefaultFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.001" />
-
-    <TextView
-        android:id="@+id/textView33"
-        style="@style/toolbarFontStyle"
-        android:text="@string/DailyMedLbl"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.253"
-        app:layout_constraintStart_toStartOf="@+id/toolbar4dailyMed"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/toolbarheading_dailymed"
-        style="@style/toolbarImage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
-
-    <Button
-        android:id="@+id/addSchedulebtn_dailymed"
-        style="@style/buttonStyle"
-        android:text="@string/AddScheduleBtn"
-        app:layout_constraintBaseline_toBaselineOf="@+id/viewschedulebtn_dailymed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/viewschedulebtn_dailymed"
-        style="@style/buttonStyle"
-        android:text="@string/ViewMySchedulesBtn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.173" />
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

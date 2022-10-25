@@ -148,4 +148,14 @@
     <string name="qtyLbl">Qty</string>
     <string name="MedcineLbl">Medicine</string>
     <string name="MyMedicineListsHeading">My Medicine Lists</string>
+    <string name="NewMedlbl">Add New Medicine</string>
+    <string name="MedNamelbl">Medicine Name</string>
+    <string name="pharNameLbl">Pharmacy name</string>
+    <string name="descriptionlbl">Description</string>
+    <string name="pricelbl">Price</string>
+    <string name="EditMedLbl">Edit Medicine</string>
+    <string name="totalPrice">Total</string>
+    <string name="morningLbl">Morning</string>
+    <string name="afternoonlbl">Afternoon</string>
+    <string name="nightLbl">Night</string>
 </resources>

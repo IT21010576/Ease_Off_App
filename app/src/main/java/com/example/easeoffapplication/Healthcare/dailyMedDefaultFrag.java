@@ -1,24 +1,22 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.Healthcare;
 
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link dailyMedDefaultFrag#newInstance} factory method to
- * create an instance of this fragment.
- */
+import com.example.easeoffapplication.R;
+
 public class dailyMedDefaultFrag extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    Button startSchedule,viewAllSchedules;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -28,15 +26,6 @@ public class dailyMedDefaultFrag extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment dailyMedDefaultFrag.
-     */
-    // TODO: Rename and change types and number of parameters
     public static dailyMedDefaultFrag newInstance(String param1, String param2) {
         dailyMedDefaultFrag fragment = new dailyMedDefaultFrag();
         Bundle args = new Bundle();
@@ -59,6 +48,28 @@ public class dailyMedDefaultFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_daily_med_default, container, false);
+        View view = inflater.inflate(R.layout.fragment_daily_med_default, container, false);
+
+        viewAllSchedules = view.findViewById(R.id.viewschedulebtn_dailymed);
+
+        viewAllSchedules.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.dailyMedDefFrag, new MedicineSchedules());
+                ft.commit();
+            }
+        });
+
+        startSchedule = view.findViewById(R.id.startScheduleBtn);
+        startSchedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.dailyMedDefFrag, new NewSchedule());
+                ft.commit();
+            }
+        });
+        return view;
     }
 }

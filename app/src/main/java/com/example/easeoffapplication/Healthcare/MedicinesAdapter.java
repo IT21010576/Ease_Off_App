@@ -1,17 +1,17 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.Healthcare;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.Medicines;
 
 import java.util.List;
@@ -38,7 +38,7 @@ public class MedicinesAdapter extends ArrayAdapter<Medicines> {
         TextView medName = row.findViewById(R.id.MedName);
         TextView description = row.findViewById(R.id.Med_description);
         TextView medPrice = row.findViewById(R.id.med_price);
-        TextView pharName = row.findViewById(R.id.medListname);
+        TextView pharName = row.findViewById(R.id.pharName);
         ImageView pillIcon = row.findViewById(R.id.pill_icon);
 
         Medicines med = meds.get(position);

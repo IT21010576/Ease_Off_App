@@ -16,6 +16,4 @@ public class MealPlans {
         public static final String COLUMN_NAME_LUNCH="lunch";
         public static final String COLUMN_NAME_DINNER="dinner";
     }
-
-
 }

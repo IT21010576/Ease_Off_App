@@ -1,14 +1,12 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.Healthcare;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
+import com.example.easeoffapplication.R;
 
 public class healthcare extends AppCompatActivity {
 
@@ -20,7 +18,13 @@ public class healthcare extends AppCompatActivity {
     }
 
     public void moveToPharmacy(View view){
-        Intent intent1=new Intent(this,PharmacyMain.class);
+        Intent intent1=new Intent(this, PharmacyMain.class);
+        startActivity(intent1);
+
+    }
+
+    public void moveToDailyMedicine(View view){
+        Intent intent1=new Intent(this, DailyMedicine.class);
         startActivity(intent1);
 
     }

@@ -1,9 +1,8 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.Healthcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -12,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.Medicines;
 
@@ -50,7 +50,7 @@ public class EditMed extends AppCompatActivity {
 
                 Medicines med = new Medicines(Integer.parseInt(id),medName,pharName,des,Double.parseDouble(price));
                 updateSingleMed(med);
-                startActivity(new Intent(getApplicationContext(),PharmacyMain.class));
+                startActivity(new Intent(getApplicationContext(), PharmacyMain.class));
 
             }
         });

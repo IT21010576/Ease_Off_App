@@ -14,6 +14,24 @@
         android:theme="@style/Theme.EaseOffApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Healthcare.EditMedLists"
+            android:label="Edit List"
+            android:parentActivityName=".Healthcare.allMedLists"
+            android:exported="false" />
+        <activity
+            android:name=".Healthcare.allMedLists"
+            android:label="All medicine lists"
+            android:parentActivityName=".Healthcare.PharmacyMain"
+            android:exported="false" />
+        <activity
+            android:name=".Healthcare.newMedList"
+            android:exported="false"
+            android:label="Medicine List"
+            android:parentActivityName=".Healthcare.PharmacyMain" />
+        <activity
+            android:name=".Healthcare.EditMed"
+            android:exported="false" />
+        <activity
             android:name=".NutriFacts"
             android:exported="false" />
         <activity
@@ -50,21 +68,24 @@
             android:name=".DietDashboard"
             android:exported="false" />
         <activity
-            android:name=".PharmacyMain"
-            android:exported="false" />
+            android:name=".Healthcare.PharmacyMain"
+            android:exported="false"
+            android:label="Pharmacy"
+            android:parentActivityName=".Healthcare.healthcare"/>
         <activity
-            android:name=".DailyMedicine"
+            android:name=".Healthcare.DailyMedicine"
             android:exported="false" />
         <activity
             android:name=".DiseasesUpdate"
             android:exported="false" />
         <activity
-            android:name=".Beauty"
+            android:name=".Healthcare.Beauty"
             android:exported="false" />
         <activity
-            android:name=".healthcare"
-
-            android:exported="false" />
+            android:name=".Healthcare.healthcare"
+            android:exported="false"
+            android:label="Healthcare"
+            android:parentActivityName=".MainDashboard" />
         <activity
             android:name=".MainDashboard"
             android:exported="false" />

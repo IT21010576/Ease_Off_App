@@ -1,4 +1,4 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.Healthcare;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -7,21 +7,17 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.Medicines;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -36,7 +32,6 @@ public class pharmacyDefault extends Fragment {
 
     FloatingActionButton addMedicineBtn;
     ListView medList;
-    TextView medCount;
     List<Medicines> meds;
 
     // TODO: Rename and change types of parameters
@@ -71,7 +66,6 @@ public class pharmacyDefault extends Fragment {
 
         addMedicineBtn = view.findViewById(R.id.addNewMedBtn);
         medList = view.findViewById(R.id.medlist);
-        medCount = view.findViewById(R.id.medCount);
         meds = new ArrayList<>();
 
         meds = getAllMedicines();
@@ -87,9 +81,6 @@ public class pharmacyDefault extends Fragment {
                 ft.commit();
             }
         });
-        int num_med = countMed();
-        String med_num = String.valueOf(num_med);
-        medCount.setText("You can find " + med_num + " medcines here");
 
         medList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -109,11 +100,10 @@ public class pharmacyDefault extends Fragment {
                     }
                 });
 
-
                 builder.setNeutralButton("Update", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent intent = new Intent(getContext(),EditMed.class);
+                        Intent intent = new Intent(getContext(), EditMed.class);
                         intent.putExtra("id", String.valueOf(med.getId()));
                         startActivity(intent);
                     }

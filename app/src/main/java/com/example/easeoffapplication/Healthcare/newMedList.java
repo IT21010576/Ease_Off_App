@@ -1,7 +1,9 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.Healthcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -12,8 +14,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
+import com.example.easeoffapplication.db.MedicineLists;
 import com.example.easeoffapplication.db.Medicines;
 
 import java.util.ArrayList;
@@ -22,10 +27,10 @@ import java.util.Locale;
 
 public class newMedList extends AppCompatActivity {
 
-    TextView listName, totalView;
+    TextView totalView;
     Spinner med1_select,med2_select,med3_select,med4_select,med5_select;
-    EditText med1_qty, med2_qty, med3_qty, med4_qty, med5_qty;
-    Button calculate;
+    EditText listName,med1_qty, med2_qty, med3_qty, med4_qty, med5_qty;
+    Button calculate, saveList;
     String selection1, selection2, selection3, selection4, selection5;
 
     @Override
@@ -47,6 +52,7 @@ public class newMedList extends AppCompatActivity {
 
         listName = findViewById(R.id.listNameEdt);
         calculate = findViewById(R.id.calculateBtn);
+        saveList = findViewById(R.id.saveMedList);
         totalView = findViewById(R.id.total_view);
 
         ArrayList<String> meds = getAllMedicines();
@@ -57,7 +63,6 @@ public class newMedList extends AppCompatActivity {
         med3_select.setAdapter(myAdapter);
         med4_select.setAdapter(myAdapter);
         med5_select.setAdapter(myAdapter);
-
 
 
         med1_select.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -131,6 +136,15 @@ public class newMedList extends AppCompatActivity {
             }
         });
 
+        saveList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                addNewMedicineList(selection1,selection2,selection3,selection4,selection5);
+                Intent intent = new Intent(getApplicationContext(), allMedLists.class);
+                startActivity(intent);
+            }
+        });
+
     }
     public ArrayList<String> getAllMedicines(){
 
@@ -178,5 +192,32 @@ public class newMedList extends AppCompatActivity {
             return med.getMedPrice();
         }
         return 0.0;
+    }
+
+    public void addNewMedicineList(String med1, String med2, String med3, String med4, String med5){
+        String name_list = listName.getText().toString();
+        double total = Double.parseDouble(totalView.getText().toString());
+
+        MedicineLists list = new MedicineLists(name_list,med1, med2,med3,med4,med5,total);
+
+        DBhelper dbHelper = new DBhelper(getApplicationContext());
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(MedicineLists.medicineLists.COLUMN_NAME_LISTNAME, list.getListName());
+        cv.put(MedicineLists.medicineLists.COLUMN_NAME_MEDNAME1, list.getMedName1());
+        cv.put(MedicineLists.medicineLists.COLUMN_NAME_MEDNAME2, list.getMedName2());
+        cv.put(MedicineLists.medicineLists.COLUMN_NAME_MEDNAME3, list.getMedName3());
+        cv.put(MedicineLists.medicineLists.COLUMN_NAME_MEDNAME4, list.getMedName4());
+        cv.put(MedicineLists.medicineLists.COLUMN_NAME_MEDNAME5, list.getMedName5());
+        cv.put(MedicineLists.medicineLists.COLUMN_NAME_TOTAL, list.getTotal());
+
+        long result = db.insert(MedicineLists.medicineLists.TABLE_NAME, null, cv);
+        db.close();
+        if(result == -1){
+            Toast.makeText(getApplicationContext(), "New medicine list not added", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(getApplicationContext(), "Medicine list added", Toast.LENGTH_SHORT).show();
+        }
     }
 }

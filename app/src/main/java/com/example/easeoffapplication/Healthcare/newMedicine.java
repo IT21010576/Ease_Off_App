@@ -1,11 +1,9 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.Healthcare;
 
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -16,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.Medicines;
 
@@ -78,7 +77,7 @@ public class newMedicine extends Fragment {
 
     }
 
-    void addNewMedicine(){
+    public void addNewMedicine(){
         String medName = medName_input.getText().toString();
         String pharName = phar_input.getText().toString();
         String des = des_input.getText().toString();
