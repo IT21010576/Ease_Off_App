@@ -18,6 +18,8 @@
             android:exported="false" />
         <activity
             android:name=".EatHealthy.NutriFacts"
+            android:label="Nutritional Facts"
+            android:parentActivityName=".EatHealthy.DietDashboard"
             android:exported="false" />
         <activity
             android:name=".MindSleepFeedback"
@@ -42,12 +44,18 @@
             android:exported="false" />
         <activity
             android:name=".EatHealthy.PlanMyDiet"
+            android:label="Plan My Diet"
+            android:parentActivityName=".EatHealthy.DietDashboard"
             android:exported="false" />
         <activity
             android:name=".EatHealthy.TrackMyCalories"
+            android:label="Track My Calories"
+            android:parentActivityName=".EatHealthy.DietDashboard"
             android:exported="false" />
         <activity
             android:name=".EatHealthy.DietDashboard"
+            android:label="Diet Dashboard"
+            android:parentActivityName=".MainDashboard"
             android:exported="false" />
         <activity
             android:name=".PharmacyMain"
@@ -86,9 +94,7 @@
             </intent-filter>
         </activity>
 
-        <meta-data
-            android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>

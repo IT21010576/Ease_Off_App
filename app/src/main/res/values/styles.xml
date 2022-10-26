@@ -40,4 +40,8 @@
         <item name="android:textAlignment">center</item>
         <item name="android:textStyle">bold</item>
     </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
 </resources>

@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.easeoffapplication.db.DBhelper;
@@ -36,8 +38,22 @@ public class Login extends AppCompatActivity {
                 login();
             }
         });
+
     }
 
+    void showToast(String message) {
+
+        Toast toast = new Toast(this);
+
+        View view = LayoutInflater.from(Login.this).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
+
+    }
     public void login(){
         Username=username.getText().toString();
         Password=password.getText().toString();
@@ -50,7 +66,7 @@ public class Login extends AppCompatActivity {
             startActivity(intent2);
         }
         else{
-            Toast.makeText(this,"Invalid Username or Paasword!",Toast.LENGTH_LONG).show();
+            showToast("Invalid Username or Password!");
         }
 
     }

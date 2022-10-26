@@ -9,10 +9,10 @@
     <TextView
         android:id="@+id/prevLbl"
         style="@style/headingFontText"
-        android:layout_width="340dp"
-        android:layout_height="36dp"
+        android:layout_width="391dp"
+        android:layout_height="35dp"
         android:text="@string/nutriLbl"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -47,7 +47,6 @@
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.929"
@@ -73,6 +72,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fact1Text"
                 app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.085"
+                app:srcCompat="@drawable/successicon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -101,8 +112,9 @@
                 android:layout_height="97dp"
                 android:backgroundTint="@color/DashboardCol2"
                 android:ems="10"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.934"
@@ -127,6 +139,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fact2Text"
                 app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.032"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.073"
+                app:srcCompat="@drawable/successicon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -155,8 +179,9 @@
                 android:layout_height="97dp"
                 android:backgroundTint="@color/DashboardCol2"
                 android:ems="10"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="22sp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.943"
@@ -174,19 +199,24 @@
                 android:layout_marginEnd="87dp"
                 android:layout_marginBottom="2dp"
                 android:background="@color/teal_200"
-                android:text="Read more"
+                android:text="Watch Video"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/fact3Text" />
 
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_begin="20dp" />
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.035"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.073"
+                app:srcCompat="@drawable/successicon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
