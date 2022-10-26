@@ -1,6 +1,7 @@
 package com.example.easeoffapplication.Healthcare;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -14,9 +15,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.easeoffapplication.EatHealthy.Update_trackCalorie;
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.Medicines;
@@ -33,6 +37,7 @@ public class pharmacyDefault extends Fragment {
     FloatingActionButton addMedicineBtn;
     ListView medList;
     List<Medicines> meds;
+    private Dialog dialog;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -66,8 +71,18 @@ public class pharmacyDefault extends Fragment {
 
         addMedicineBtn = view.findViewById(R.id.addNewMedBtn);
         medList = view.findViewById(R.id.medlist);
-        meds = new ArrayList<>();
 
+        //Create the Dialog here
+        dialog = new Dialog(getContext());
+        dialog.setContentView(R.layout.custom_dialog);
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.setCancelable(false); //Optional
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; //Setting the animations to dialog
+
+        Button DialogYes = dialog.findViewById(R.id.btn_okay);
+        Button Cancel = dialog.findViewById(R.id.btn_cancel);
+
+        meds = new ArrayList<>();
         meds = getAllMedicines();
 
         MedicinesAdapter medicinesAdapter = new MedicinesAdapter(getContext(),R.layout.single_medicine, meds);
@@ -93,10 +108,24 @@ public class pharmacyDefault extends Fragment {
                 builder.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        dialog.show();
+
+                    }
+                });
+                DialogYes.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
                         deleteMed(med.getId());
+                        dialog.dismiss();
                         FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                         ft.replace(R.id.pharmacyDefaultfrag, new pharmacyDefault());
                         ft.commit();
+                    }
+                });
+                Cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
                     }
                 });
 
@@ -157,9 +186,30 @@ public class pharmacyDefault extends Fragment {
         DBhelper dbHelper = new DBhelper(getContext());
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-        db.delete(Medicines.medicines.TABLE_NAME, Medicines.medicines._ID + " =?",
+        long result = db.delete(Medicines.medicines.TABLE_NAME, Medicines.medicines._ID + " =?",
                 new String[]{String.valueOf(id)});
         db.close();
+
+        if(result==-1){
+            showToast("Failed To Delete!");
+        }
+        else {
+            showToast("Record Deleted!");
+        }
+    }
+
+    void showToast(String message) {
+
+        Toast toast = new Toast(getContext());
+
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
+
     }
 
 

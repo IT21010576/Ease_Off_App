@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -14,7 +15,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.easeoffapplication.EatHealthy.Update_trackCalorie;
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.MedicineLists;
@@ -255,6 +258,26 @@ public class EditMedLists extends AppCompatActivity {
                 cv,MedicineLists.medicineLists._ID + " =?",
                 new String[]{String.valueOf(list.getId())});
         db.close();
+        if(status==-1){
+            showToast("Failed To Update!");
+        }
+        else {
+            showToast("Record Updated!");
+        }
         return status;
+    }
+
+    void showToast(String message) {
+
+        Toast toast = new Toast(this);
+
+        View view = LayoutInflater.from(EditMedLists.this).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
+
     }
 }

@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -16,6 +17,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.easeoffapplication.EatHealthy.Update_trackCalorie;
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.MedicineLists;
@@ -215,9 +217,22 @@ public class newMedList extends AppCompatActivity {
         long result = db.insert(MedicineLists.medicineLists.TABLE_NAME, null, cv);
         db.close();
         if(result == -1){
-            Toast.makeText(getApplicationContext(), "New medicine list not added", Toast.LENGTH_SHORT).show();
+            showToast("New Medicine List Not Added");
         }else{
-            Toast.makeText(getApplicationContext(), "Medicine list added", Toast.LENGTH_SHORT).show();
+            showToast("New Medicine List Added!");
         }
+    }
+    void showToast(String message) {
+
+        Toast toast = new Toast(this);
+
+        View view = LayoutInflater.from(newMedList.this).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
+
     }
 }

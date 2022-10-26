@@ -4,15 +4,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.easeoffapplication.EatHealthy.Update_trackCalorie;
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.MedicineLists;
@@ -25,6 +32,7 @@ public class allMedLists extends AppCompatActivity {
 
     ListView lists_list;
     List<MedicineLists> medLists;
+    private Dialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +40,18 @@ public class allMedLists extends AppCompatActivity {
         setContentView(R.layout.activity_all_med_lists);
 
         lists_list = findViewById(R.id.medlists_list);
-        medLists = new ArrayList<>();
 
+        //Create the Dialog here
+        dialog = new Dialog(this);
+        dialog.setContentView(R.layout.custom_dialog);
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.setCancelable(false); //Optional
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; //Setting the animations to dialog
+
+        Button DialogYes = dialog.findViewById(R.id.btn_okay);
+        Button Cancel = dialog.findViewById(R.id.btn_cancel);
+
+        medLists = new ArrayList<>();
         medLists = getAllMedicinesLists();
 
         MedicineListsAdapter medicineListsAdapter = new MedicineListsAdapter(getApplicationContext(),R.layout.single_medicine_list, medLists);
@@ -50,8 +68,23 @@ public class allMedLists extends AppCompatActivity {
                 builder.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        dialog.show();
+                    }
+                });
+
+                DialogYes.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
                         deleteMedList(list.getId());
+                        dialog.dismiss();
                         startActivity(new Intent(getApplicationContext(), allMedLists.class));
+                    }
+                });
+
+                Cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
                     }
                 });
 
@@ -101,8 +134,27 @@ public class allMedLists extends AppCompatActivity {
         DBhelper dbHelper = new DBhelper(getApplicationContext());
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-        db.delete(MedicineLists.medicineLists.TABLE_NAME, MedicineLists.medicineLists._ID + " =?",
+        long result = db.delete(MedicineLists.medicineLists.TABLE_NAME, MedicineLists.medicineLists._ID + " =?",
                 new String[]{String.valueOf(id)});
+        if(result==-1){
+            showToast("Failed To Delete!");
+        }
+        else {
+            showToast("Record Deleted!");
+        }
         db.close();
+    }
+    void showToast(String message) {
+
+        Toast toast = new Toast(this);
+
+        View view = LayoutInflater.from(allMedLists.this).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
+
     }
 }

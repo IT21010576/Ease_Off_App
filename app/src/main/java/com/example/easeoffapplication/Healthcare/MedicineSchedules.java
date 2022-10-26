@@ -1,6 +1,7 @@
 package com.example.easeoffapplication.Healthcare;
 
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
@@ -16,7 +17,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.easeoffapplication.EatHealthy.Update_trackCalorie;
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.MedShedule;
@@ -40,6 +44,7 @@ public class MedicineSchedules extends Fragment {
     FloatingActionButton addScheduleBtn;
     ListView all_schedules;
     List<MedShedule> schedules;
+    private Dialog dialog;
 
     public MedicineSchedules() {
         // Required empty public constructor
@@ -72,8 +77,18 @@ public class MedicineSchedules extends Fragment {
 
         addScheduleBtn = view.findViewById(R.id.addSchedule_floating);
         all_schedules = view.findViewById(R.id.listView_schedules);
-        schedules = new ArrayList<>();
 
+        //Create the Dialog here
+        dialog = new Dialog(getContext());
+        dialog.setContentView(R.layout.custom_dialog);
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.setCancelable(false); //Optional
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; //Setting the animations to dialog
+
+        Button DialogYes = dialog.findViewById(R.id.btn_okay);
+        Button Cancel = dialog.findViewById(R.id.btn_cancel);
+
+        schedules = new ArrayList<>();
         schedules = getAllSchedules();
 
         MedicineSchedulesAdapter medicineSchedulesAdapter = new MedicineSchedulesAdapter(getContext(),R.layout.single_medicine_schedule, schedules);
@@ -99,10 +114,25 @@ public class MedicineSchedules extends Fragment {
                 builder.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
+                        dialog.show();
+                    }
+                });
+
+                DialogYes.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
                         deleteSchedule(schedule.getId());
+                        dialog.dismiss();
                         FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                         ft.replace(R.id.dailyMedDefFrag, new MedicineSchedules());
                         ft.commit();
+                    }
+                });
+
+                Cancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        dialog.dismiss();
                     }
                 });
 
@@ -155,8 +185,28 @@ public class MedicineSchedules extends Fragment {
         DBhelper dbHelper = new DBhelper(getContext());
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
-        db.delete(MedShedule.medSchedules.TABLE_NAME, MedShedule.medSchedules._ID + " =?",
+        long result = db.delete(MedShedule.medSchedules.TABLE_NAME, MedShedule.medSchedules._ID + " =?",
                 new String[]{String.valueOf(id)});
+        if(result==-1){
+            showToast("Failed To Delete!");
+        }
+        else {
+            showToast("Record Deleted!");
+        }
         db.close();
+    }
+
+    void showToast(String message) {
+
+        Toast toast = new Toast(getContext());
+
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
+
     }
 }
