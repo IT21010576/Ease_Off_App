@@ -16,13 +16,16 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.example.easeoffapplication.EatHealthy.Update_trackCalorie;
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.MedShedule;
@@ -184,6 +187,12 @@ public class EditMedSchedule extends AppCompatActivity {
                 cv,MedShedule.medSchedules._ID + " =?",
                 new String[]{String.valueOf(schedule.getId())});
         db.close();
+        if(status==-1){
+            showToast("Failed To Update!");
+        }
+        else {
+            showToast("Record Update!");
+        }
         return status;
     }
 
@@ -209,7 +218,20 @@ public class EditMedSchedule extends AppCompatActivity {
             System.out.println("alarm manager null");
         }
         alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP,date.getDate(),AlarmManager.INTERVAL_DAY,pendingIntent);
-        Toast.makeText(EditMedSchedule.this,"Alarm set successfully",Toast.LENGTH_SHORT).show();
+        showToast("Alarm set successfully!");
+    }
+
+    void showToast(String message) {
+
+        Toast toast = new Toast(this);
+
+        View view = LayoutInflater.from(EditMedSchedule.this).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
 
     }
 }

@@ -24,9 +24,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
+import com.example.easeoffapplication.EatHealthy.Update_trackCalorie;
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.databinding.ActivityMainBinding;
 import com.example.easeoffapplication.db.DBhelper;
@@ -191,11 +193,12 @@ public class NewSchedule extends Fragment {
 
         long result = db.insert(MedShedule.medSchedules.TABLE_NAME, null, cv);
         db.close();
-        /*if(result == -1){
-            Toast.makeText(getContext(), "New medicine not added", Toast.LENGTH_SHORT).show();
-        }else{
-            Toast.makeText(getContext(), "Medicine added", Toast.LENGTH_SHORT).show();
-        }*/
+        if(result==-1){
+            showToast("New Schedule Not Added!");
+        }
+        else {
+            showToast("Schedule Added!");
+        }
     }
     private void createNotificationChannel(){
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
@@ -215,11 +218,21 @@ public class NewSchedule extends Fragment {
         alarmManager = (AlarmManager) getActivity().getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(getContext(), AlarmReceiver.class);
         pendingIntent = PendingIntent.getBroadcast(getContext(),0,intent,0);
-        if(alarmManager == null){
-            System.out.println("alarm manager null");
-        }
         alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP,date.getDate(),AlarmManager.INTERVAL_DAY,pendingIntent);
-        Toast.makeText(getContext(),"Alarm set successfully",Toast.LENGTH_SHORT).show();
+        showToast("Alarm set successfully!");
+    }
+
+    void showToast(String message) {
+
+        Toast toast = new Toast(getContext());
+
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
 
     }
 

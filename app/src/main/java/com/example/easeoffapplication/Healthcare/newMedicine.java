@@ -12,8 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.easeoffapplication.EatHealthy.Update_trackCalorie;
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.Medicines;
@@ -97,9 +99,23 @@ public class newMedicine extends Fragment {
         long result = db.insert(Medicines.medicines.TABLE_NAME, null, cv);
         db.close();
         if(result == -1){
-            Toast.makeText(getContext(), "New medicine not added", Toast.LENGTH_SHORT).show();
+            showToast("Failed To Add Medicine!");
         }else{
-            Toast.makeText(getContext(), "Medicine added", Toast.LENGTH_SHORT).show();
+            showToast("Medicine Added!");
         }
+    }
+
+    void showToast(String message) {
+
+        Toast toast = new Toast(getContext());
+
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
+
     }
 }
