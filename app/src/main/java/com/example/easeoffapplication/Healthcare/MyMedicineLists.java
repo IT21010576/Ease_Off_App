@@ -1,4 +1,4 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.Healthcare;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.easeoffapplication.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link dailyMedDefaultFrag#newInstance} factory method to
+ * Use the {@link MyMedicineLists#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class dailyMedDefaultFrag extends Fragment {
+public class MyMedicineLists extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class dailyMedDefaultFrag extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public dailyMedDefaultFrag() {
+    public MyMedicineLists() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class dailyMedDefaultFrag extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment dailyMedDefaultFrag.
+     * @return A new instance of fragment MyMedicineLists.
      */
     // TODO: Rename and change types and number of parameters
-    public static dailyMedDefaultFrag newInstance(String param1, String param2) {
-        dailyMedDefaultFrag fragment = new dailyMedDefaultFrag();
+    public static MyMedicineLists newInstance(String param1, String param2) {
+        MyMedicineLists fragment = new MyMedicineLists();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,6 +61,6 @@ public class dailyMedDefaultFrag extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_daily_med_default, container, false);
+        return inflater.inflate(R.layout.fragment_my_medicine_lists, container, false);
     }
 }

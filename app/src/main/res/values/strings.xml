@@ -146,6 +146,16 @@
     <string name="qtyLbl">Qty</string>
     <string name="MedcineLbl">Medicine</string>
     <string name="MyMedicineListsHeading">My Medicine Lists</string>
+    <string name="NewMedlbl">Add New Medicine</string>
+    <string name="MedNamelbl">Medicine Name</string>
+    <string name="pharNameLbl">Pharmacy name</string>
+    <string name="descriptionlbl">Description</string>
+    <string name="pricelbl">Price</string>
+    <string name="EditMedLbl">Edit Medicine</string>
+    <string name="totalPrice">Total</string>
+    <string name="morningLbl">Morning</string>
+    <string name="afternoonlbl">Afternoon</string>
+    <string name="nightLbl">Night</string>
     <string name="Workoutbtn">Add Workout</string>
     <string name="weeklylbl1">Weekly Planner</string>
     <string name="Myprobtn">My Profile</string>
@@ -190,4 +200,5 @@
     <string name="arm_newtxt">Hug a tree-10 reps, Serve the Platter-6-10 reps,V exercises- 6-10 reps,Bicep Curls-10 reps</string>
     <string name="exercise_newtxt">Dumbbell crunch-Reps 10 ,Tuck and crunch-Reps 12 ,Modified V-sit-Reps 15 ,Crunch- Reps 12</string>
     <string name="exercise2_new">Decline plank with foot touch-10 reps, Garhammer raise- 12 reps, Hanging knee raise-12 reps, Hanging leg raise- 15 reps</string>
+    >>>>>>> 2c285a575312105f47c3816b8d8f17f368d0b9ba
 </resources>

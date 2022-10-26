@@ -14,7 +14,29 @@
         android:theme="@style/Theme.EaseOffApplication"
         tools:targetApi="31">
         <activity
-            android:name=".EatHealthy.Update_trackCalorie"
+            android:name=".Healthcare.EditMedSchedule"
+            android:label="Edit Schedule"
+            android:parentActivityName=".Healthcare.DailyMedicine"
+            android:exported="false" />
+        <activity
+            android:name=".Healthcare.EditMedLists"
+            android:exported="false"
+            android:label="Edit List"
+            android:parentActivityName=".Healthcare.allMedLists" />
+        <activity
+            android:name=".Healthcare.allMedLists"
+            android:exported="false"
+            android:label="All medicine lists"
+            android:parentActivityName=".Healthcare.PharmacyMain" />
+        <activity
+            android:name=".Healthcare.newMedList"
+            android:exported="false"
+            android:label="Medicine List"
+            android:parentActivityName=".Healthcare.PharmacyMain" />
+        <activity
+            android:name=".Healthcare.EditMed"
+            android:label="Edit Medicine"
+            android:parentActivityName=".Healthcare.PharmacyMain"
             android:exported="false" />
         <activity
             android:name=".EatHealthy.NutriFacts"
@@ -58,20 +80,25 @@
             android:parentActivityName=".MainDashboard"
             android:exported="false" />
         <activity
-            android:name=".PharmacyMain"
+            android:name=".Healthcare.PharmacyMain"
+            android:exported="false"
+            android:label="Pharmacy"
+            android:parentActivityName=".Healthcare.healthcare" />
+        <activity
+            android:name=".Healthcare.DailyMedicine"
+            android:label="Daily Medicine"
+            android:parentActivityName=".MainDashboard"
             android:exported="false" />
         <activity
-            android:name=".DailyMedicine"
+            android:name=".Healthcare.DiseasesUpdate"
+            android:label="Diseases Update"
+            android:parentActivityName=".Healthcare.healthcare"
             android:exported="false" />
         <activity
-            android:name=".DiseasesUpdate"
-            android:exported="false" />
-        <activity
-            android:name=".Beauty"
-            android:exported="false" />
-        <activity
-            android:name=".healthcare"
-            android:exported="false" />
+            android:name=".Healthcare.healthcare"
+            android:exported="false"
+            android:label="Healthcare"
+            android:parentActivityName=".MainDashboard" />
         <activity
             android:name=".SetGoal"
             android:exported="false" />
@@ -93,8 +120,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <receiver android:name=".Healthcare.AlarmReceiver"/>
+</application>
 
-
-    </application>
 
 </manifest>
