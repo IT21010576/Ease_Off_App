@@ -5,7 +5,7 @@ import android.provider.BaseColumns;
 public class MedShedule {
 
     private int id;
-    private long date;
+    private String name;
     private int mornHour;
     private int mornMin;
     private int noonHour;
@@ -13,9 +13,9 @@ public class MedShedule {
     private int nightHour;
     private int nightMin;
 
-    public MedShedule(int id, long date, int mornHour, int mornMin, int noonHour, int noonMin, int nightHour, int nightMin) {
+    public MedShedule(int id, String name, int mornHour, int mornMin, int noonHour, int noonMin, int nightHour, int nightMin) {
         this.id = id;
-        this.date = date;
+        this.name = name;
         this.mornHour = mornHour;
         this.mornMin = mornMin;
         this.noonHour = noonHour;
@@ -24,8 +24,8 @@ public class MedShedule {
         this.nightMin = nightMin;
     }
 
-    public MedShedule(long date, int mornHour, int mornMin, int noonHour, int noonMin, int nightHour, int nightMin) {
-        this.date = date;
+    public MedShedule(String name, int mornHour, int mornMin, int noonHour, int noonMin, int nightHour, int nightMin) {
+        this.name = name;
         this.mornHour = mornHour;
         this.mornMin = mornMin;
         this.noonHour = noonHour;
@@ -46,12 +46,12 @@ public class MedShedule {
         this.id = id;
     }
 
-    public long getDate() {
-        return date;
+    public String getName() {
+        return name;
     }
 
-    public void setDate(long date) {
-        this.date = date;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getMornHour() {
@@ -104,7 +104,7 @@ public class MedShedule {
 
     public static class medSchedules implements BaseColumns {
         public static final String TABLE_NAME="medSchedules";
-        public static final String COLUMN_NAME_DATE="date";
+        public static final String COLUMN_NAME_SCHEDULENAME="schedule_name";
         public static final String COLUMN_NAME_MORNHOUR="morn_hour";
         public static final String COLUMN_NAME_MORNMIN="morn_min";
         public static final String COLUMN_NAME_NOONHOUR="noon_hour";

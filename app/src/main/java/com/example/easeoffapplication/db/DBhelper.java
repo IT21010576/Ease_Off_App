@@ -10,7 +10,7 @@ public class DBhelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME="EaseOffApp.db";
 
     public DBhelper(Context context){
-        super(context,DATABASE_NAME,null,3);
+        super(context,DATABASE_NAME,null,7);
     }
 
         private static final String SQL_CREATE_ENTRY_MP="CREATE TABLE "+MealPlans.mealPlans.TABLE_NAME +" ("+
@@ -60,7 +60,7 @@ public class DBhelper extends SQLiteOpenHelper {
 
     private static final String SQL_CREATE_MEDSCHEDULES="CREATE TABLE "+MedShedule.medSchedules.TABLE_NAME +" ("+
             MedShedule.medSchedules._ID +" INTEGER PRIMARY KEY AUTOINCREMENT,"+
-            MedShedule.medSchedules.COLUMN_NAME_DATE+" TEXT,"+
+            MedShedule.medSchedules.COLUMN_NAME_SCHEDULENAME+" TEXT,"+
             MedShedule.medSchedules.COLUMN_NAME_MORNHOUR+" INTEGER,"+
             MedShedule.medSchedules.COLUMN_NAME_MORNMIN+" INTEGER,"+
             MedShedule.medSchedules.COLUMN_NAME_NOONHOUR+" INTEGER,"+

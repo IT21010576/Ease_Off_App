@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -23,6 +24,7 @@ public class MedicineSchedulesAdapter extends ArrayAdapter<MedShedule> {
     private Context context;
     private int resource;
     List<MedShedule> schedules;
+    ImageView alarm;
 
     MedicineSchedulesAdapter(Context context, int resource, List<MedShedule> schedules){
         super(context,resource,schedules);
@@ -38,10 +40,11 @@ public class MedicineSchedulesAdapter extends ArrayAdapter<MedShedule> {
         View row = inflater.inflate(resource,parent,false);
 
         TextView scheduleName = row.findViewById(R.id.schedule_date_display);
+        alarm = row.findViewById(R.id.alarmView);
 
         MedShedule schedule = schedules.get(position);
-        DateFormat dateFormat = new SimpleDateFormat("dd MMMM yyyy");
-        scheduleName.setText(String.valueOf(dateFormat.format(schedule.getDate())));
+        scheduleName.setText(schedule.getName());
+        alarm.setVisibility(View.VISIBLE);
 
         return row;
     }

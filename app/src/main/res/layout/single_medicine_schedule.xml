@@ -9,14 +9,26 @@
 
     <TextView
         android:id="@+id/schedule_date_display"
-        android:layout_width="344dp"
-        android:layout_height="77dp"
+        android:layout_width="217dp"
+        android:layout_height="54dp"
         android:text="TextView"
         android:textSize="10pt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.865"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521" />
+        app:layout_constraintVertical_bias="0.652" />
+
+    <ImageView
+        android:id="@+id/alarmView"
+        android:layout_width="141dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alarm_icon" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

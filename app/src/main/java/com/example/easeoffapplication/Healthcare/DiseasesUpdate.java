@@ -1,8 +1,10 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.Healthcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.easeoffapplication.R;
 
 public class DiseasesUpdate extends AppCompatActivity {
 

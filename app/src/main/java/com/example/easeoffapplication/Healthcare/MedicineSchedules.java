@@ -1,5 +1,8 @@
 package com.example.easeoffapplication.Healthcare;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -10,13 +13,18 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.MedShedule;
+import com.example.easeoffapplication.db.Medicines;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -60,15 +68,13 @@ public class MedicineSchedules extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_medicine_schedules, container, false);
+        getActivity().setTitle("All Reminders");
 
         addScheduleBtn = view.findViewById(R.id.addSchedule_floating);
         all_schedules = view.findViewById(R.id.listView_schedules);
         schedules = new ArrayList<>();
 
         schedules = getAllSchedules();
-        if(all_schedules == null){
-            System.out.println("list null");
-        }
 
         MedicineSchedulesAdapter medicineSchedulesAdapter = new MedicineSchedulesAdapter(getContext(),R.layout.single_medicine_schedule, schedules);
         all_schedules.setAdapter(medicineSchedulesAdapter);
@@ -77,9 +83,40 @@ public class MedicineSchedules extends Fragment {
             @Override
             public void onClick(View view) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-                ft.replace(R.id.pharmacyDefaultfrag, new NewSchedule());
+                ft.replace(R.id.dailyMedDefFrag, new NewSchedule());
                 ft.commit();
             }
+        });
+
+        all_schedules.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                MedShedule schedule = schedules.get(i);
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+                builder.setTitle(schedule.getName());
+
+                builder.setNegativeButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        deleteSchedule(schedule.getId());
+                        FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                        ft.replace(R.id.dailyMedDefFrag, new MedicineSchedules());
+                        ft.commit();
+                    }
+                });
+
+                builder.setNeutralButton("Edit", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent intent = new Intent(getContext(), EditMedSchedule.class);
+                        intent.putExtra("scheduleEdit", String.valueOf(schedule.getId()));
+                        startActivity(intent);
+                    }
+                });
+                builder.show();
+            }
+
         });
 
         return view;
@@ -100,7 +137,7 @@ public class MedicineSchedules extends Fragment {
                 MedShedule schedule = new MedShedule();
 
                 schedule.setId(cursor.getInt(0));
-                schedule.setDate(cursor.getLong(1));
+                schedule.setName(cursor.getString(1));
                 schedule.setMornHour(cursor.getInt(2));
                 schedule.setMornMin(cursor.getInt(3));
                 schedule.setNoonHour(cursor.getInt(4));
@@ -112,5 +149,14 @@ public class MedicineSchedules extends Fragment {
             }while (cursor.moveToNext());
         }
         return schedules;
+    }
+
+    public void deleteSchedule(int id){
+        DBhelper dbHelper = new DBhelper(getContext());
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        db.delete(MedShedule.medSchedules.TABLE_NAME, MedShedule.medSchedules._ID + " =?",
+                new String[]{String.valueOf(id)});
+        db.close();
     }
 }
