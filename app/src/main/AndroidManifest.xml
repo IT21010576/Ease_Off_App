@@ -123,4 +123,5 @@
         <receiver android:name=".Healthcare.AlarmReceiver"/>
 </application>
 
+
 </manifest>
