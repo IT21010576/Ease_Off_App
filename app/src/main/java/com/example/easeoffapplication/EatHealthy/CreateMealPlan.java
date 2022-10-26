@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.easeoffapplication.R;
@@ -42,6 +43,7 @@ public class CreateMealPlan extends Fragment {
                 addMealPlan();
             }
         });
+
         return view;
     }
 
@@ -62,10 +64,10 @@ public class CreateMealPlan extends Fragment {
 
         long newRowId = db.insert(MealPlans.mealPlans.TABLE_NAME,null, values);
         if(newRowId==-1){
-            Toast.makeText(getActivity(), "Cannot Create Plan!", Toast.LENGTH_SHORT).show();
+            showToast("Cannot Create Plan");
         }
         else {
-            Toast.makeText(getActivity(), "Added Meal Plan!", Toast.LENGTH_SHORT).show();
+            showToast("Meal Plan Added!");
         }
 
         reset();
@@ -77,6 +79,21 @@ public class CreateMealPlan extends Fragment {
         breakfast.setText("");
         lunch.setText("");
         dinner.setText("");
+
+    }
+
+    //custom Toast message
+    void showToast(String message) {
+
+        Toast toast = new Toast(getContext());
+
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
 
     }
 

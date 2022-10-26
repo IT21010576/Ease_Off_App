@@ -7,10 +7,12 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.easeoffapplication.db.DBhelper;
@@ -61,13 +63,13 @@ public class Signup extends AppCompatActivity {
 
         //validations
         if(checkUsername(Username)==true){
-            Toast.makeText(this,"Username already exists!",Toast.LENGTH_LONG).show();
+            showToast("Username Already Exists!");
         }
         else if(Password.equals(Password2)==false){
-            Toast.makeText(this,"Passwords do not match!",Toast.LENGTH_LONG).show();
+            showToast("Passwords Don't Match!");
         }
         else if(Password.length()<8){
-            Toast.makeText(this,"Password must have at least 8 characters!",Toast.LENGTH_LONG).show();
+            showToast("Password Must Have At Least 8 Characters!");
         }
         else{
             insertUser();
@@ -103,14 +105,28 @@ public class Signup extends AppCompatActivity {
 
         long newRowId = db.insert(User.userDetails.TABLE_NAME,null, values);
         if(newRowId==-1){
-            Toast.makeText(this, "Registration failed!", Toast.LENGTH_SHORT).show();
+            showToast("Registration Failed");
         }
         else {
-            Toast.makeText(this, "Success!", Toast.LENGTH_SHORT).show();
+            showToast("Successfully Registered!");
             Intent intent=new Intent(this,Login.class);
             startActivity(intent);
         }
 
+
+    }
+    //custom Toast message
+    void showToast(String message) {
+
+        Toast toast = new Toast(this);
+
+        View view = LayoutInflater.from(Signup.this).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
 
     }
 

@@ -79,8 +79,22 @@ public class DisplaySaveCalcTotal extends Fragment {
 
         long newRowId = db.insert(TrackCalories.savedCalories.TABLE_NAME,null, values);
 
-        Toast.makeText(getActivity(), "Record Saved!", Toast.LENGTH_SHORT).show();
+        showToast("Record Saved!");
     }
 
+    //custom Toast message
+    void showToast(String message) {
+
+        Toast toast = new Toast(getContext());
+
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
+
+    }
 
 }

@@ -13,8 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.easeoffapplication.Login;
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.MealPlans;
@@ -73,7 +75,7 @@ public class ViewMealPlans extends Fragment {
 
         //If user clicks btn without entering a day
         if(input.getText().toString().isEmpty()){
-            Toast.makeText(getActivity(), "Please Enter day of the week", Toast.LENGTH_LONG).show();
+            showToast("Please Enter Day Of The Week");
         }
         else {
             String day = input.getText().toString();
@@ -130,10 +132,10 @@ public class ViewMealPlans extends Fragment {
 
         long result=db.delete(MealPlans.mealPlans.TABLE_NAME, selection, selectionArgs);
         if(result==-1){
-            Toast.makeText(getContext(), "Failed to Delete!", Toast.LENGTH_LONG).show();
+            showToast("Failed To Delete.");
         }
         else {
-            Toast.makeText(getContext(), "Meal Plan Deleted!", Toast.LENGTH_LONG).show();
+            showToast("Meal Plan Deleted!");
         }
         displayBrkfst.setText("");
         displayLunch.setText("");
@@ -162,11 +164,25 @@ public class ViewMealPlans extends Fragment {
         long result = db.update(MealPlans.mealPlans.TABLE_NAME, values, selection, selectionArgs);
 
         if(result==-1){
-            Toast.makeText(getContext(), "Failed to Update!", Toast.LENGTH_LONG).show();
+            showToast("Failed To Update.");
         }
         else {
-            Toast.makeText(getContext(), "Meal Plan Updated!", Toast.LENGTH_LONG).show();
+            showToast("Meal Plan Updated!");
         }
+    }
+
+    void showToast(String message) {
+
+        Toast toast = new Toast(getContext());
+
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
+
     }
 
 
