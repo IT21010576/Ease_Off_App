@@ -12,6 +12,7 @@ import android.provider.BaseColumns;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.easeoffapplication.EatHealthy.ViewCaloryAdaptor;
@@ -66,7 +67,7 @@ public class PreviousCalorieIntakes extends Fragment {
     public void displayData(){
         Cursor cursor=readAllRecords();
         if(cursor.getCount()==0){
-            Toast.makeText(getActivity(),"No data",Toast.LENGTH_LONG).show();
+            showToast("No Data");
         }else{
             while(cursor.moveToNext()){
                 date.add(cursor.getString(
@@ -79,5 +80,19 @@ public class PreviousCalorieIntakes extends Fragment {
                         cursor.getColumnIndexOrThrow(BaseColumns._ID)));
             }
         }
+    }
+
+    void showToast(String message) {
+
+        Toast toast = new Toast(getContext());
+
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.sucesstoast, null);
+
+        TextView tvMessage = view.findViewById(R.id.tvMessage);
+        tvMessage.setText(message);
+
+        toast.setView(view);
+        toast.show();
+
     }
 }

@@ -75,27 +75,28 @@ public class NutriFacts extends AppCompatActivity {
     public void displayFacts(){
 
         if(Age<=25){
-            String Fact1="Cutting Down on Fast Food Intake Will Improve Your Life In Unbelievable Ways.Read To" +
-                    "Find Out Ways To Cut Down Intake";
-            String Fact2="Never Forget To Stay Hydrated It Will Boost Your Life. Read To Find Out More ";
-            String Fact3="Did You Know Breakfast Is The Most Important Meal of the Day. Read To Find Out How " +
-                    "it Helps in Memory Retention and More";
+            String Fact1="Cutting down on fast food intake will improve your life in unbelievable ways." +
+                    "Find out ways to cut down intake";
+            String Fact2="Never forget to stay hydrated it will boost your life. Find out more below";
+            String Fact3="Did you know breakfast is the most important meal of the day. Watch to find out how " +
+                    "it helps in memory retention and more";
             textView1.setText(Fact1);
             textView2.setText(Fact2);
             textView3.setText(Fact3);
         }
         else if(Age>25 && Age<=45){
-            String Fact1="Don't Miss to Eat a Mix Of Colorful Vegetables Each Day";
-            String Fact2="Limit Foods and Beverages That Are High In Sugar and Salt.";
-            String Fact3="Try Out This Healthy Oatmeal Recipe";
+            String Fact1="Don't miss to eat a mix of colorful vegetables each day. Find out more of their importance" +
+                    "below";
+            String Fact2="Here is why you need to limit foods and beverages that are high in sugar and salt.";
+            String Fact3="Oatmeal food are extremely healthy and easy to prepare! Watch to learn to make Oatmeal snacks";
             textView1.setText(Fact1);
             textView2.setText(Fact2);
             textView3.setText(Fact3);
         }
         else{
-            String Fact1="Don't Forget to Include Calcium and Vitamin D Rich Food In Your Diet";
-            String Fact2="Choose Foods with Little to No Added Sugar, Fats, and Sodium, to Reduce Disease Risk.";
-            String Fact3="Remember To Drink Plenty Of Water and Stay Hydrated";
+            String Fact1="Don't forget to include Calcium and Vitamin D rich food in your diet.Find out more about this";
+            String Fact2="Choose food with little to no added Sugar, Fats, and Sodium, to reduce disease risk.";
+            String Fact3="Remember to drink plenty of water and stay hydrated. Watch and learn the benefits";
             textView1.setText(Fact1);
             textView2.setText(Fact2);
             textView3.setText(Fact3);
@@ -124,7 +125,7 @@ public class NutriFacts extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse("https://blog.innerdrive.co.uk/the-7-psychological-benefits-of-students-eating-breakfast"));
+                    intent.setData(Uri.parse("https://www.youtube.com/watch?v=JNZkXx8eB90&t=3s"));
                     startActivity(intent);
                 }
             });
@@ -134,7 +135,7 @@ public class NutriFacts extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse("https://www.heartfoundation.org.nz/about-us/news/blogs/eight-ways-to-cut-the-junk"));
+                    intent.setData(Uri.parse("https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/vegetables-and-fruits/"));
                     startActivity(intent);
                 }
             });
@@ -142,7 +143,7 @@ public class NutriFacts extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse("https://archive.nutrition.org.uk/healthyliving/hydration/adults-teens.html"));
+                    intent.setData(Uri.parse("https://www.hsph.harvard.edu/news/hsph-in-the-news/benefits-of-limiting-sugary-beverages/"));
                     startActivity(intent);
                 }
             });
@@ -150,10 +151,37 @@ public class NutriFacts extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent intent=new Intent(Intent.ACTION_VIEW);
-                    intent.setData(Uri.parse("https://blog.innerdrive.co.uk/the-7-psychological-benefits-of-students-eating-breakfast"));
+                    intent.setData(Uri.parse("https://www.youtube.com/watch?v=tMZHstlBHRY"));
                     startActivity(intent);
                 }
             });
+        }
+        else{
+            btn1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse("https://www.bonehealthandosteoporosis.org/news/a-diet-rich-in-calcium-and-vitamin-d-can-improve-health-and-add-to-your-longevity/"));
+                    startActivity(intent);
+                }
+            });
+            btn2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse("https://medlineplus.gov/nutritionforolderadults.html"));
+                    startActivity(intent);
+                }
+            });
+            btn3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent=new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse("https://www.webmd.com/diet/features/6-reasons-to-drink-water"));
+                    startActivity(intent);
+                }
+            });
+
         }
     }
 }
