@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.easeoffapplication.R;
-import com.example.easeoffapplication.setReminderForMeal;
 
 public class PlanMyDiet extends AppCompatActivity {
 

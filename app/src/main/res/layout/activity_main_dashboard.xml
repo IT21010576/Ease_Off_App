@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mainbg3"
     tools:context=".MainDashboard">
 
     <Button
@@ -14,11 +15,12 @@
         android:onClick="MoveToDietDash"
         android:text="@string/EathealthyLbl"
         android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/HealthcareBtn"
         app:layout_constraintEnd_toStartOf="@+id/StayFitBtn"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/HealthcareBtn"
@@ -28,6 +30,7 @@
         android:onClick="moveToHealthcare"
         android:text="@string/HelathcareLbl"
         android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/MinYouBtn"
         app:layout_constraintHorizontal_bias="0.5"
@@ -42,6 +45,7 @@
         android:onClick="moveToMindAndYou"
         android:text="@string/MindYouLbl"
         android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -55,34 +59,13 @@
         android:backgroundTint="@color/DashboardCol2"
         android:text="@string/StayfitLbl"
         android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/MinYouBtn"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.5"
-
         app:layout_constraintStart_toEndOf="@+id/EatHealthyBtn"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        style="@style/toolbarStyle"
-        android:backgroundTint="@color/ThemeCol4"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/toolbarheading_mainDash"
-        style="@style/toolbarFontStyle"
-        android:text="@string/DashboardLbl"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.121"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
