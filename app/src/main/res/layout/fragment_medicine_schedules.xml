@@ -13,8 +13,8 @@
 
         <ListView
             android:id="@+id/listView_schedules"
-            android:layout_width="416dp"
-            android:layout_height="643dp"
+            android:layout_width="410dp"
+            android:layout_height="518dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.333"
@@ -32,10 +32,10 @@
             android:src="@drawable/ic_add_medicine"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.874"
+            app:layout_constraintHorizontal_bias="0.871"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/listView_schedules"
-            app:layout_constraintVertical_bias="0.223" />
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

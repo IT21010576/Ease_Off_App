@@ -24,8 +24,8 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "EaseOff")
                 .setSmallIcon(R.drawable.ic_launcher_background)
-                .setContentTitle("EaseOff Alarm Manager")
-                .setContentText("Daily medicine alarm notification")
+                .setContentTitle("Ease off reminder")
+                .setContentText("Take your daily medicine")
                 .setAutoCancel(true)
                 .setDefaults(NotificationCompat.DEFAULT_ALL)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)

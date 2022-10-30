@@ -200,5 +200,7 @@
     <string name="arm_newtxt">Hug a tree-10 reps, Serve the Platter-6-10 reps,V exercises- 6-10 reps,Bicep Curls-10 reps</string>
     <string name="exercise_newtxt">Dumbbell crunch-Reps 10 ,Tuck and crunch-Reps 12 ,Modified V-sit-Reps 15 ,Crunch- Reps 12</string>
     <string name="exercise2_new">Decline plank with foot touch-10 reps, Garhammer raise- 12 reps, Hanging knee raise-12 reps, Hanging leg raise- 15 reps</string>
-    >>>>>>> 2c285a575312105f47c3816b8d8f17f368d0b9ba
+    <string name="coronavirusLBL">COVID-19 Statistics If you think you are sick ? Protect yourself and others Advices for people with special health needs</string>
+    <string name="ebolaLBL">On 20 September 2022, the health authorities in the Republic of Uganda declared an outbreak of Ebola disease caused by Sudan ebolavirus (SUDV).</string>
+    <string name="monkeypoxLBL">Since early May 2022, cases of monkeypox have been reported from countries where the disease is not endemic</string>
 </resources>

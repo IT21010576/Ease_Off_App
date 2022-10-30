@@ -54,7 +54,7 @@ public class Login extends AppCompatActivity {
         toast.show();
 
     }
-    public void login(){
+    public boolean login(){
         Username=username.getText().toString();
         Password=password.getText().toString();
 
@@ -68,6 +68,7 @@ public class Login extends AppCompatActivity {
         else{
             showToast("Invalid Username or Password!");
         }
+        return valid;
 
     }
 
