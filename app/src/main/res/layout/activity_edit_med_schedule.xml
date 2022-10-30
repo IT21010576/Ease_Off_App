@@ -8,12 +8,12 @@
 
     <CalendarView
         android:id="@+id/scheduleDate_edit"
-        android:layout_width="377dp"
-        android:layout_height="302dp"
-        android:layout_marginTop="124dp"
+        android:layout_width="286dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="92dp"
         android:outlineSpotShadowColor="@color/DashboardCol4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -79,8 +79,8 @@
 
     <EditText
         android:id="@+id/scheduleName_edit"
-        android:layout_width="355dp"
-        android:layout_height="60dp"
+        android:layout_width="344dp"
+        android:layout_height="59dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"

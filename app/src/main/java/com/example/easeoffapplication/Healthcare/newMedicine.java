@@ -79,7 +79,7 @@ public class newMedicine extends Fragment {
 
     }
 
-    public void addNewMedicine(){
+    public int addNewMedicine(){
         String medName = medName_input.getText().toString();
         String pharName = phar_input.getText().toString();
         String des = des_input.getText().toString();
@@ -96,13 +96,16 @@ public class newMedicine extends Fragment {
         cv.put(Medicines.medicines.COLUMN_NAME_DESCRIPTION, newMed.getMedDes());
         cv.put(Medicines.medicines.COLUMN_NAME_PRICE, newMed.getMedPrice());
 
+        int success = 0;
         long result = db.insert(Medicines.medicines.TABLE_NAME, null, cv);
         db.close();
         if(result == -1){
             showToast("Failed To Add Medicine!");
+            success = 1;
         }else{
             showToast("Medicine Added!");
         }
+        return success;
     }
 
     void showToast(String message) {

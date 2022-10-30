@@ -141,14 +141,14 @@
             android:layout_height="56dp"
             android:background="@color/IndividualDashboardCol1"
             android:text="@string/mindCreateJournalSaveBtn"
-            android:textStyle="bold"
             android:textColor="@color/white"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.732" />
+            app:layout_constraintVertical_bias="0.775" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

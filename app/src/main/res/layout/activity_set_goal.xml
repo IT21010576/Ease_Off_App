@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/IndividualDashboardCol2"
     tools:context=".Today"
     tools:layout_editor_absoluteX="-2dp"
     tools:layout_editor_absoluteY="44dp">
@@ -22,7 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
-
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="136dp"
@@ -196,13 +194,14 @@
 
     <EditText
         android:id="@+id/editTextNumber5"
-        android:layout_width="373dp"
-        android:layout_height="48dp"
+        android:layout_width="342dp"
+        android:layout_height="49dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="496dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView43"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="514dp" />
 
     <EditText
         android:id="@+id/editTextNumber6"
@@ -210,8 +209,8 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="597dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="626dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

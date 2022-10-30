@@ -219,7 +219,7 @@ public class NewSchedule extends Fragment {
         Intent intent = new Intent(getContext(), AlarmReceiver.class);
         pendingIntent = PendingIntent.getBroadcast(getContext(),0,intent,0);
         alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP,date.getDate(),AlarmManager.INTERVAL_DAY,pendingIntent);
-        showToast("Alarm set successfully!");
+        showToast("Reminder set successfully!");
     }
 
     void showToast(String message) {
