@@ -20,7 +20,7 @@ import java.util.Calendar;
 
 public class NutriFacts extends AppCompatActivity {
 
-    Integer Age;
+    int Age,birthYear,currentYear;
     TextView textView1,textView2,textView3;
     Button btn1,btn2,btn3;
 
@@ -37,7 +37,10 @@ public class NutriFacts extends AppCompatActivity {
         btn2=findViewById(R.id.fact2Btn);
         btn3=findViewById(R.id.fact3Btn);
 
-        calculateAge();
+        //getting the birthYear from getDOB() method
+        birthYear=getDOB();
+        //getting the currentYear
+        currentYear= Calendar.getInstance().get(Calendar.YEAR);
         displayFacts();
         setLinks();
 
@@ -65,14 +68,14 @@ public class NutriFacts extends AppCompatActivity {
     }
 
     //calulate age of user from Birth Year
-    public void calculateAge(){
-        Integer birthYear=getDOB();
-        Integer currentYear= Calendar.getInstance().get(Calendar.YEAR);
-        Age=currentYear-birthYear;
+    public int calculateAge(int birthYear,int currentYear){
+        return (currentYear-birthYear);
     }
 
     //Display Facts according to age group
     public void displayFacts(){
+
+        Age=calculateAge(birthYear,currentYear);
 
         if(Age<=25){
             String Fact1="Cutting down on fast food intake will improve your life in unbelievable ways." +
@@ -104,6 +107,8 @@ public class NutriFacts extends AppCompatActivity {
     }
 
     public void setLinks(){
+        Age=calculateAge(birthYear,currentYear);
+
         if(Age<=25){
             btn1.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -39,22 +39,20 @@ public class CreateMealPlan extends Fragment {
         createBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                addMealPlan();
+                String Day=day.getText().toString();
+                String Breakfast=breakfast.getText().toString();
+                String Lunch=lunch.getText().toString();
+                String Dinner=dinner.getText().toString();
+                addMealPlan(Day,Breakfast,Lunch,Dinner);
             }
         });
 
         return view;
     }
 
-    public void addMealPlan(){
+    public boolean addMealPlan(String Day,String Breakfast,String Lunch,String Dinner){
         DBhelper dbHelper = new DBhelper(getContext());
         SQLiteDatabase db = dbHelper.getWritableDatabase();
-
-        String Day=day.getText().toString();
-        String Breakfast=breakfast.getText().toString();
-        String Lunch=lunch.getText().toString();
-        String Dinner=dinner.getText().toString();
 
         ContentValues values = new ContentValues();
         values.put(MealPlans.mealPlans.COLUMN_NAME_DAY, Day);
@@ -65,12 +63,14 @@ public class CreateMealPlan extends Fragment {
         long newRowId = db.insert(MealPlans.mealPlans.TABLE_NAME,null, values);
         if(newRowId==-1){
             showToast("Cannot Create Plan");
+            return false;
         }
         else {
             showToast("Meal Plan Added!");
+            reset();
+            return true;
         }
 
-        reset();
     }
 
     public void reset(){

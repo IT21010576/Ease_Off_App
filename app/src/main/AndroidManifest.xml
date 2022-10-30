@@ -151,5 +151,9 @@
         <receiver android:name=".Healthcare.AlarmReceiver"/>
 </application>
 
+        <receiver
+            android:name=".EatHealthy.Reminder"
+            android:enabled="true"
+            android:exported="true"/>
 
 </manifest>

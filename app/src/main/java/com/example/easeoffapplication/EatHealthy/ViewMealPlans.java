@@ -1,5 +1,6 @@
 package com.example.easeoffapplication.EatHealthy;
 
+import android.app.Dialog;
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -26,6 +27,7 @@ public class ViewMealPlans extends Fragment {
     EditText input,displayBrkfst,displayLunch,displayDinner;
     Button btn,deleteBtn,editBtn;
     String currentID;
+    private Dialog dialog;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,6 +43,17 @@ public class ViewMealPlans extends Fragment {
         btn=view.findViewById(R.id.viewmpBtn);
         deleteBtn=view.findViewById(R.id.viewPlanDel);
         editBtn=view.findViewById(R.id.viewPlanEdit);
+
+        //Create the Dialog here
+        dialog = new Dialog(getContext());
+        dialog.setContentView(R.layout.custom_dialog);
+        dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        dialog.setCancelable(false); //Optional
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation; //Setting the animations to dialog
+
+        Button DialogYes = dialog.findViewById(R.id.btn_okay);
+        Button Cancel = dialog.findViewById(R.id.btn_cancel);
+
 
         //set onclick listener to buttons
         btn.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +74,22 @@ public class ViewMealPlans extends Fragment {
         deleteBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                dialog.show();
+            }
+        });
+
+        DialogYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
                 deletePlan();
+                dialog.dismiss();
+            }
+        });
+
+        Cancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
             }
         });
 
