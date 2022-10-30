@@ -53,9 +53,6 @@
             android:exported="false"
             android:parentActivityName=".mindandyou.MindThoughtJournal" />
         <activity
-            android:name=".NutriFacts"
-            android:exported="false" />
-        <activity
             android:name=".mindandyou.MindSleepFeedback"
             android:exported="false" />
         <activity
@@ -83,9 +80,6 @@
             android:exported="false"
             android:label="ThoughtJournals"
             android:parentActivityName=".mindandyou.MindAndYouDashboard"/>
-        <activity
-            android:name=".MyHealthyRecipies"
-            android:exported="false" />
         <activity
             android:name=".mindandyou.MindAndYouDashboard"
             android:exported="false" />
@@ -125,9 +119,6 @@
             android:label="Healthcare"
             android:parentActivityName=".MainDashboard" />
         <activity
-            android:name=".healthcare"
-            android:exported="false"/>
-        <activity
             android:name=".SetGoal"
             android:exported="false" />
         <activity
@@ -150,12 +141,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <receiver android:name=".Healthcare.AlarmReceiver"/>
-</application>
-
         <receiver
             android:name=".EatHealthy.Reminder"
             android:enabled="true"
             android:exported="true"/>
-
+        <receiver 
+            android:name=".Healthcare.AlarmReceiver"/>
+</application>
 </manifest>
