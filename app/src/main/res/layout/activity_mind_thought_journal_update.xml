@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5pt">
+
+    <RelativeLayout
+        android:id="@+id/mind_journal_update_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/mind_journal_update_textview"
+            style="@style/headingFontText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50pt"
+            android:layout_marginTop="10pt"
+            android:text="@string/mindUpdateJournalLabel" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mind_journal_update_title_bar"
+        android:layout_marginVertical="26dp"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/datelbl_updateMindJournal"
+            style="@style/generalFontText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mindCreateJournalDate"
+            android:textColor="@color/DashboardCol3" />
+
+        <EditText
+            android:id="@+id/dateEdt_updateMindJ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/mindCreateJournalTypeDate"
+            android:inputType="date"
+            android:textColor="@color/DashboardCol4"
+            android:textColorHint="@color/IndividualDashboardCol3"
+            android:minHeight="48dp"
+            android:paddingBottom="3pt"
+            android:textSize="10pt" />
+
+        <TextView
+            style="@style/generalFontText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/DashboardCol3"
+            android:text="@string/mindCreateJournalRating" />
+
+        <EditText
+            android:id="@+id/mind_journal_update_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="enter rate"
+            android:textSize="10pt"
+            android:textColor="@color/DashboardCol4"
+            android:textColorHint="@color/IndividualDashboardCol3"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <TextView
+            style="@style/generalFontText"
+            android:textColor="@color/DashboardCol3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:text="@string/mindCreateJournalNote" />
+
+        <EditText
+            android:id="@+id/mind_journal_update_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:gravity="top"
+            android:hint="@string/mindCreateJJournalDescHint"
+            android:textColor="@color/DashboardCol3"
+            android:textColorHint="@color/IndividualDashboardCol3"
+
+            android:minLines="4"
+            android:padding="12dp"
+            android:textSize="10pt" />
+
+        <Button
+            android:id="@+id/min"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/IndividualDashboardCol3"
+            android:text="@string/mindUpdateJournalSaveBtn"
+            android:textColor="@color/ThemeCol2" />
+
+        <Button
+            android:id="@+id/deleteMindTJBtn"
+            style="@style/buttonStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/mindJournalDeleteBtn"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

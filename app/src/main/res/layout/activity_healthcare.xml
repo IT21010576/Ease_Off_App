@@ -4,96 +4,51 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".healthcare">
+    android:background="@drawable/healthbg"
+    tools:context=".Healthcare.healthcare">
 
     <Button
         android:id="@+id/dailyMedicineBtn"
-        style="@style/DashboardFontStyle"
-        android:layout_width="168dp"
-        android:layout_height="158dp"
-        android:backgroundTint="@color/IndividualDashboardCol1"
+        android:layout_width="362dp"
+        android:layout_height="148dp"
+        android:backgroundTint="@color/white"
+        android:onClick="moveToDailyMedicine"
         android:text="@string/DailyMedLbl"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/HealthcareBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintVertical_bias="0.163" />
 
     <Button
         android:id="@+id/HealthcareBtn"
-        style="@style/DashboardFontStyle"
-        android:layout_width="168dp"
-        android:layout_height="158dp"
-        android:backgroundTint="@color/IndividualDashboardCol3"
+        android:layout_width="356dp"
+        android:layout_height="150dp"
+        android:backgroundTint="@color/white"
+        android:onClick="moveToPharmacy"
         android:text="@string/PharmacyLbl"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/MinYouBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintTop_toBottomOf="@+id/dailyMedicineBtn"
+        app:layout_constraintVertical_bias="0.446" />
 
     <Button
         android:id="@+id/MinYouBtn"
-        style="@style/DashboardFontStyle"
-        android:layout_width="168dp"
-        android:layout_height="158dp"
-        android:backgroundTint="@color/IndividualDashboardCol4"
+
+        android:layout_width="356dp"
+        android:layout_height="154dp"
+        android:backgroundTint="@color/white"
+        android:onClick="moveToDiseasesUpdate"
         android:text="@string/DiseasesUpdtLbl"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642" />
+        app:layout_constraintTop_toBottomOf="@+id/HealthcareBtn"
+        app:layout_constraintVertical_bias="0.713" />
 
-    <Button
-        android:id="@+id/StayFitBtn"
-        style="@style/DashboardFontStyle"
-        android:layout_width="168dp"
-        android:layout_height="158dp"
-        android:backgroundTint="@color/IndividualDashboardCol2"
-        android:text="@string/BeautyLbl"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.876"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="410dp"
-        android:layout_height="76dp"
-        android:background="@drawable/ic_launcher_background"
-        android:backgroundTint="@color/ThemeCol2"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/toolbarheading_mainDash"
-        style="@style/toolbarFontStyle"
-        android:text="@string/HelathcareLbl"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.292"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/backbtn_heathcareDash"
-        android:layout_width="54dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

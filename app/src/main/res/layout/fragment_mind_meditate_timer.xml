@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MindMeditateTimerFr">
+    tools:context=".mindandyou.MindMeditateTimerFr">
 
     <TextView
         android:id="@+id/mind_meditate_timer_header"

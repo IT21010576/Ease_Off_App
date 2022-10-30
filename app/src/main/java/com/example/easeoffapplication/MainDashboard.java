@@ -5,7 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
+import com.example.easeoffapplication.mindandyou.MindAndYouDashboard;
+import com.example.easeoffapplication.Healthcare.healthcare;
 import com.example.easeoffapplication.EatHealthy.DietDashboard;
 
 public class MainDashboard extends AppCompatActivity {
@@ -28,7 +29,7 @@ public class MainDashboard extends AppCompatActivity {
     }
 
     public void moveToHealthcare(View view){
-        Intent intent1=new Intent(this,healthcare.class);
+        Intent intent1=new Intent(this, healthcare.class);
         startActivity(intent1);
 
     }

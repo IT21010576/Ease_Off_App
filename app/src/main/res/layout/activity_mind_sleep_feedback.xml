@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgs"
-    tools:context=".MindSleepFeedback">
+    tools:context=".mindandyou.MindSleepFeedback">
 
     <TextView
         android:id="@+id/mind_sleep_feedback_header"
