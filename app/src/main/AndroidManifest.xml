@@ -14,6 +14,20 @@
         android:theme="@style/Theme.EaseOffApplication"
         tools:targetApi="31">
         <activity
+            android:name=".stayfit.setprofile_list"
+            android:exported="false" />
+        <activity
+            android:name=".setgoal_lists"
+            android:exported="false" />
+        <activity
+            android:name=".stayfit.Myworkout1"
+            android:exported="false" />
+        <activity
+            android:name=".stayfit.Myprofile1"
+            android:exported="false"
+            android:label="@string/title_activity_myprofile1"
+            android:theme="@style/Theme.EaseOffApplication.NoActionBar" />
+        <activity
             android:name=".NutriFacts"
             android:exported="false" />
         <activity
@@ -65,13 +79,13 @@
             android:name=".healthcare"
             android:exported="false" />
         <activity
-            android:name=".SetGoal"
+            android:name=".stayfit.SetGoal"
             android:exported="false" />
         <activity
             android:name=".MainDashboard"
             android:exported="false" />
         <activity
-            android:name=".Workout"
+            android:name=".stayfit.Workout"
             android:exported="false" />
         <activity
             android:name=".Signup"

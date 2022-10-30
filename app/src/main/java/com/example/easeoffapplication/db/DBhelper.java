@@ -10,7 +10,7 @@ public class DBhelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME="EaseOffApp.db";
 
     public DBhelper(Context context){
-        super(context,DATABASE_NAME,null,2);
+        super(context,DATABASE_NAME,null,10);
     }
 
         private static final String SQL_CREATE_ENTRY1="CREATE TABLE "+MealPlans.mealPlans.TABLE_NAME +" ("+
@@ -21,13 +21,41 @@ public class DBhelper extends SQLiteOpenHelper {
                                                         MealPlans.mealPlans.COLUMN_NAME_LUNCH+" TEXT,"+
                                                         MealPlans.mealPlans.COLUMN_NAME_DINNER+" Text)";
 
-        private static final String SQL_DELETE_ENTRIES =
+        private static final String SQL_CREATE_ENTRY_Work="CREATE TABLE "+Workoutprofile.workoutprofile.TABLE_NAME +" ("+
+                                                        Workoutprofile.workoutprofile._ID +" INTEGER PRIMARY KEY AUTOINCREMENT,"+
+                                                        Workoutprofile.workoutprofile.COLUMN_NAME_name+" TEXT,"+
+                                                        Workoutprofile.workoutprofile.COLUMN_NAME_age+" INTEGER,"+
+                                                        Workoutprofile.workoutprofile.COLUMN_NAME_height+" DOUBLE,"+
+                                                        Workoutprofile.workoutprofile.COLUMN_NAME_weight+" DOUBLE)";
+
+        private static final String SQL_CREATE_ENTRY_Workplan="CREATE TABLE "+workoutplan.Workoutplan.TABLE_NAME +" ("+
+                                                        workoutplan.Workoutplan._ID +" INTEGER PRIMARY KEY AUTOINCREMENT,"+
+                                                        workoutplan.Workoutplan.COLUMN_NAME_name+" TEXT,"+
+                                                        workoutplan.Workoutplan.COLUMN_NAME_squat+" INTEGER,"+
+                                                        workoutplan.Workoutplan.COLUMN_NAME_bench_press+" INTEGER,"+
+                                                        workoutplan.Workoutplan.COLUMN_NAME_leg_press+" INTEGER,"+
+                                                        workoutplan.Workoutplan.COLUMN_NAME_overhead_press+" INTEGER,"+
+                                                        workoutplan.Workoutplan.COLUMN_NAME_calorie+"REAL,"+
+                                                        workoutplan.Workoutplan.COLUMN_NAME_workouttime+"REAL)";
+
+
+
+    private static final String SQL_DELETE_ENTRIES =
                 "DROP TABLE IF EXISTS " + MealPlans.mealPlans.TABLE_NAME;
+
+    private static final String SQL_DELETE_ENTRIES_Work =
+               "DROP TABLE IF EXISTS " + Workoutprofile.workoutprofile.TABLE_NAME;
+
+    private static final String SQL_DELETE_ENTRIES_Workplan =
+            "DROP TABLE IF EXISTS " + workoutplan.Workoutplan.TABLE_NAME;
+
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
         sqLiteDatabase.execSQL(SQL_CREATE_ENTRY1);
+        sqLiteDatabase.execSQL(SQL_CREATE_ENTRY_Work);
+        sqLiteDatabase.execSQL(SQL_CREATE_ENTRY_Workplan);
 
     }
 
@@ -36,9 +64,13 @@ public class DBhelper extends SQLiteOpenHelper {
         // This database is only a cache for online data, so its upgrade policy is
         // to simply to discard the data and start over
         db.execSQL(SQL_DELETE_ENTRIES);
+        db.execSQL(SQL_DELETE_ENTRIES_Work);
+        db.execSQL(SQL_DELETE_ENTRIES_Workplan);
         onCreate(db);
     }
     public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         onUpgrade(db, oldVersion, newVersion);
     }
+
+
 }
