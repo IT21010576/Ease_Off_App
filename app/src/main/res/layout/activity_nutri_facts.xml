@@ -4,208 +4,222 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NutriFacts">
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
-        android:layout_width="343dp"
-        android:layout_height="168dp"
-        android:background="@color/ThemeCol4"
-        android:backgroundTint="@color/ThemeCol4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273">
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="410dp"
-        android:layout_height="76dp"
-        android:background="@drawable/ic_launcher_background"
-        android:backgroundTint="@color/ThemeCol2"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".EatHealthy.NutriFacts">
 
     <TextView
         android:id="@+id/prevLbl"
         style="@style/headingFontText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="391dp"
+        android:layout_height="35dp"
         android:text="@string/nutriLbl"
-        android:textSize="20sp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintVertical_bias="0.028" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="343dp"
-        android:layout_height="168dp"
-        android:background="@color/ThemeCol4"
-        android:backgroundTint="@color/ThemeCol4"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/fact1"
+        android:layout_width="371dp"
+        android:layout_height="170dp"
+        android:background="@color/IndividualDashboardCol4"
+        android:backgroundTint="@color/IndividualDashboardCol4"
+        app:layout_constraintBottom_toTopOf="@+id/fact2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273">
+        app:layout_constraintTop_toBottomOf="@+id/prevLbl"
+        app:layout_constraintVertical_bias="0.126">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/viewbtn1_nutrifacts"
-                style="@style/buttonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="View"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.435"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.93" />
-
             <TextView
-                android:id="@+id/lbl1_nutrifacts"
-                android:layout_width="217dp"
-                android:layout_height="103dp"
-                android:text="TextView"
+                android:id="@+id/fact1Text"
+                android:layout_width="259dp"
+                android:layout_height="97dp"
+                android:backgroundTint="@color/DashboardCol2"
+                android:ems="10"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.873"
+                app:layout_constraintHorizontal_bias="0.929"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.138" />
+                app:layout_constraintVertical_bias="0.088"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/fact1Btn"
+                android:layout_width="131dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="177dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="87dp"
+                android:layout_marginBottom="1dp"
+                android:background="@color/teal_200"
+                android:text="Read More"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fact1Text"
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
-                android:id="@+id/img1_nutrifacts"
-                android:layout_width="94dp"
-                android:layout_height="102dp"
+                android:id="@+id/imageView5"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/lbl1_nutrifacts"
-                app:layout_constraintHorizontal_bias="0.375"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.046"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.136"
-                app:srcCompat="@drawable/factimg" />
-
+                app:layout_constraintVertical_bias="0.085"
+                app:srcCompat="@drawable/successicon" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="340dp"
-        android:layout_height="176dp"
-        android:background="@color/ThemeCol4"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fact2"
+        android:layout_width="371dp"
+        android:layout_height="170dp"
+        android:background="@color/IndividualDashboardCol4"
+        android:backgroundTint="@color/IndividualDashboardCol4"
+        app:layout_constraintBottom_toTopOf="@+id/fact3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fact1"
+        app:layout_constraintVertical_bias="0.513">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fact2Text"
+                android:layout_width="264dp"
+                android:layout_height="97dp"
+                android:backgroundTint="@color/DashboardCol2"
+                android:ems="10"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.934"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.088"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/fact2Btn"
+                android:layout_width="131dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="177dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="87dp"
+                android:background="@color/teal_200"
+                android:text="Read More"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.458"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fact2Text"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.032"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.073"
+                app:srcCompat="@drawable/successicon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fact3"
+        android:layout_width="371dp"
+        android:layout_height="170dp"
+        android:background="@color/IndividualDashboardCol4"
+        android:backgroundTint="@color/IndividualDashboardCol4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603">
+        app:layout_constraintTop_toBottomOf="@+id/fact2"
+        app:layout_constraintVertical_bias="0.904">
 
-        <Button
-            android:id="@+id/viewbtn2_nutrifacts"
-            style="@style/buttonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="View"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.435"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.93" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/lbl2_nutrifacts"
-            android:layout_width="217dp"
-            android:layout_height="103dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.873"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.138" />
+            <TextView
+                android:id="@+id/fact3Text"
+                android:layout_width="264dp"
+                android:layout_height="97dp"
+                android:backgroundTint="@color/DashboardCol2"
+                android:ems="10"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.943"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.088"
+                tools:ignore="MissingConstraints" />
 
-        <ImageView
-            android:id="@+id/img2_nutrifacts"
-            android:layout_width="94dp"
-            android:layout_height="102dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/lbl2_nutrifacts"
-            app:layout_constraintHorizontal_bias="0.384"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.135"
-            app:srcCompat="@drawable/factimg" />
+            <Button
+                android:id="@+id/fact3Btn"
+                android:layout_width="131dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="177dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="87dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/teal_200"
+                android:text="Watch Video"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fact3Text" />
 
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="91dp"
+                android:layout_height="88dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.035"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.073"
+                app:srcCompat="@drawable/successicon" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="340dp"
-        android:layout_height="176dp"
-        android:layout_marginBottom="32dp"
-        android:background="@color/ThemeCol4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
-
-        <Button
-            android:id="@+id/viewbtn3_nutrifacts"
-            style="@style/buttonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="View"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.435"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.93" />
-
-        <TextView
-            android:id="@+id/lbl3_nutrifacts"
-            android:layout_width="217dp"
-            android:layout_height="103dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.894"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.136" />
-
-        <ImageView
-            android:id="@+id/img3_nutrifacts"
-            android:layout_width="94dp"
-            android:layout_height="102dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/lbl3_nutrifacts"
-            app:layout_constraintHorizontal_bias="0.384"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.135"
-            app:srcCompat="@drawable/factimg" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

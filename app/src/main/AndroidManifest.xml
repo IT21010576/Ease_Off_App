@@ -16,7 +16,36 @@
         <activity
             android:name=".mindandyou.MindMeditationTimes"
             android:label="Meditated Time"
-            android:parentActivityName=".mindandyou.MindMeditate"
+            android:parentActivityName=".mindandyou.MindMeditate"/>
+        <activity
+            android:name=".Healthcare.EditMedSchedule"
+            android:label="Edit Schedule"
+            android:parentActivityName=".Healthcare.DailyMedicine"
+            android:exported="false" />
+        <activity
+            android:name=".Healthcare.EditMedLists"
+            android:exported="false"
+            android:label="Edit List"
+            android:parentActivityName=".Healthcare.allMedLists" />
+        <activity
+            android:name=".Healthcare.allMedLists"
+            android:exported="false"
+            android:label="All medicine lists"
+            android:parentActivityName=".Healthcare.PharmacyMain" />
+        <activity
+            android:name=".Healthcare.newMedList"
+            android:exported="false"
+            android:label="Medicine List"
+            android:parentActivityName=".Healthcare.PharmacyMain" />
+        <activity
+            android:name=".Healthcare.EditMed"
+            android:label="Edit Medicine"
+            android:parentActivityName=".Healthcare.PharmacyMain"
+            android:exported="false" />
+        <activity
+            android:name=".EatHealthy.NutriFacts"
+            android:label="Nutritional Facts"
+            android:parentActivityName=".EatHealthy.DietDashboard"
             android:exported="false" />
 
         <activity
@@ -61,31 +90,51 @@
             android:name=".mindandyou.MindAndYouDashboard"
             android:exported="false" />
         <activity
-            android:name=".PlanMyDiet"
+            android:name=".EatHealthy.PlanMyDiet"
+            android:label="Plan My Diet"
+            android:parentActivityName=".EatHealthy.DietDashboard"
             android:exported="false" />
         <activity
-            android:name=".TrackMyCalories"
+            android:name=".EatHealthy.TrackMyCalories"
+            android:label="Track My Calories"
+            android:parentActivityName=".EatHealthy.DietDashboard"
             android:exported="false" />
         <activity
-            android:name=".DietDashboard"
+            android:name=".EatHealthy.DietDashboard"
+            android:label="Diet Dashboard"
+            android:parentActivityName=".MainDashboard"
             android:exported="false" />
         <activity
-            android:name=".PharmacyMain"
+            android:name=".Healthcare.PharmacyMain"
+            android:exported="false"
+            android:label="Pharmacy"
+            android:parentActivityName=".Healthcare.healthcare" />
+        <activity
+            android:name=".Healthcare.DailyMedicine"
+            android:label="Daily Medicine"
+            android:parentActivityName=".MainDashboard"
             android:exported="false" />
         <activity
-            android:name=".DailyMedicine"
+            android:name=".Healthcare.DiseasesUpdate"
+            android:label="Diseases Update"
+            android:parentActivityName=".Healthcare.healthcare"
             android:exported="false" />
         <activity
-            android:name=".DiseasesUpdate"
-            android:exported="false" />
-        <activity
-            android:name=".Beauty"
-            android:exported="false" />
+            android:name=".Healthcare.healthcare"
+            android:exported="false"
+            android:label="Healthcare"
+            android:parentActivityName=".MainDashboard" />
         <activity
             android:name=".healthcare"
+            android:exported="false"/>
+        <activity
+            android:name=".SetGoal"
             android:exported="false" />
         <activity
             android:name=".MainDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Workout"
             android:exported="false" />
         <activity
             android:name=".Signup"
@@ -99,6 +148,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <receiver android:name=".Healthcare.AlarmReceiver"/>
+</application>
+
 
 </manifest>

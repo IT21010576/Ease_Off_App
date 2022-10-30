@@ -4,60 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DiseasesUpdate">
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbardiseaseUp"
-        style="@style/toolbarStyle"
-        android:backgroundTint="@color/ThemeCol2"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageView
-        android:id="@+id/backbtn_disUp"
-        style="@style/toolbarImage"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/backbtn" />
-
-    <TextView
-        android:id="@+id/heading_disUp"
-        style="@style/toolbarFontStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/DiseasesUpdtLbl"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.253"
-        app:layout_constraintStart_toStartOf="@+id/toolbardiseaseUp"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".Healthcare.DiseasesUpdate">
 
     <EditText
         android:id="@+id/diseaseUp_search"
         android:layout_width="286dp"
         android:layout_height="69dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/SearchLbl"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <SearchView
         android:layout_width="46dp"
         android:layout_height="48dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -67,9 +34,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbardiseaseUp"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,7 +62,7 @@
                     android:layout_marginTop="70dp"
                     android:layout_marginRight="20dp"
                     android:backgroundTint="@color/ThemeCol1Btn"
-                    android:text="@string/SeeMoreBtn"/>
+                    android:text="@string/SeeMoreBtn" />
 
                 <TextView
                     android:id="@+id/lbl1_disUp"
@@ -119,7 +84,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="200dp"
-                    app:srcCompat="@drawable/default_image"/>
+                    app:srcCompat="@drawable/default_image" />
 
                 <Button
                     android:id="@+id/seemore2_disUp"
@@ -129,7 +94,7 @@
                     android:layout_marginTop="70dp"
                     android:layout_marginRight="20dp"
                     android:backgroundTint="@color/ThemeCol1Btn"
-                    android:text="@string/SeeMoreBtn"/>
+                    android:text="@string/SeeMoreBtn" />
 
                 <TextView
                     android:id="@+id/lbl2_disUp"
@@ -161,7 +126,7 @@
                     android:layout_marginTop="70dp"
                     android:layout_marginRight="20dp"
                     android:backgroundTint="@color/ThemeCol1Btn"
-                    android:text="@string/SeeMoreBtn"/>
+                    android:text="@string/SeeMoreBtn" />
 
                 <TextView
                     android:id="@+id/lbl3_disUp"
@@ -183,7 +148,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="200dp"
-                    app:srcCompat="@drawable/default_image"/>
+                    app:srcCompat="@drawable/default_image" />
 
                 <Button
                     android:id="@+id/seemore4_disUp"
@@ -193,7 +158,7 @@
                     android:layout_marginTop="70dp"
                     android:layout_marginRight="20dp"
                     android:backgroundTint="@color/ThemeCol1Btn"
-                    android:text="@string/SeeMoreBtn"/>
+                    android:text="@string/SeeMoreBtn" />
 
                 <TextView
                     android:id="@+id/lbl4_disUp"
@@ -215,7 +180,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="200dp"
-                    app:srcCompat="@drawable/default_image"/>
+                    app:srcCompat="@drawable/default_image" />
 
                 <Button
                     android:id="@+id/seemore5_disUp"
@@ -225,7 +190,7 @@
                     android:layout_marginTop="70dp"
                     android:layout_marginRight="20dp"
                     android:backgroundTint="@color/ThemeCol1Btn"
-                    android:text="@string/SeeMoreBtn"/>
+                    android:text="@string/SeeMoreBtn" />
 
                 <TextView
                     android:id="@+id/lbl5_disUp"
