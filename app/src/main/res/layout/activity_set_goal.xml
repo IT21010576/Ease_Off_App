@@ -12,10 +12,10 @@
     <TextView
         android:id="@+id/textView32"
         style="@style/headingFontText"
-        android:layout_width="120dp"
-        android:layout_height="52dp"
+        android:layout_width="178dp"
+        android:layout_height="35dp"
         android:text="@string/today_lbl"
-        android:textSize="40dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -25,14 +25,14 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="211dp"
-        android:layout_height="164dp"
+        android:layout_width="136dp"
+        android:layout_height="115dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.112"
+        app:layout_constraintVertical_bias="0.149"
         app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
     <TextView
@@ -159,9 +159,9 @@
         android:layout_height="45dp"
         android:ems="10"
         android:inputType="number"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="237dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="202dp" />
 
     <EditText
         android:id="@+id/editTextNumber2"
@@ -180,9 +180,9 @@
         android:layout_height="42dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="350dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="305dp" />
 
     <EditText
         android:id="@+id/editTextNumber4"
@@ -190,9 +190,9 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
-        tools:layout_editor_absoluteX="149dp"
-        tools:layout_editor_absoluteY="397dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="355dp" />
 
     <EditText
         android:id="@+id/editTextNumber5"

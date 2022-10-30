@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setReminderForMeal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="349dp"
+            android:layout_height="360dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.382" />
+
+        <Button
+            android:id="@+id/alarmBtn"
+            android:layout_width="218dp"
+            android:layout_height="77dp"
+            android:backgroundTint="@color/DashboardCol4"
+            android:text="Set Reminder"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timePicker"
+            app:layout_constraintVertical_bias="0.478" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="351dp"
+            android:layout_height="49dp"
+            android:text="Set a reminder for your meal!"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.048" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

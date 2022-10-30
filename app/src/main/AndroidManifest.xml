@@ -94,6 +94,10 @@
             </intent-filter>
         </activity>
 
+        <receiver
+            android:name=".EatHealthy.Reminder"
+            android:enabled="true"
+            android:exported="true"/>
 
     </application>
 

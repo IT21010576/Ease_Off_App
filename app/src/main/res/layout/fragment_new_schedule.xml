@@ -22,7 +22,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/AddBtn_medSchedule"
+        android:id="@+id/dietDashBtnb1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/AddBtn"

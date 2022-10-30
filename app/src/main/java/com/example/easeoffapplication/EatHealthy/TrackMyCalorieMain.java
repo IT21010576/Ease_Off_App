@@ -42,6 +42,26 @@ public class TrackMyCalorieMain extends Fragment {
         return view;
     }
 
+    //method to convert Carbohydrate input in g to Calories
+    public int carbToCal(int carbsInG){
+        return carbsInG*4;
+    }
+
+    //method to convert Protein input in g to Calories
+    public int protToCal(int protInG){
+        return protInG*4;
+    }
+
+    //method to convert Fat input in g to Calories
+    public int fatToCal(int fatsInG){
+        return fatsInG*9;
+    }
+
+    //method to calculate the total calories
+    public int getTotalCalories(int carbCal,int protCal,int fatCal){
+        return carbCal+protCal+fatCal;
+    }
+
     public void calcTotalCalories(){
         //getting the values entered as Integers
         int carbsInG=Integer.valueOf(carbGrams.getText().toString());
@@ -49,12 +69,12 @@ public class TrackMyCalorieMain extends Fragment {
         int fatsInG=Integer.valueOf(fatGrams.getText().toString());
 
         //converting grams of each type to calories
-        carbsInCal=carbsInG*4;
-        proteinsInCal=proteinsInG*4;
-        fatsInCal=fatsInG*9;
+        carbsInCal=carbToCal(carbsInG);
+        proteinsInCal=protToCal(proteinsInG);
+        fatsInCal=fatToCal(fatsInG);
 
-        //calulcating total calories
-        totalCalories=carbsInCal+proteinsInCal+fatsInCal;
+        //getting total calories
+        totalCalories=getTotalCalories(carbsInCal,proteinsInCal,fatsInCal);
     }
 
     public void displayResults(){
