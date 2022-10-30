@@ -1,37 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgs"
-    tools:context=".MindMeditate">
+    android:orientation="vertical"
+    tools:context=".mindandyou.MindMeditate">
 
-    <FrameLayout
-        android:id="@+id/mind_meditate_frame_layout"
+    <TextView
+        android:id="@+id/mind_meditation_timer_header"
+        style="@style/headingFontText"
         android:layout_width="match_parent"
-        android:layout_height="600dp"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10pt"
+        android:layout_marginBottom="10dp"
+        android:text="@string/mindMeditateHeader" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveTimeMeditateMind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/IndividualDashboardCol3"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/save_med_mind" />
+
+    <TextView
+        android:id="@+id/mind_meditation_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mind_meditation_timer_header"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text="00:00:00"
+        android:textColor="@color/DashboardCol2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="60sp" />
 
     <Button
-        android:id="@+id/mind_meditate_timer_frag_btn"
-        style="@style/buttonStyle"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginBottom="50dp"
-        android:backgroundTint="@color/black"
-        android:text="@string/mindMeditateTimerBtn" />
+        android:id="@+id/mind_meditation_start_btn"
+        style="@style/buttonStyle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mind_meditation_time_view"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="0dp"
+        android:onClick="onClickStartTimer"
+        android:text="@string/mindMeditateTimerStartBtn" />
 
     <Button
-        android:id="@+id/mind_meditate_times_frag_btn"
-        style="@style/buttonStyle"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="50dp"
-        android:backgroundTint="@color/black"
-        android:text="@string/mindMeditateTimesBtn" />
-</RelativeLayout>
+        android:id="@+id/mind_meditation_stop_btn"
+        style="@style/buttonStyle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/mind_meditation_time_view"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickStopTimer"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_toRightOf="@id/mind_meditation_start_btn"
+        android:text="@string/mindMeditateTimerStopBtn" />
+
+    <Button
+        android:id="@+id/mind_meditation_reset_btn"
+        style="@style/buttonStyle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mind_meditation_time_view"
+        android:layout_alignParentTop="false"
+        android:onClick="onClickResetTimer"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/mind_meditation_stop_btn"
+        android:text="@string/mindMeditateTimerResetBtn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mind_meditation_times_frag_btn"
+            android:layout_width="375dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentBottom="false"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/IndividualDashboardCol1"
+            android:text="@string/mindMeditateTimesBtn" />
+    </LinearLayout>
+</LinearLayout>
