@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Healthcare.EditMedSchedule">
+
+    <CalendarView
+        android:id="@+id/scheduleDate_edit"
+        android:layout_width="377dp"
+        android:layout_height="302dp"
+        android:layout_marginTop="124dp"
+        android:outlineSpotShadowColor="@color/DashboardCol4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/save_medSchedule_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/DashboardCol3"
+        android:text="@string/mindCreateJournalSaveBtn"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979" />
+
+    <Button
+        android:id="@+id/morning_time_edit"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@color/IndividualDashboardCol2"
+        android:text="set morning alarm"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/afternoon_time_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheduleDate_edit"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <Button
+        android:id="@+id/night_time_edit"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@color/IndividualDashboardCol2"
+        android:text="set night alarm"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/save_medSchedule_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/afternoon_time_edit"
+        app:layout_constraintVertical_bias="0.54" />
+
+    <Button
+        android:id="@+id/afternoon_time_edit"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:background="@color/IndividualDashboardCol2"
+        android:text="set noon alarm"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/night_time_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morning_time_edit"
+        app:layout_constraintVertical_bias="0.353" />
+
+    <EditText
+        android:id="@+id/scheduleName_edit"
+        android:layout_width="355dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/scheduleDate_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
