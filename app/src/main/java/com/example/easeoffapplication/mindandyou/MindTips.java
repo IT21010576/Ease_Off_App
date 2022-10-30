@@ -1,4 +1,4 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.mindandyou;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import com.example.easeoffapplication.R;
 
 public class MindTips extends AppCompatActivity {
 

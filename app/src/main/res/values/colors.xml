@@ -21,4 +21,6 @@
     <color name="ThemeCol2">#5DADE2</color>
     <color name="ThemeCol3">#A9CCE3</color>
     <color name="ThemeCol4">#D6EAF8</color>
+    <color name="OKgreen">#20d663</color>
+    <color name="AlertRed">#B33F40</color>
 </resources>
