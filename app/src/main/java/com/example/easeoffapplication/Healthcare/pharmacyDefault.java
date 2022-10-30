@@ -20,7 +20,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.easeoffapplication.EatHealthy.Update_trackCalorie;
 import com.example.easeoffapplication.R;
 import com.example.easeoffapplication.db.DBhelper;
 import com.example.easeoffapplication.db.Medicines;
@@ -142,18 +141,6 @@ public class pharmacyDefault extends Fragment {
         });
 
         return view;
-    }
-
-
-
-    public int countMed(){
-        DBhelper dbHelper = new DBhelper(getContext());
-        SQLiteDatabase db = dbHelper.getReadableDatabase();
-
-        String query = "SELECT * FROM " + Medicines.medicines.TABLE_NAME;
-
-        Cursor cursor = db.rawQuery(query, null);
-        return cursor.getCount();
     }
 
     public List<Medicines> getAllMedicines(){

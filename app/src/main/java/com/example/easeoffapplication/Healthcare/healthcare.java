@@ -29,4 +29,10 @@ public class healthcare extends AppCompatActivity {
 
     }
 
+    public void moveToDiseasesUpdate(View view){
+        Intent intent1=new Intent(this, DiseasesUpdate.class);
+        startActivity(intent1);
+
+    }
+
 }

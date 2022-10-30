@@ -58,14 +58,28 @@ public class newMedList extends AppCompatActivity {
         totalView = findViewById(R.id.total_view);
 
         ArrayList<String> meds = getAllMedicines();
+        meds.add("Select medicine");
         ArrayAdapter<String> myAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,meds);
         myAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         med1_select.setAdapter(myAdapter);
-        med2_select.setAdapter(myAdapter);
-        med3_select.setAdapter(myAdapter);
-        med4_select.setAdapter(myAdapter);
-        med5_select.setAdapter(myAdapter);
+        int p1 = myAdapter.getPosition("Select medicine");
+        med1_select.setSelection(p1);
 
+        med2_select.setAdapter(myAdapter);
+        int p2 = myAdapter.getPosition("Select medicine");
+        med2_select.setSelection(p2);
+
+        med3_select.setAdapter(myAdapter);
+        int p3 = myAdapter.getPosition("Select medicine");
+        med3_select.setSelection(p3);
+
+        med4_select.setAdapter(myAdapter);
+        int p4 = myAdapter.getPosition("Select medicine");
+        med4_select.setSelection(p4);
+
+        med5_select.setAdapter(myAdapter);
+        int p5 = myAdapter.getPosition("Select medicine");
+        med5_select.setSelection(p5);
 
         med1_select.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

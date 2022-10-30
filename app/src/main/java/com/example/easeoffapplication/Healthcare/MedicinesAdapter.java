@@ -51,4 +51,6 @@ public class MedicinesAdapter extends ArrayAdapter<Medicines> {
 
         return row;
     }
+
+
 }

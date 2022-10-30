@@ -132,6 +132,7 @@
             android:exported="false" />
         <activity
             android:name=".MainDashboard"
+            android:label="Dashboard"
             android:exported="false" />
         <activity
             android:name=".Workout"
@@ -141,6 +142,7 @@
             android:exported="false" />
         <activity
             android:name=".Login"
+            android:label="Ease Off"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
