@@ -8,29 +8,16 @@
     tools:layout_editor_absoluteX="-2dp"
     tools:layout_editor_absoluteY="44dp">
 
-    <TextView
-        android:id="@+id/textView32"
-        style="@style/headingFontText"
-        android:layout_width="178dp"
-        android:layout_height="35dp"
-        android:text="@string/today_lbl"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="136dp"
-        android:layout_height="115dp"
+        android:layout_width="97dp"
+        android:layout_height="92dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintHorizontal_bias="0.461"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.149"
+        app:layout_constraintVertical_bias="0.031"
         app:srcCompat="@android:drawable/ic_menu_my_calendar" />
 
     <TextView
@@ -46,7 +33,7 @@
         app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.355" />
+        app:layout_constraintVertical_bias="0.275" />
 
     <TextView
         android:id="@+id/textView40"
@@ -61,7 +48,7 @@
         app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.439" />
+        app:layout_constraintVertical_bias="0.372" />
 
     <TextView
         android:id="@+id/textView41"
@@ -76,7 +63,7 @@
         app:layout_constraintHorizontal_bias="0.039"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.513" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <TextView
         android:id="@+id/textView42"
@@ -95,7 +82,7 @@
 
     <TextView
         android:id="@+id/textView43"
-        android:layout_width="391dp"
+        android:layout_width="373dp"
         android:layout_height="47dp"
         android:background="@color/IndividualDashboardCol3"
         android:text="@string/EstTime"
@@ -106,7 +93,7 @@
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.675" />
+        app:layout_constraintVertical_bias="0.723" />
 
     <TextView
         android:id="@+id/textView44"
@@ -118,10 +105,10 @@
         android:textSize="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.842" />
 
     <Button
         android:id="@+id/button11"
@@ -157,9 +144,13 @@
         android:layout_height="45dp"
         android:ems="10"
         android:inputType="number"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="156dp"
-        tools:layout_editor_absoluteY="202dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextNumber2"
@@ -168,8 +159,10 @@
         android:layout_marginTop="12dp"
         android:ems="10"
         android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
-        tools:layout_editor_absoluteX="156dp"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -178,9 +171,13 @@
         android:layout_height="42dp"
         android:ems="10"
         android:inputType="number"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextNumber4"
@@ -188,29 +185,12 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="number"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="355dp" />
-
-    <EditText
-        android:id="@+id/editTextNumber5"
-        android:layout_width="342dp"
-        android:layout_height="49dp"
-        android:ems="10"
-        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView43"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="514dp" />
-
-    <EditText
-        android:id="@+id/editTextNumber6"
-        android:layout_width="373dp"
-        android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="number"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="626dp" />
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

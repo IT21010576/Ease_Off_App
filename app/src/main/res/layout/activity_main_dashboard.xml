@@ -57,12 +57,13 @@
         android:layout_width="168dp"
         android:layout_height="158dp"
         android:backgroundTint="@color/DashboardCol2"
+        android:onClick="moveTostayFit"
         android:text="@string/StayfitLbl"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/MinYouBtn"
-        app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/EatHealthyBtn"
         app:layout_constraintTop_toTopOf="parent" />

@@ -33,4 +33,10 @@ public class MainDashboard extends AppCompatActivity {
         startActivity(intent1);
 
     }
+
+    public void moveTostayFit(View view){
+        Intent intent1=new Intent(this, SetGoal.class);
+        startActivity(intent1);
+
+    }
 }
