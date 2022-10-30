@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
+import com.example.easeoffapplication.mindandyou.MindAndYouDashboard;
 import com.example.easeoffapplication.Healthcare.healthcare;
 import com.example.easeoffapplication.EatHealthy.DietDashboard;
 

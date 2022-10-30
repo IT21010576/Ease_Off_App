@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="343dp"
+            android:layout_height="573dp">
+
+            <ImageView
+                android:id="@+id/mind_sleep_enough_img"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="39dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="39dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mind_sleep_positive_header"
+                app:srcCompat="@drawable/ic_baseline_check_circle_24" />
+
+            <TextView
+                android:id="@+id/mind_sleep_positive_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="131dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="160dp"
+                android:text="@string/mindSleepPositiveHeader"
+                android:textColor="@color/OKgreen"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.441"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mind_sleep_positive_feedback"
+                android:layout_width="283dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="168dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="@string/mindSleepPosFeedback"
+                android:textColor="@color/OKgreen"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.402"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mind_sleep_enough_img" />
+
+            <Button
+                android:id="@+id/mind_sleep_pos_dialog_close"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="117dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="146dp"
+                android:backgroundTint="@color/OKgreen"
+                android:text="OK!"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.469"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mind_sleep_positive_feedback" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

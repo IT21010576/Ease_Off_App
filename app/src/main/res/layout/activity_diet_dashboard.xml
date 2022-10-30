@@ -34,10 +34,10 @@
         app:layout_constraintBottom_toTopOf="@+id/NutriFctBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AddBtn_medSchedule" />
+        app:layout_constraintTop_toBottomOf="@+id/dietDashBtnb1" />
 
     <Button
-        android:id="@+id/AddBtn_medSchedule"
+        android:id="@+id/dietDashBtnb1"
         android:layout_width="263dp"
         android:layout_height="137dp"
         android:backgroundTint="@color/white"
