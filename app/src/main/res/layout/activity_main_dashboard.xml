@@ -15,6 +15,7 @@
         android:onClick="MoveToDietDash"
         android:text="@string/EathealthyLbl"
         android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/HealthcareBtn"
         app:layout_constraintEnd_toStartOf="@+id/StayFitBtn"
         app:layout_constraintHorizontal_bias="0.5"
@@ -29,6 +30,7 @@
         android:onClick="moveToHealthcare"
         android:text="@string/HelathcareLbl"
         android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/MinYouBtn"
         app:layout_constraintHorizontal_bias="0.5"
@@ -43,6 +45,7 @@
         android:onClick="moveToMindAndYou"
         android:text="@string/MindYouLbl"
         android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -56,10 +59,11 @@
         android:backgroundTint="@color/DashboardCol2"
         android:text="@string/StayfitLbl"
         android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/MinYouBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
 
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/EatHealthyBtn"
         app:layout_constraintTop_toTopOf="parent" />
 

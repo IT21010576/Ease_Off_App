@@ -1,4 +1,4 @@
-package com.example.easeoffapplication;
+package com.example.easeoffapplication.EatHealthy;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -17,6 +17,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.example.easeoffapplication.EatHealthy.Reminder;
+import com.example.easeoffapplication.R;
 
 import java.util.Calendar;
 
