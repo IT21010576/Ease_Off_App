@@ -20,7 +20,6 @@
         <entry key="..\:/Ease_Off_App/app/src/main/res/layout/mind_meditation_time_row.xml" value="0.5" />
         <entry key="..\:/Ease_Off_App/app/src/main/res/layout/mind_sleep_negative_dialog.xml" value="0.25" />
         <entry key="..\:/Ease_Off_App/app/src/main/res/layout/mind_sleep_positive_dialog.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_plan_my_diet.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/drawable/background.xml" value="0.1945" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/font/alata.xml" value="0.10625" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_diet_dashboard.xml" value="0.25" />
@@ -43,7 +42,6 @@
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_pharmacy.xml" value="0.1" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_plan_diet_default.xml" value="0.18" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_previous_calorie_intakes.xml" value="0.25" />
-        <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_track_calorie_default.xml" value="0.21" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_set_reminder_for_meal.xml" value="0.2" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_track_calorie_default.xml" value="0.25" />
         <entry key="..\:/Users/STZ/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/fragment_track_my_calorie_main.xml" value="0.25" />
@@ -112,6 +110,8 @@
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/sucesstoast.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/layout/viewcalorierow.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Siyumi/AndroidStudioProjects/Ease_Off_App/app/src/main/res/menu/menu.xml" value="0.2" />
+        <entry key="..\:/Users/Siyumi/Desktop/new app/app/src/main/res/layout/activity_pharmacy_main.xml" value="0.264" />
+        <entry key="..\:/Users/Siyumi/Desktop/new app/app/src/main/res/layout/fragment_pharmacy_default.xml" value="0.18958333333333333" />
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_diet_dashboard.xml" value="0.33" />
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Vihanga/Desktop/SLIIT Y2 SEM 2/Mobile Application Development/Labs/Ease_Off_App/app/src/main/res/layout/activity_main2.xml" value="0.2" />

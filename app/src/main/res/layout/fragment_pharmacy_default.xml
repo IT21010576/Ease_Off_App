@@ -27,8 +27,8 @@
 
         <ListView
             android:id="@+id/medlist"
-            android:layout_width="409dp"
-            android:layout_height="572dp"
+            android:layout_width="405dp"
+            android:layout_height="460dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

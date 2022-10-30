@@ -47,6 +47,11 @@
             android:label="Nutritional Facts"
             android:parentActivityName=".EatHealthy.DietDashboard"
             android:exported="false" />
+        <activity
+            android:name=".EatHealthy.Update_trackCalorie"
+            android:label="Update"
+            android:parentActivityName=".EatHealthy.DietDashboard"
+            android:exported="false" />
 
         <activity
             android:name=".mindandyou.MindThoughtJournalUpdate"
